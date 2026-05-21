@@ -1,0 +1,27 @@
+{
+  "name": "kpis-call-center-cc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "chart.js": "^4.5.1",
+    "next": "14.2.35",
+    "react": "^18",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^18",
+    "xlsx": "^0.18.5",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}

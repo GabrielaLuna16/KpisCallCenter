@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Heebo:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: #d2262c;
+  --red-dark: #a81e23;
+  --red-light: #fdf2f2;
+  --red-mid: #f5c0c2;
+  --black: #111111;
+  --dark: #1e1e1e;
+  --charcoal: #383838;
+  --warm: #faf9f5;
+  --white: #ffffff;
+  --border: #e5e2db;
+  --muted: #767676;
+  --text: #1e1e1e;
+  --green: #2d8a5e;
+  --green-bg: #f0faf5;
+  --green-light: #b7e4ce;
+  --orange: #c45c1a;
+  --orange-bg: #fef6ee;
+  --orange-light: #fcd5aa;
+  --purple: #5b3fa0;
+  --purple-bg: #f5f1fd;
+  --purple-light: #d5c5f5;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(0,0,0,.05), 0 4px 12px rgba(0,0,0,.06);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.12);
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Heebo', system-ui, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.55;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

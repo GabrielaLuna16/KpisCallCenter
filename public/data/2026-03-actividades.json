@@ -1,0 +1,4816 @@
+{
+  "month": "2026-03",
+  "tendencia": {
+    "kpis": {
+      "prom_asignadas": 39,
+      "prom_realizadas": 36,
+      "max_realizadas": 75,
+      "max_real_fecha": "31/03/2026",
+      "limite_recomendado": 38
+    },
+    "data": [
+      {
+        "date": "02/03/2026",
+        "day": 2,
+        "asignadas": 44,
+        "realizadas": 44
+      },
+      {
+        "date": "03/03/2026",
+        "day": 3,
+        "asignadas": 66,
+        "realizadas": 66
+      },
+      {
+        "date": "04/03/2026",
+        "day": 4,
+        "asignadas": 29,
+        "realizadas": 29
+      },
+      {
+        "date": "05/03/2026",
+        "day": 5,
+        "asignadas": 33,
+        "realizadas": 33
+      },
+      {
+        "date": "06/03/2026",
+        "day": 6,
+        "asignadas": 60,
+        "realizadas": 60
+      },
+      {
+        "date": "09/03/2026",
+        "day": 9,
+        "asignadas": 54,
+        "realizadas": 54
+      },
+      {
+        "date": "10/03/2026",
+        "day": 10,
+        "asignadas": 29,
+        "realizadas": 29
+      },
+      {
+        "date": "11/03/2026",
+        "day": 11,
+        "asignadas": 23,
+        "realizadas": 23
+      },
+      {
+        "date": "12/03/2026",
+        "day": 12,
+        "asignadas": 48,
+        "realizadas": 48
+      },
+      {
+        "date": "13/03/2026",
+        "day": 13,
+        "asignadas": 48,
+        "realizadas": 46
+      },
+      {
+        "date": "17/03/2026",
+        "day": 17,
+        "asignadas": 23,
+        "realizadas": 16
+      },
+      {
+        "date": "18/03/2026",
+        "day": 18,
+        "asignadas": 23,
+        "realizadas": 23
+      },
+      {
+        "date": "19/03/2026",
+        "day": 19,
+        "asignadas": 39,
+        "realizadas": 37
+      },
+      {
+        "date": "20/03/2026",
+        "day": 20,
+        "asignadas": 24,
+        "realizadas": 24
+      },
+      {
+        "date": "23/03/2026",
+        "day": 23,
+        "asignadas": 42,
+        "realizadas": 41
+      },
+      {
+        "date": "24/03/2026",
+        "day": 24,
+        "asignadas": 53,
+        "realizadas": 53
+      },
+      {
+        "date": "25/03/2026",
+        "day": 25,
+        "asignadas": 26,
+        "realizadas": 24
+      },
+      {
+        "date": "26/03/2026",
+        "day": 26,
+        "asignadas": 26,
+        "realizadas": 26
+      },
+      {
+        "date": "30/03/2026",
+        "day": 30,
+        "asignadas": 49,
+        "realizadas": 49
+      },
+      {
+        "date": "31/03/2026",
+        "day": 31,
+        "asignadas": 75,
+        "realizadas": 75
+      }
+    ]
+  },
+  "cumplimiento": {
+    "kpis": {
+      "total": 860,
+      "a_tiempo": 802,
+      "tardio": 58,
+      "no_realizadas": 0
+    },
+    "tardio_detail": [],
+    "no_real_detail": [],
+    "detail_table": [
+      {
+        "dia": "Lunes",
+        "fecha": "02/03/2026",
+        "asignadas": 44,
+        "realizadas": 44
+      },
+      {
+        "dia": "Martes",
+        "fecha": "03/03/2026",
+        "asignadas": 66,
+        "realizadas": 66
+      },
+      {
+        "dia": "Miércoles",
+        "fecha": "04/03/2026",
+        "asignadas": 29,
+        "realizadas": 29
+      },
+      {
+        "dia": "Jueves",
+        "fecha": "05/03/2026",
+        "asignadas": 33,
+        "realizadas": 33
+      },
+      {
+        "dia": "Viernes",
+        "fecha": "06/03/2026",
+        "asignadas": 60,
+        "realizadas": 60
+      },
+      {
+        "dia": "Lunes",
+        "fecha": "09/03/2026",
+        "asignadas": 54,
+        "realizadas": 54
+      },
+      {
+        "dia": "Martes",
+        "fecha": "10/03/2026",
+        "asignadas": 29,
+        "realizadas": 29
+      },
+      {
+        "dia": "Miércoles",
+        "fecha": "11/03/2026",
+        "asignadas": 23,
+        "realizadas": 23
+      },
+      {
+        "dia": "Jueves",
+        "fecha": "12/03/2026",
+        "asignadas": 48,
+        "realizadas": 48
+      },
+      {
+        "dia": "Viernes",
+        "fecha": "13/03/2026",
+        "asignadas": 48,
+        "realizadas": 46
+      },
+      {
+        "dia": "Lunes",
+        "fecha": "16/03/2026",
+        "asignadas": 45,
+        "realizadas": 1
+      },
+      {
+        "dia": "Martes",
+        "fecha": "17/03/2026",
+        "asignadas": 23,
+        "realizadas": 16
+      },
+      {
+        "dia": "Miércoles",
+        "fecha": "18/03/2026",
+        "asignadas": 23,
+        "realizadas": 23
+      },
+      {
+        "dia": "Jueves",
+        "fecha": "19/03/2026",
+        "asignadas": 39,
+        "realizadas": 37
+      },
+      {
+        "dia": "Viernes",
+        "fecha": "20/03/2026",
+        "asignadas": 24,
+        "realizadas": 24
+      },
+      {
+        "dia": "Lunes",
+        "fecha": "23/03/2026",
+        "asignadas": 42,
+        "realizadas": 41
+      },
+      {
+        "dia": "Martes",
+        "fecha": "24/03/2026",
+        "asignadas": 53,
+        "realizadas": 53
+      },
+      {
+        "dia": "Miércoles",
+        "fecha": "25/03/2026",
+        "asignadas": 26,
+        "realizadas": 24
+      },
+      {
+        "dia": "Jueves",
+        "fecha": "26/03/2026",
+        "asignadas": 26,
+        "realizadas": 26
+      },
+      {
+        "dia": "Viernes",
+        "fecha": "27/03/2026",
+        "asignadas": 1,
+        "realizadas": 1
+      },
+      {
+        "dia": "Lunes",
+        "fecha": "30/03/2026",
+        "asignadas": 49,
+        "realizadas": 49
+      },
+      {
+        "dia": "Martes",
+        "fecha": "31/03/2026",
+        "asignadas": 75,
+        "realizadas": 75
+      }
+    ]
+  },
+  "horarios": {
+    "kpis": {
+      "prom_horas_activas": 7.73,
+      "tiempo_prom_entre_cierres": 12,
+      "dia_mas_largo": {
+        "horas": 9.23,
+        "fecha": "24/03/2026",
+        "ultimo_cierre": "18:54"
+      },
+      "dia_mas_corto": {
+        "horas": 6.1,
+        "fecha": "18/03/2026",
+        "ultimo_cierre": "15:46"
+      }
+    },
+    "data": [
+      {
+        "dia": "Lunes",
+        "fecha": "02/03/2026",
+        "asignadas": 44,
+        "primera": "09:47",
+        "ultima": "16:37",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Emmanuel Gomez Valdez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:31"
+          },
+          {
+            "related_to": "Edel Luque",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:47"
+          },
+          {
+            "related_to": "Israel Gomez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:47"
+          },
+          {
+            "related_to": "David Zamora Barba",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:08"
+          },
+          {
+            "related_to": "Susana Trujillo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:26"
+          },
+          {
+            "related_to": "Papeleria christopher",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:27"
+          },
+          {
+            "related_to": "Karla Lizeth Borbon Esquer",
+            "subject": "Seguir contactando",
+            "closed_time": "10:46"
+          },
+          {
+            "related_to": "Luis Eduardo Nava",
+            "subject": "Seguir contactando",
+            "closed_time": "12:11"
+          },
+          {
+            "related_to": "emerick badillo badillo",
+            "subject": "Seguir contactando",
+            "closed_time": "12:39"
+          },
+          {
+            "related_to": "Sergio Moya",
+            "subject": "Seguir contactando",
+            "closed_time": "12:40"
+          },
+          {
+            "related_to": "Paulina Shen",
+            "subject": "Seguir contactando",
+            "closed_time": "12:48"
+          },
+          {
+            "related_to": "Eduardo Reyes",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:58"
+          },
+          {
+            "related_to": "Carlos Robles",
+            "subject": "Seguir contactando",
+            "closed_time": "13:19"
+          },
+          {
+            "related_to": "Ginette Betancourt",
+            "subject": "Seguir contactando 2",
+            "closed_time": "13:20"
+          },
+          {
+            "related_to": "Rocio Aguilar",
+            "subject": "Seguir contactando 2",
+            "closed_time": "13:32"
+          },
+          {
+            "related_to": "AB Guzman",
+            "subject": "Seguir contactando 2",
+            "closed_time": "13:32"
+          },
+          {
+            "related_to": "Pablo Serna Serna",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:10"
+          },
+          {
+            "related_to": "Omar Mayorquin",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:16"
+          },
+          {
+            "related_to": "Sebastian CN",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:32"
+          },
+          {
+            "related_to": "Pedro Acosta",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:33"
+          },
+          {
+            "related_to": "Yulissa Caraveo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:35"
+          },
+          {
+            "related_to": "Enrique Sanchez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:47"
+          },
+          {
+            "related_to": "Karen Pineda",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:48"
+          },
+          {
+            "related_to": "Sandy Garcia",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:49"
+          },
+          {
+            "related_to": "Gustavo Fring",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:49"
+          },
+          {
+            "related_to": "Angel Ruiz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:23"
+          },
+          {
+            "related_to": "Salvador Reyes",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:24"
+          },
+          {
+            "related_to": "Roxana Espinoza",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:25"
+          },
+          {
+            "related_to": "Fabys Velasco",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:26"
+          },
+          {
+            "related_to": "Miguel Ángel Quintanilla Mendoza",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:27"
+          },
+          {
+            "related_to": "Marylu Lugo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:27"
+          },
+          {
+            "related_to": "Ivan Hernandez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:28"
+          },
+          {
+            "related_to": "Fernando Franco",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:29"
+          },
+          {
+            "related_to": "Cudberto Ernesto Lara",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:31"
+          },
+          {
+            "related_to": "Manuel Rodriguez Camarillo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:32"
+          },
+          {
+            "related_to": "Donovan Soto",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:32"
+          },
+          {
+            "related_to": "Erick Rodriguez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:33"
+          },
+          {
+            "related_to": "F. Gástelo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:34"
+          },
+          {
+            "related_to": "Carlos Mercado",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:34"
+          },
+          {
+            "related_to": "Jose Batres",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:35"
+          },
+          {
+            "related_to": "Eric Valladares",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:35"
+          },
+          {
+            "related_to": "Lupita de Garay",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:36"
+          },
+          {
+            "related_to": "Adrian Gutierrez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:36"
+          },
+          {
+            "related_to": "Marcelo Ortiz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:37"
+          }
+        ]
+      },
+      {
+        "dia": "Martes",
+        "fecha": "03/03/2026",
+        "asignadas": 66,
+        "primera": "10:01",
+        "ultima": "18:15",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Rocio Alvarez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:39"
+          },
+          {
+            "related_to": "Miriam Azucena",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:01"
+          },
+          {
+            "related_to": "Miriam Peña",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:02"
+          },
+          {
+            "related_to": "Coexfi Rubio",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:03"
+          },
+          {
+            "related_to": "Maribel Molina",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:06"
+          },
+          {
+            "related_to": "Aideé Delgado",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:40"
+          },
+          {
+            "related_to": "Rene Cazarez",
+            "subject": "Seguir contactando",
+            "closed_time": "10:51"
+          },
+          {
+            "related_to": "Selene Lizeth Hernandez",
+            "subject": "Seguir contactando",
+            "closed_time": "10:52"
+          },
+          {
+            "related_to": "Saho Varela",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:21"
+          },
+          {
+            "related_to": "Robert Ramirez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:22"
+          },
+          {
+            "related_to": "M V",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:23"
+          },
+          {
+            "related_to": "Raul Andrade",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:35"
+          },
+          {
+            "related_to": "Maria de jesus Aguero",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:35"
+          },
+          {
+            "related_to": "C Vega",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:38"
+          },
+          {
+            "related_to": "heymi beltran olivas",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:43"
+          },
+          {
+            "related_to": "Alfredo Avila",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:55"
+          },
+          {
+            "related_to": "Edith Ruelas",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:59"
+          },
+          {
+            "related_to": "Daniel Jiménez Jimenez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:03"
+          },
+          {
+            "related_to": "Fabiola Pérez Pérez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:07"
+          },
+          {
+            "related_to": "Stephanie González",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:14"
+          },
+          {
+            "related_to": "Ariel Gonzalez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:19"
+          },
+          {
+            "related_to": "Adolfo Huizar Velasquez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:07"
+          },
+          {
+            "related_to": "Carmina Martinez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:09"
+          },
+          {
+            "related_to": "Ramón Roque",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:11"
+          },
+          {
+            "related_to": "Eduardo D Machuca",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:28"
+          },
+          {
+            "related_to": "Flor Melendez Acosta",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:31"
+          },
+          {
+            "related_to": "Mayra Velazquez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:32"
+          },
+          {
+            "related_to": "Ismael Cervantes Lopez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:34"
+          },
+          {
+            "related_to": "Rommel Aguirre Molina",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:35"
+          },
+          {
+            "related_to": "Ingrid Barrios",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:37"
+          },
+          {
+            "related_to": "Jorge Askins",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:39"
+          },
+          {
+            "related_to": "Monica Lugo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:40"
+          },
+          {
+            "related_to": "Marisol Rubio",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:50"
+          },
+          {
+            "related_to": "bbyuli Flores",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:52"
+          },
+          {
+            "related_to": "Martha Maria marin valle Marin Valle",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:29"
+          },
+          {
+            "related_to": "Arlet Servantes",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:43"
+          },
+          {
+            "related_to": "Yolanda N/A",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:45"
+          },
+          {
+            "related_to": "Jonathan Diaz Maldonado",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:46"
+          },
+          {
+            "related_to": "Salina Distribuidora",
+            "subject": "Seguir contactando",
+            "closed_time": "16:56"
+          },
+          {
+            "related_to": "Anton Alcala",
+            "subject": "Seguir contactando",
+            "closed_time": "16:58"
+          },
+          {
+            "related_to": "Laura VB",
+            "subject": "Seguir contactando",
+            "closed_time": "16:59"
+          },
+          {
+            "related_to": "Kevin Quezada",
+            "subject": "Seguir contactando",
+            "closed_time": "17:00"
+          },
+          {
+            "related_to": "Ruben De Campo",
+            "subject": "Seguir contactando",
+            "closed_time": "17:06"
+          },
+          {
+            "related_to": "Jesus Gpe Rochin Rocha",
+            "subject": "Seguir contactando",
+            "closed_time": "17:07"
+          },
+          {
+            "related_to": "Karla Soria",
+            "subject": "Seguir contactando",
+            "closed_time": "17:09"
+          },
+          {
+            "related_to": "",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:10"
+          },
+          {
+            "related_to": "Angie Díaz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:14"
+          },
+          {
+            "related_to": "Valeria Zepeda",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:16"
+          },
+          {
+            "related_to": "Selene Rodríguez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:18"
+          },
+          {
+            "related_to": "Jesus Alvarado",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:19"
+          },
+          {
+            "related_to": "Yohan Uribe",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:20"
+          },
+          {
+            "related_to": "Jenifer Leyva",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:21"
+          },
+          {
+            "related_to": "Jorge Castro",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:22"
+          },
+          {
+            "related_to": "Doris López",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:23"
+          },
+          {
+            "related_to": "Alejandro Gh",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:32"
+          },
+          {
+            "related_to": "Ing Jorge Reyes",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "18:04"
+          },
+          {
+            "related_to": "Paty Arenas",
+            "subject": "Seguir contactando 3",
+            "closed_time": "18:06"
+          },
+          {
+            "related_to": "Isaac Moreno",
+            "subject": "Seguir contactando 3",
+            "closed_time": "18:07"
+          },
+          {
+            "related_to": "Tony Ruiz Hernandez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "18:07"
+          },
+          {
+            "related_to": "Veronica Garcia",
+            "subject": "Seguir contactando 2",
+            "closed_time": "18:10"
+          },
+          {
+            "related_to": "Juan Alfonso Gonzalez Gonzalez",
+            "subject": "Seguir contactando",
+            "closed_time": "18:10"
+          },
+          {
+            "related_to": "Joyeria Victoria",
+            "subject": "Seguir contactando 2",
+            "closed_time": "18:11"
+          },
+          {
+            "related_to": "Edgar Ramirez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "18:12"
+          },
+          {
+            "related_to": "Rommel Arvizu",
+            "subject": "Seguir contactando 2",
+            "closed_time": "18:13"
+          },
+          {
+            "related_to": "Miryan Silva A",
+            "subject": "Seguir contactando 2",
+            "closed_time": "18:14"
+          },
+          {
+            "related_to": "Alberto Loyo Aoyama",
+            "subject": "Seguir contactando 2",
+            "closed_time": "18:15"
+          }
+        ]
+      },
+      {
+        "dia": "Miércoles",
+        "fecha": "04/03/2026",
+        "asignadas": 29,
+        "primera": "09:31",
+        "ultima": "16:53",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Daniel Moreno",
+            "subject": "Seguir contactando 2",
+            "closed_time": "13:31"
+          },
+          {
+            "related_to": "Moises Laniado",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:31"
+          },
+          {
+            "related_to": "Obed Vargas",
+            "subject": "Seguir contactando",
+            "closed_time": "09:39"
+          },
+          {
+            "related_to": "Socorro Barragan",
+            "subject": "Seguir contactando",
+            "closed_time": "09:39"
+          },
+          {
+            "related_to": "cafeteria",
+            "subject": "Seguir contactando",
+            "closed_time": "09:41"
+          },
+          {
+            "related_to": "Dayana Alderete",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:26"
+          },
+          {
+            "related_to": "Umenie Tatto",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:30"
+          },
+          {
+            "related_to": "Bigvai Ramos",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:37"
+          },
+          {
+            "related_to": "Ernesto Olivo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:41"
+          },
+          {
+            "related_to": "Gabriel NA",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:45"
+          },
+          {
+            "related_to": "Jonatan Cr",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:52"
+          },
+          {
+            "related_to": "Alfredo Guzmán",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:26"
+          },
+          {
+            "related_to": "Carlos Gallardo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:42"
+          },
+          {
+            "related_to": "Jennifer Nuñez",
+            "subject": "Seguir contactando",
+            "closed_time": "16:43"
+          },
+          {
+            "related_to": "Ángela Rodriguez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:44"
+          },
+          {
+            "related_to": "Jakeline MJ",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:45"
+          },
+          {
+            "related_to": "Emmanuel Gomez Valdez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:46"
+          },
+          {
+            "related_to": "Jesus Gonzalez Munoz",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:46"
+          },
+          {
+            "related_to": "Joaquin Hernández",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:47"
+          },
+          {
+            "related_to": "Cesar Simental",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:47"
+          },
+          {
+            "related_to": "Jesus Rocha",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:47"
+          },
+          {
+            "related_to": "Miguel Angel Rodriguez Castillo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:48"
+          },
+          {
+            "related_to": "Nathalie Castelo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:48"
+          },
+          {
+            "related_to": "Maria San Elias",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:49"
+          },
+          {
+            "related_to": "Pedro Andres Romo Noriega",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:49"
+          },
+          {
+            "related_to": "Marco Antonio",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:50"
+          },
+          {
+            "related_to": "Alfredo Agci",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:52"
+          },
+          {
+            "related_to": "Manuel Alcocer",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:52"
+          },
+          {
+            "related_to": "Elieth Santana",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:53"
+          }
+        ]
+      },
+      {
+        "dia": "Jueves",
+        "fecha": "05/03/2026",
+        "asignadas": 33,
+        "primera": "09:47",
+        "ultima": "17:59",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Papeleria christopher",
+            "subject": "Seguir contactando",
+            "closed_time": "11:23"
+          },
+          {
+            "related_to": "Carlos Maldonado Bizarro",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:47"
+          },
+          {
+            "related_to": "Jose M Gonzalez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:49"
+          },
+          {
+            "related_to": "Mariano Merino",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:59"
+          },
+          {
+            "related_to": "Angel Ruiz",
+            "subject": "Seguir contactando",
+            "closed_time": "10:01"
+          },
+          {
+            "related_to": "Israel Gomez",
+            "subject": "Seguir contactando",
+            "closed_time": "10:03"
+          },
+          {
+            "related_to": "David Zamora Barba",
+            "subject": "Seguir contactando",
+            "closed_time": "10:05"
+          },
+          {
+            "related_to": "Susana Trujillo",
+            "subject": "Seguir contactando",
+            "closed_time": "10:06"
+          },
+          {
+            "related_to": "Xochitl Cisneros Niebla",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:38"
+          },
+          {
+            "related_to": "Antonini Fernández",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:54"
+          },
+          {
+            "related_to": "Egren Beas",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:56"
+          },
+          {
+            "related_to": "Noe Morelia",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:00"
+          },
+          {
+            "related_to": "Melissa Viera",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:01"
+          },
+          {
+            "related_to": "Cristian Naranjo Galindo",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:05"
+          },
+          {
+            "related_to": "cesar robles salgado",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:35"
+          },
+          {
+            "related_to": "Miguel Angel Luna ruiz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:37"
+          },
+          {
+            "related_to": "Cruz Macarena Manzanarez Sandoval",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:39"
+          },
+          {
+            "related_to": "Tomás García Ramos",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:40"
+          },
+          {
+            "related_to": "Luz Luz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:42"
+          },
+          {
+            "related_to": "Kike Hdez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:12"
+          },
+          {
+            "related_to": "Marco A. Juarez Juarez Planas",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:14"
+          },
+          {
+            "related_to": "Lucy Saavedra",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:16"
+          },
+          {
+            "related_to": "Christian Cervantes",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:17"
+          },
+          {
+            "related_to": "Bianca Cisneros",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:50"
+          },
+          {
+            "related_to": "Nancy Ramirez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:51"
+          },
+          {
+            "related_to": "Angélica Ruiz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:52"
+          },
+          {
+            "related_to": "Carlos Benavides",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:53"
+          },
+          {
+            "related_to": "G Λ B O",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:54"
+          },
+          {
+            "related_to": "Dulce Martinez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:55"
+          },
+          {
+            "related_to": "Martha Maria Marin Valle",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:56"
+          },
+          {
+            "related_to": "Cecilia balderrama",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:57"
+          },
+          {
+            "related_to": "Marcelo Ortiz",
+            "subject": "Seguir contactando",
+            "closed_time": "17:58"
+          },
+          {
+            "related_to": "Thania Bojorquez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:59"
+          }
+        ]
+      },
+      {
+        "dia": "Viernes",
+        "fecha": "06/03/2026",
+        "asignadas": 60,
+        "primera": "09:35",
+        "ultima": "17:49",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "@kevinn_uriel Dilux Kevin Diexpeeer",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:35"
+          },
+          {
+            "related_to": "Vaginy Castrastado",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:39"
+          },
+          {
+            "related_to": "Misraim cruz Pastrana",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:42"
+          },
+          {
+            "related_to": "Jose Frutos",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:43"
+          },
+          {
+            "related_to": "Ing Jorge Reyes",
+            "subject": "Seguir contactando",
+            "closed_time": "09:52"
+          },
+          {
+            "related_to": "Yolanda N/A",
+            "subject": "Seguir contactando",
+            "closed_time": "09:53"
+          },
+          {
+            "related_to": "Miriam Azucena",
+            "subject": "Seguir contactando",
+            "closed_time": "09:55"
+          },
+          {
+            "related_to": "Miriam Peña",
+            "subject": "Seguir contactando",
+            "closed_time": "10:02"
+          },
+          {
+            "related_to": "Saho Varela",
+            "subject": "Seguir contactando",
+            "closed_time": "10:04"
+          },
+          {
+            "related_to": "Robert Ramirez",
+            "subject": "Seguir contactando",
+            "closed_time": "10:18"
+          },
+          {
+            "related_to": "M V",
+            "subject": "Seguir contactando",
+            "closed_time": "10:19"
+          },
+          {
+            "related_to": "Maria de jesus Aguero",
+            "subject": "Seguir contactando",
+            "closed_time": "10:20"
+          },
+          {
+            "related_to": "Raul Andrade",
+            "subject": "Seguir contactando",
+            "closed_time": "10:21"
+          },
+          {
+            "related_to": "C Vega",
+            "subject": "Seguir contactando",
+            "closed_time": "10:22"
+          },
+          {
+            "related_to": "heymi beltran olivas",
+            "subject": "Seguir contactando",
+            "closed_time": "11:39"
+          },
+          {
+            "related_to": "Alfredo Avila",
+            "subject": "Seguir contactando",
+            "closed_time": "11:41"
+          },
+          {
+            "related_to": "Miguel Hidalgo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:42"
+          },
+          {
+            "related_to": "Edith Ruelas",
+            "subject": "Seguir contactando",
+            "closed_time": "11:44"
+          },
+          {
+            "related_to": "Daniel Jiménez Jimenez",
+            "subject": "Seguir contactando",
+            "closed_time": "11:47"
+          },
+          {
+            "related_to": "Fabiola Pérez Pérez",
+            "subject": "Seguir contactando",
+            "closed_time": "12:37"
+          },
+          {
+            "related_to": "David Flores",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:48"
+          },
+          {
+            "related_to": "Miguel Medina",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:28"
+          },
+          {
+            "related_to": "Alejandro Rassam",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:32"
+          },
+          {
+            "related_to": "Stephanie González",
+            "subject": "Seguir contactando",
+            "closed_time": "15:36"
+          },
+          {
+            "related_to": "Salvador Reyes",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:45"
+          },
+          {
+            "related_to": "Edgar Solaiza",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:48"
+          },
+          {
+            "related_to": "Ariel Gonzalez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:49"
+          },
+          {
+            "related_to": "Brian Vedrichkova",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:49"
+          },
+          {
+            "related_to": "Carmina Martinez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:50"
+          },
+          {
+            "related_to": "Ramón Roque",
+            "subject": "Seguir contactando",
+            "closed_time": "15:51"
+          },
+          {
+            "related_to": "Eduardo D Machuca",
+            "subject": "Seguir contactando",
+            "closed_time": "15:52"
+          },
+          {
+            "related_to": "Mayra Velazquez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:53"
+          },
+          {
+            "related_to": "Maribel Molina",
+            "subject": "Seguir contactando",
+            "closed_time": "15:54"
+          },
+          {
+            "related_to": "Aideé Delgado",
+            "subject": "Seguir contactando",
+            "closed_time": "15:56"
+          },
+          {
+            "related_to": "Ismael Cervantes Lopez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:58"
+          },
+          {
+            "related_to": "Ingrid Barrios",
+            "subject": "Seguir contactando",
+            "closed_time": "16:00"
+          },
+          {
+            "related_to": "Rommel Aguirre Molina",
+            "subject": "Seguir contactando",
+            "closed_time": "16:00"
+          },
+          {
+            "related_to": "Jorge Askins",
+            "subject": "Seguir contactando",
+            "closed_time": "16:01"
+          },
+          {
+            "related_to": "Monica Lugo",
+            "subject": "Seguir contactando",
+            "closed_time": "16:24"
+          },
+          {
+            "related_to": "Marisol Rubio",
+            "subject": "Seguir contactando",
+            "closed_time": "16:25"
+          },
+          {
+            "related_to": "bbyuli Flores",
+            "subject": "Seguir contactando",
+            "closed_time": "16:25"
+          },
+          {
+            "related_to": "Arlet Servantes",
+            "subject": "Seguir contactando",
+            "closed_time": "16:26"
+          },
+          {
+            "related_to": "Jonathan Diaz Maldonado",
+            "subject": "Seguir contactando",
+            "closed_time": "16:27"
+          },
+          {
+            "related_to": "Pekestetica Infantil",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:29"
+          },
+          {
+            "related_to": "Joel Salas",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:30"
+          },
+          {
+            "related_to": "Roxana Ochoa",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:35"
+          },
+          {
+            "related_to": "Romeriana Gonzalez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:38"
+          },
+          {
+            "related_to": "Edgar Villela Maldonado",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:39"
+          },
+          {
+            "related_to": "Koralito Garcia",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:41"
+          },
+          {
+            "related_to": "Daniel Moreno",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:29"
+          },
+          {
+            "related_to": "Pablo Ortiz",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:30"
+          },
+          {
+            "related_to": "Enrique N/A",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:33"
+          },
+          {
+            "related_to": "Luis Alberto",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:34"
+          },
+          {
+            "related_to": "Eduardo Carrillo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:36"
+          },
+          {
+            "related_to": "Eduardo Rodriguez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:38"
+          },
+          {
+            "related_to": "Adriel Cuadras",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:39"
+          },
+          {
+            "related_to": "dianita_labella@hotmail.com Robles",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:40"
+          },
+          {
+            "related_to": "Araceli Guzmán",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:46"
+          },
+          {
+            "related_to": "Hugo Martinez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:47"
+          },
+          {
+            "related_to": "Edgar Ramirez",
+            "subject": "Seguir contactando",
+            "closed_time": "17:49"
+          }
+        ]
+      },
+      {
+        "dia": "Lunes",
+        "fecha": "09/03/2026",
+        "asignadas": 54,
+        "primera": "09:58",
+        "ultima": "16:55",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Laura Alvarez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:58"
+          },
+          {
+            "related_to": "Pet Center Solutions",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:09"
+          },
+          {
+            "related_to": "Eleazar Aguilar",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:15"
+          },
+          {
+            "related_to": "Luis Rios",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:22"
+          },
+          {
+            "related_to": "Hugo TAPIA ELORRIAGA",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:25"
+          },
+          {
+            "related_to": "Gabriela Acuña",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:27"
+          },
+          {
+            "related_to": "Armando Oso",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:39"
+          },
+          {
+            "related_to": "Gisselle Maya",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:40"
+          },
+          {
+            "related_to": "Perla De leon",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:41"
+          },
+          {
+            "related_to": "heber moises Adame Ramos",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:44"
+          },
+          {
+            "related_to": "Elsa Benitez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:46"
+          },
+          {
+            "related_to": "? DV",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:47"
+          },
+          {
+            "related_to": "Marlene Mb",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:49"
+          },
+          {
+            "related_to": "Vicente Medina",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:06"
+          },
+          {
+            "related_to": "VD E Leon",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:08"
+          },
+          {
+            "related_to": "Humberto Medina",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:12"
+          },
+          {
+            "related_to": "Martin Barragan",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:13"
+          },
+          {
+            "related_to": "Roberto Carlos Gutiérrez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:14"
+          },
+          {
+            "related_to": "Raúl Valenzuela valenzuela",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:17"
+          },
+          {
+            "related_to": "Isaac Resendiz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:19"
+          },
+          {
+            "related_to": "Alejandro Zuniga",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:30"
+          },
+          {
+            "related_to": "Nadia Luna",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:33"
+          },
+          {
+            "related_to": "Alfredo Guzmán",
+            "subject": "Seguir contactando",
+            "closed_time": "11:35"
+          },
+          {
+            "related_to": "Moises Laniado",
+            "subject": "Seguir contactando",
+            "closed_time": "11:36"
+          },
+          {
+            "related_to": "Karla Lizeth Borbon Esquer",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:41"
+          },
+          {
+            "related_to": "Luis Eduardo Nava",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:55"
+          },
+          {
+            "related_to": "emerick badillo badillo",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:56"
+          },
+          {
+            "related_to": "Sergio Moya",
+            "subject": "Seguir contactando 2",
+            "closed_time": "13:26"
+          },
+          {
+            "related_to": "Josué Andrade",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:12"
+          },
+          {
+            "related_to": "Jiram Bautista",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:13"
+          },
+          {
+            "related_to": "Paulina Shen",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:17"
+          },
+          {
+            "related_to": "Carlos Robles",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:18"
+          },
+          {
+            "related_to": "Mauricio Tapia",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:19"
+          },
+          {
+            "related_to": "Antonio López López",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:20"
+          },
+          {
+            "related_to": "David Picho Zira",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:29"
+          },
+          {
+            "related_to": "Juan Carlos",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:30"
+          },
+          {
+            "related_to": "Katya Olguin",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:08"
+          },
+          {
+            "related_to": "Jose camino Ortega",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:09"
+          },
+          {
+            "related_to": "Yareni Garcia",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:10"
+          },
+          {
+            "related_to": "???????? Martínez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:11"
+          },
+          {
+            "related_to": "Pepe Pepe",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:13"
+          },
+          {
+            "related_to": "Maximiliano Fuentes",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:09"
+          },
+          {
+            "related_to": "Yahir Alejandro Muñoz",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:10"
+          },
+          {
+            "related_to": "Alberto Sanchez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:10"
+          },
+          {
+            "related_to": "Camarillo Cuevas",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:11"
+          },
+          {
+            "related_to": "Catherinr Escobar",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:12"
+          },
+          {
+            "related_to": "Dayana Alderete",
+            "subject": "Seguir contactando",
+            "closed_time": "16:48"
+          },
+          {
+            "related_to": "Umenie Tatto",
+            "subject": "Seguir contactando",
+            "closed_time": "16:49"
+          },
+          {
+            "related_to": "Bigvai Ramos",
+            "subject": "Seguir contactando",
+            "closed_time": "16:50"
+          },
+          {
+            "related_to": "Ernesto Olivo",
+            "subject": "Seguir contactando",
+            "closed_time": "16:51"
+          },
+          {
+            "related_to": "Marco Antonio",
+            "subject": "Seguir contactando",
+            "closed_time": "16:51"
+          },
+          {
+            "related_to": "Jonatan Cr",
+            "subject": "Seguir contactando",
+            "closed_time": "16:53"
+          },
+          {
+            "related_to": "Gabriel NA",
+            "subject": "Seguir contactando",
+            "closed_time": "16:54"
+          },
+          {
+            "related_to": "Estif Ortiz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:55"
+          }
+        ]
+      },
+      {
+        "dia": "Martes",
+        "fecha": "10/03/2026",
+        "asignadas": 29,
+        "primera": "09:40",
+        "ultima": "18:23",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Miguel Angel Luna ruiz",
+            "subject": "Seguir contactando",
+            "closed_time": "15:10"
+          },
+          {
+            "related_to": "Sandra Sandra Soto",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:40"
+          },
+          {
+            "related_to": "Sade C.",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:48"
+          },
+          {
+            "related_to": "Bianca Cisneros",
+            "subject": "Seguir contactando",
+            "closed_time": "09:49"
+          },
+          {
+            "related_to": "Angélica Ruiz",
+            "subject": "Seguir contactando",
+            "closed_time": "09:52"
+          },
+          {
+            "related_to": "Carlos Maldonado Bizarro",
+            "subject": "Seguir contactando",
+            "closed_time": "10:00"
+          },
+          {
+            "related_to": "Rene Meza",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:15"
+          },
+          {
+            "related_to": "Jose M Gonzalez",
+            "subject": "Seguir contactando",
+            "closed_time": "11:17"
+          },
+          {
+            "related_to": "Mariano Merino",
+            "subject": "Seguir contactando",
+            "closed_time": "11:26"
+          },
+          {
+            "related_to": "Rene Cazarez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:01"
+          },
+          {
+            "related_to": "Selene Lizeth Hernandez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:02"
+          },
+          {
+            "related_to": "Anton Alcala",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:06"
+          },
+          {
+            "related_to": "Laura VB",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:57"
+          },
+          {
+            "related_to": "Kevin Quezada",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:00"
+          },
+          {
+            "related_to": "Ruben De Campo",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:02"
+          },
+          {
+            "related_to": "Jesus Gpe Rochin Rocha",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:12"
+          },
+          {
+            "related_to": "Karla Soria",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:08"
+          },
+          {
+            "related_to": "Jesus Zorrilla",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:10"
+          },
+          {
+            "related_to": "Carlos Gastelum",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:35"
+          },
+          {
+            "related_to": "Francisco Domínguez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:53"
+          },
+          {
+            "related_to": "Anna Rodriguez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:53"
+          },
+          {
+            "related_to": "Samantha Zúñiga Sandoval",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:18"
+          },
+          {
+            "related_to": "Alexis Pérez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:39"
+          },
+          {
+            "related_to": "Hector Cardenas",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:39"
+          },
+          {
+            "related_to": "Jorge Serrano",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:40"
+          },
+          {
+            "related_to": "Juan Alfonso Gonzalez Gonzalez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "18:19"
+          },
+          {
+            "related_to": "Alberto Fraga",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "18:20"
+          },
+          {
+            "related_to": "Aaron Felix",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "18:21"
+          },
+          {
+            "related_to": "Thania Bojorquez",
+            "subject": "Seguir contactando",
+            "closed_time": "18:23"
+          }
+        ]
+      },
+      {
+        "dia": "Miércoles",
+        "fecha": "11/03/2026",
+        "asignadas": 23,
+        "primera": "09:40",
+        "ultima": "16:55",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "JJcano Cano",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:40"
+          },
+          {
+            "related_to": "Yarely Almaral",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:41"
+          },
+          {
+            "related_to": "David Flores",
+            "subject": "Seguir contactando",
+            "closed_time": "09:43"
+          },
+          {
+            "related_to": "Gonzalo N/A",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:59"
+          },
+          {
+            "related_to": "Miguel Medina",
+            "subject": "Seguir contactando",
+            "closed_time": "10:08"
+          },
+          {
+            "related_to": "Brian Vedrichkova",
+            "subject": "Seguir contactando",
+            "closed_time": "10:45"
+          },
+          {
+            "related_to": "Ana Aguilar",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:04"
+          },
+          {
+            "related_to": "Job Mtz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:03"
+          },
+          {
+            "related_to": "Alejandro Rassam",
+            "subject": "Seguir contactando",
+            "closed_time": "14:04"
+          },
+          {
+            "related_to": "Misraim cruz Pastrana",
+            "subject": "Seguir contactando",
+            "closed_time": "14:09"
+          },
+          {
+            "related_to": "Jose Frutos",
+            "subject": "Seguir contactando",
+            "closed_time": "14:13"
+          },
+          {
+            "related_to": "Socorro Barragan",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:59"
+          },
+          {
+            "related_to": "Obed Vargas",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:03"
+          },
+          {
+            "related_to": "cafeteria",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:06"
+          },
+          {
+            "related_to": "Jennifer Nuñez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:13"
+          },
+          {
+            "related_to": "Ginette Betancourt",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:01"
+          },
+          {
+            "related_to": "Rocio Aguilar",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:10"
+          },
+          {
+            "related_to": "AB Guzman",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:11"
+          },
+          {
+            "related_to": "Pablo Serna Serna",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:50"
+          },
+          {
+            "related_to": "Sebastian CN",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:51"
+          },
+          {
+            "related_to": "Salvador Reyes",
+            "subject": "Seguir contactando",
+            "closed_time": "16:53"
+          },
+          {
+            "related_to": "Hugo Martinez",
+            "subject": "Seguir contactando",
+            "closed_time": "16:54"
+          },
+          {
+            "related_to": "Alejandra Ruiz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:55"
+          }
+        ]
+      },
+      {
+        "dia": "Jueves",
+        "fecha": "12/03/2026",
+        "asignadas": 48,
+        "primera": "09:45",
+        "ultima": "17:59",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Brandon Guzman",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:45"
+          },
+          {
+            "related_to": "Astrea Dufour",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:46"
+          },
+          {
+            "related_to": "Naan del Angel",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:47"
+          },
+          {
+            "related_to": "Manuel Aguiar",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:49"
+          },
+          {
+            "related_to": "Edith Garay",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:51"
+          },
+          {
+            "related_to": "Nancy Remax Rosarito",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:53"
+          },
+          {
+            "related_to": "Marian Muñoz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:03"
+          },
+          {
+            "related_to": "Josué Andrade",
+            "subject": "Seguir contactando",
+            "closed_time": "10:17"
+          },
+          {
+            "related_to": "Elsa Benitez",
+            "subject": "Seguir contactando",
+            "closed_time": "10:26"
+          },
+          {
+            "related_to": "Alejandra Paret",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:33"
+          },
+          {
+            "related_to": "Laura Alvarez",
+            "subject": "Seguir contactando",
+            "closed_time": "10:36"
+          },
+          {
+            "related_to": "Jiram Bautista",
+            "subject": "Seguir contactando",
+            "closed_time": "12:23"
+          },
+          {
+            "related_to": "Luis Rios",
+            "subject": "Seguir contactando",
+            "closed_time": "12:34"
+          },
+          {
+            "related_to": "Hugo TAPIA ELORRIAGA",
+            "subject": "Seguir contactando",
+            "closed_time": "12:35"
+          },
+          {
+            "related_to": "Daniel Zepeda",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:45"
+          },
+          {
+            "related_to": "Armando Oso",
+            "subject": "Seguir contactando",
+            "closed_time": "13:48"
+          },
+          {
+            "related_to": "Gabriela Acuña",
+            "subject": "Seguir contactando",
+            "closed_time": "13:48"
+          },
+          {
+            "related_to": "Gisselle Maya",
+            "subject": "Seguir contactando",
+            "closed_time": "13:51"
+          },
+          {
+            "related_to": "Perla De leon",
+            "subject": "Seguir contactando",
+            "closed_time": "13:52"
+          },
+          {
+            "related_to": "Vicente Medina",
+            "subject": "Seguir contactando",
+            "closed_time": "13:53"
+          },
+          {
+            "related_to": "Humberto Medina",
+            "subject": "Seguir contactando",
+            "closed_time": "15:33"
+          },
+          {
+            "related_to": "Elisa Chavez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:36"
+          },
+          {
+            "related_to": "Ricardo Zavala",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:40"
+          },
+          {
+            "related_to": "Martin Barragan",
+            "subject": "Seguir contactando",
+            "closed_time": "15:43"
+          },
+          {
+            "related_to": "Roberto Carlos Gutiérrez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:50"
+          },
+          {
+            "related_to": "Raúl Valenzuela valenzuela",
+            "subject": "Seguir contactando",
+            "closed_time": "15:51"
+          },
+          {
+            "related_to": "Isaac Resendiz",
+            "subject": "Seguir contactando",
+            "closed_time": "15:52"
+          },
+          {
+            "related_to": "Alejandro Zuniga",
+            "subject": "Seguir contactando",
+            "closed_time": "15:53"
+          },
+          {
+            "related_to": "Nadia Luna",
+            "subject": "Seguir contactando",
+            "closed_time": "15:54"
+          },
+          {
+            "related_to": "Angel Ruiz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:55"
+          },
+          {
+            "related_to": "Israel Gomez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:57"
+          },
+          {
+            "related_to": "David Zamora Barba",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:59"
+          },
+          {
+            "related_to": "Susana Trujillo",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:01"
+          },
+          {
+            "related_to": "Angie Díaz",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:02"
+          },
+          {
+            "related_to": "Valeria Zepeda",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:04"
+          },
+          {
+            "related_to": "Selene Rodríguez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:05"
+          },
+          {
+            "related_to": "Jesus Alvarado",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:45"
+          },
+          {
+            "related_to": "Yohan Uribe",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:46"
+          },
+          {
+            "related_to": "Jenifer Leyva",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:47"
+          },
+          {
+            "related_to": "Veronica Garcia",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:48"
+          },
+          {
+            "related_to": "Manuel Reyes",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:49"
+          },
+          {
+            "related_to": "Marco Antonio Gularte Figueroa",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:51"
+          },
+          {
+            "related_to": "Joyeria Victoria",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:52"
+          },
+          {
+            "related_to": "Rommel Arvizu",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:55"
+          },
+          {
+            "related_to": "Miryan Silva A",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:56"
+          },
+          {
+            "related_to": "Estif Ortiz",
+            "subject": "Seguir contactando",
+            "closed_time": "17:57"
+          },
+          {
+            "related_to": "Marcelo Ortiz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:58"
+          },
+          {
+            "related_to": "Alberto Loyo Aoyama",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:59"
+          }
+        ]
+      },
+      {
+        "dia": "Viernes",
+        "fecha": "13/03/2026",
+        "asignadas": 48,
+        "primera": "09:46",
+        "ultima": "16:50",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Optica jireh",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:46"
+          },
+          {
+            "related_to": "Esteban Segura",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:51"
+          },
+          {
+            "related_to": "Marcela García",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:54"
+          },
+          {
+            "related_to": "Jorge Tagle",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:00"
+          },
+          {
+            "related_to": "Carlos Gastelum",
+            "subject": "Seguir contactando",
+            "closed_time": "10:01"
+          },
+          {
+            "related_to": "Rene Meza",
+            "subject": "Seguir contactando",
+            "closed_time": "10:10"
+          },
+          {
+            "related_to": "Sade C.",
+            "subject": "Seguir contactando",
+            "closed_time": "10:12"
+          },
+          {
+            "related_to": "Ing Jorge Reyes",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:39"
+          },
+          {
+            "related_to": "Yolanda N/A",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:19"
+          },
+          {
+            "related_to": "Miriam Azucena",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:22"
+          },
+          {
+            "related_to": "Miriam Peña",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:28"
+          },
+          {
+            "related_to": "Saho Varela",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:29"
+          },
+          {
+            "related_to": "Robert Ramirez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:31"
+          },
+          {
+            "related_to": "M V",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:36"
+          },
+          {
+            "related_to": "C Vega",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:37"
+          },
+          {
+            "related_to": "heymi beltran olivas",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:39"
+          },
+          {
+            "related_to": "Alfredo Avila",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:25"
+          },
+          {
+            "related_to": "Edith Ruelas",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:27"
+          },
+          {
+            "related_to": "Dolce MX",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:28"
+          },
+          {
+            "related_to": "Daniel Jiménez Jimenez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:30"
+          },
+          {
+            "related_to": "Fabiola Pérez Pérez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:31"
+          },
+          {
+            "related_to": "Stephanie González",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:36"
+          },
+          {
+            "related_to": "Ariel Gonzalez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:37"
+          },
+          {
+            "related_to": "Carmina Martinez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:43"
+          },
+          {
+            "related_to": "Ramón Roque",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:44"
+          },
+          {
+            "related_to": "Eduardo D Machuca",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:51"
+          },
+          {
+            "related_to": "Mayra Velazquez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:53"
+          },
+          {
+            "related_to": "Maribel Molina",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:55"
+          },
+          {
+            "related_to": "Aideé Delgado",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:58"
+          },
+          {
+            "related_to": "Ismael Cervantes Lopez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:00"
+          },
+          {
+            "related_to": "Rommel Aguirre Molina",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:05"
+          },
+          {
+            "related_to": "Ingrid Barrios",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:07"
+          },
+          {
+            "related_to": "Jorge Askins",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:13"
+          },
+          {
+            "related_to": "Monica Lugo",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:14"
+          },
+          {
+            "related_to": "Marisol Rubio",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:18"
+          },
+          {
+            "related_to": "bbyuli Flores",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:19"
+          },
+          {
+            "related_to": "Arlet Servantes",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:20"
+          },
+          {
+            "related_to": "Jonathan Diaz Maldonado",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:22"
+          },
+          {
+            "related_to": "Ángela Rodriguez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:23"
+          },
+          {
+            "related_to": "Jakeline MJ",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:24"
+          },
+          {
+            "related_to": "Edgar Ramirez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:25"
+          },
+          {
+            "related_to": "Manuel Alcocer",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:26"
+          },
+          {
+            "related_to": "Aaron Felix",
+            "subject": "Seguir contactando",
+            "closed_time": "15:27"
+          },
+          {
+            "related_to": "Luis Pérez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:04"
+          },
+          {
+            "related_to": "Rene Ojeda Cid",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:27"
+          },
+          {
+            "related_to": "Pedro Ramirez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:50"
+          },
+          {
+            "related_to": "CHEF POLANCO",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "18:01"
+          },
+          {
+            "related_to": "Erick Contreras",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:15"
+          }
+        ]
+      },
+      {
+        "dia": "Lunes",
+        "fecha": "16/03/2026",
+        "asignadas": 45,
+        "primera": "-",
+        "ultima": "-",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Antonini Fernández",
+            "subject": "Seguir contactando 3",
+            "closed_time": "11:43"
+          },
+          {
+            "related_to": "Mireya Ortiz Godínez Ortiz Godinez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:21"
+          },
+          {
+            "related_to": "Vero Torres",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:49"
+          },
+          {
+            "related_to": "Liza Mar",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:51"
+          },
+          {
+            "related_to": "Лизетта Цесаревна",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:52"
+          },
+          {
+            "related_to": "Efren Odagled",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:53"
+          },
+          {
+            "related_to": "Implantologo Sánchez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:54"
+          },
+          {
+            "related_to": "Jorge josue Robles hidalgo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:55"
+          },
+          {
+            "related_to": "edith alonso",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:57"
+          },
+          {
+            "related_to": "Iris Muñoz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:58"
+          },
+          {
+            "related_to": "Marco Antonio Martinez Cruz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:59"
+          },
+          {
+            "related_to": "Mariana Valdez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:58"
+          },
+          {
+            "related_to": "VI Pi",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:59"
+          },
+          {
+            "related_to": "Enrique Limas",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:05"
+          },
+          {
+            "related_to": "Mor Orus",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:10"
+          },
+          {
+            "related_to": "Gerard Dominique",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:11"
+          },
+          {
+            "related_to": "John León",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:13"
+          },
+          {
+            "related_to": "Brigitte Alvarado",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:16"
+          },
+          {
+            "related_to": "banquetes de baja california",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:18"
+          },
+          {
+            "related_to": "Job Mtz",
+            "subject": "Seguir contactando",
+            "closed_time": "10:33"
+          },
+          {
+            "related_to": "Ana Aguilar",
+            "subject": "Seguir contactando",
+            "closed_time": "10:36"
+          },
+          {
+            "related_to": "Gonzalo N/A",
+            "subject": "Seguir contactando",
+            "closed_time": "10:39"
+          },
+          {
+            "related_to": "Yarely Almaral",
+            "subject": "Seguir contactando",
+            "closed_time": "10:41"
+          },
+          {
+            "related_to": "Alfredo Guzmán",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:32"
+          },
+          {
+            "related_to": "Moises Laniado",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:34"
+          },
+          {
+            "related_to": "Xochitl Cisneros Niebla",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:03"
+          },
+          {
+            "related_to": "Egren Beas",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:03"
+          },
+          {
+            "related_to": "Noe Morelia",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:05"
+          },
+          {
+            "related_to": "Melissa Viera",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:28"
+          },
+          {
+            "related_to": "Cristian Naranjo Galindo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:29"
+          },
+          {
+            "related_to": "Cruz Macarena Manzanarez Sandoval",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:30"
+          },
+          {
+            "related_to": "Tomás García Ramos",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:31"
+          },
+          {
+            "related_to": "Luz Luz",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:32"
+          },
+          {
+            "related_to": "Kike Hdez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:34"
+          },
+          {
+            "related_to": "Lucy Saavedra",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:35"
+          },
+          {
+            "related_to": "Christian Cervantes",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:01"
+          },
+          {
+            "related_to": "Dayana Alderete",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:04"
+          },
+          {
+            "related_to": "Umenie Tatto",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:05"
+          },
+          {
+            "related_to": "Martha Maria Marin Valle",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:23"
+          },
+          {
+            "related_to": "Bigvai Ramos",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:27"
+          },
+          {
+            "related_to": "Ernesto Olivo",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:30"
+          },
+          {
+            "related_to": "Cecilia balderrama",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:33"
+          },
+          {
+            "related_to": "Marco Antonio",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:34"
+          },
+          {
+            "related_to": "Jonatan Cr",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:41"
+          },
+          {
+            "related_to": "Gabriel NA",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:42"
+          }
+        ]
+      },
+      {
+        "dia": "Martes",
+        "fecha": "17/03/2026",
+        "asignadas": 23,
+        "primera": "09:41",
+        "ultima": "17:36",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Elisa Chavez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:42"
+          },
+          {
+            "related_to": "Alberto Alejandro Castillo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:41"
+          },
+          {
+            "related_to": "Marco Antonio Gularte Figueroa",
+            "subject": "Seguir contactando",
+            "closed_time": "10:22"
+          },
+          {
+            "related_to": "Alejandra Paret",
+            "subject": "Seguir contactando",
+            "closed_time": "11:02"
+          },
+          {
+            "related_to": "Brandon Guzman",
+            "subject": "Seguir contactando",
+            "closed_time": "11:04"
+          },
+          {
+            "related_to": "Alan Marin",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:11"
+          },
+          {
+            "related_to": "Astrea Dufour",
+            "subject": "Seguir contactando",
+            "closed_time": "15:09"
+          },
+          {
+            "related_to": "Naan del Angel",
+            "subject": "Seguir contactando",
+            "closed_time": "15:26"
+          },
+          {
+            "related_to": "Manuel Aguiar",
+            "subject": "Seguir contactando",
+            "closed_time": "15:48"
+          },
+          {
+            "related_to": "Edith Garay",
+            "subject": "Seguir contactando",
+            "closed_time": "16:01"
+          },
+          {
+            "related_to": "Marian Muñoz",
+            "subject": "Seguir contactando",
+            "closed_time": "16:27"
+          },
+          {
+            "related_to": "Bianca Cisneros",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:05"
+          },
+          {
+            "related_to": "Carlos Maldonado Bizarro",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:06"
+          },
+          {
+            "related_to": "Jose M Gonzalez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:34"
+          },
+          {
+            "related_to": "Mariano Merino",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:36"
+          },
+          {
+            "related_to": "Pekestetica Infantil",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:36"
+          },
+          {
+            "related_to": "Danna Nuño",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:46"
+          },
+          {
+            "related_to": "Sandra Ramirez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:55"
+          },
+          {
+            "related_to": "Joel Salas",
+            "subject": "Seguir contactando 3",
+            "closed_time": "11:48"
+          },
+          {
+            "related_to": "Roxana Ochoa",
+            "subject": "Seguir contactando 3",
+            "closed_time": "13:59"
+          },
+          {
+            "related_to": "Edgar Villela Maldonado",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:02"
+          },
+          {
+            "related_to": "Koralito Garcia",
+            "subject": "Seguir contactando 3",
+            "closed_time": "14:33"
+          },
+          {
+            "related_to": "Thania Bojorquez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:47"
+          }
+        ]
+      },
+      {
+        "dia": "Miércoles",
+        "fecha": "18/03/2026",
+        "asignadas": 23,
+        "primera": "09:44",
+        "ultima": "15:46",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "José Dejesus Escoto Hernandez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:44"
+          },
+          {
+            "related_to": "Dolce MX",
+            "subject": "Seguir contactando",
+            "closed_time": "10:08"
+          },
+          {
+            "related_to": "Marcela García",
+            "subject": "Seguir contactando",
+            "closed_time": "10:24"
+          },
+          {
+            "related_to": "Optica jireh",
+            "subject": "Seguir contactando",
+            "closed_time": "10:38"
+          },
+          {
+            "related_to": "David Flores",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:46"
+          },
+          {
+            "related_to": "Miguel Medina",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:47"
+          },
+          {
+            "related_to": "Brian Vedrichkova",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:51"
+          },
+          {
+            "related_to": "Alejandro Rassam",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:21"
+          },
+          {
+            "related_to": "Misraim cruz Pastrana",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:27"
+          },
+          {
+            "related_to": "Jose Frutos",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:30"
+          },
+          {
+            "related_to": "Karla Lizeth Borbon Esquer",
+            "subject": "Seguir contactando 3",
+            "closed_time": "11:37"
+          },
+          {
+            "related_to": "Luis Eduardo Nava",
+            "subject": "Seguir contactando 3",
+            "closed_time": "11:40"
+          },
+          {
+            "related_to": "emerick badillo badillo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "11:43"
+          },
+          {
+            "related_to": "Sergio Moya",
+            "subject": "Seguir contactando 3",
+            "closed_time": "11:45"
+          },
+          {
+            "related_to": "Paulina Shen",
+            "subject": "Seguir contactando 3",
+            "closed_time": "11:47"
+          },
+          {
+            "related_to": "Carlos Robles",
+            "subject": "Seguir contactando 3",
+            "closed_time": "11:51"
+          },
+          {
+            "related_to": "Valeria Ross",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:01"
+          },
+          {
+            "related_to": "Eleodoro Falcon",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:27"
+          },
+          {
+            "related_to": "Salvador Reyes",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:02"
+          },
+          {
+            "related_to": "Rene Ojeda Cid",
+            "subject": "Seguir contactando",
+            "closed_time": "15:07"
+          },
+          {
+            "related_to": "Hugo Martinez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:25"
+          },
+          {
+            "related_to": "Manuel Quevedo",
+            "subject": "Contactar Inmediato",
+            "closed_time": "15:45"
+          },
+          {
+            "related_to": "Pedro Ramirez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:46"
+          }
+        ]
+      },
+      {
+        "dia": "Jueves",
+        "fecha": "19/03/2026",
+        "asignadas": 39,
+        "primera": "09:39",
+        "ultima": "17:08",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Manuel Escalante",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:39"
+          },
+          {
+            "related_to": "París Flores Coronel",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:41"
+          },
+          {
+            "related_to": "Chun Kun",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:44"
+          },
+          {
+            "related_to": "Elisa Chavez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:01"
+          },
+          {
+            "related_to": "Gpo Fiarsa",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:39"
+          },
+          {
+            "related_to": "Jose Javier Rodriguez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:40"
+          },
+          {
+            "related_to": "Paula Hurtado",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:50"
+          },
+          {
+            "related_to": "Josué Andrade",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:53"
+          },
+          {
+            "related_to": "Elsa Benitez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:55"
+          },
+          {
+            "related_to": "Laura Alvarez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:35"
+          },
+          {
+            "related_to": "reina jaimes",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:37"
+          },
+          {
+            "related_to": "Jiram Bautista",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:40"
+          },
+          {
+            "related_to": "Luis Rios",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:42"
+          },
+          {
+            "related_to": "La Michuacana",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:48"
+          },
+          {
+            "related_to": "Hugo TAPIA ELORRIAGA",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:43"
+          },
+          {
+            "related_to": "Gabriela Acuña",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:45"
+          },
+          {
+            "related_to": "Armando Oso",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:47"
+          },
+          {
+            "related_to": "Gisselle Maya",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:49"
+          },
+          {
+            "related_to": "Perla De leon",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:51"
+          },
+          {
+            "related_to": "Vicente Medina",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:53"
+          },
+          {
+            "related_to": "Humberto Medina",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:57"
+          },
+          {
+            "related_to": "Martin Barragan",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:00"
+          },
+          {
+            "related_to": "Roberto Carlos Gutiérrez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:01"
+          },
+          {
+            "related_to": "Raúl Valenzuela valenzuela",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:02"
+          },
+          {
+            "related_to": "Isaac Resendiz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:14"
+          },
+          {
+            "related_to": "Alejandro Zuniga",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:16"
+          },
+          {
+            "related_to": "Nadia Luna",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:17"
+          },
+          {
+            "related_to": "Rene Cazarez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:18"
+          },
+          {
+            "related_to": "Selene Lizeth Hernandez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:57"
+          },
+          {
+            "related_to": "Anton Alcala",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:59"
+          },
+          {
+            "related_to": "Laura VB",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:01"
+          },
+          {
+            "related_to": "Ruben De Campo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:02"
+          },
+          {
+            "related_to": "Kevin Quezada",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:02"
+          },
+          {
+            "related_to": "Jesus Gpe Rochin Rocha",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:04"
+          },
+          {
+            "related_to": "Karla Soria",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:05"
+          },
+          {
+            "related_to": "Juan Alfonso Gonzalez Gonzalez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:06"
+          },
+          {
+            "related_to": "Estif Ortiz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:08"
+          },
+          {
+            "related_to": "Renato alfonso Pimentel mayo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:45"
+          },
+          {
+            "related_to": "Jonathan Ortega",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:47"
+          }
+        ]
+      },
+      {
+        "dia": "Viernes",
+        "fecha": "20/03/2026",
+        "asignadas": 24,
+        "primera": "09:43",
+        "ultima": "17:21",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Jose Ricalday",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:43"
+          },
+          {
+            "related_to": "Carmen Ortega",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:14"
+          },
+          {
+            "related_to": "Alan Marin",
+            "subject": "Seguir contactando",
+            "closed_time": "10:56"
+          },
+          {
+            "related_to": "Liza Mar",
+            "subject": "Seguir contactando",
+            "closed_time": "11:32"
+          },
+          {
+            "related_to": "Лизетта Цесаревна",
+            "subject": "Seguir contactando",
+            "closed_time": "11:34"
+          },
+          {
+            "related_to": "Efren Odagled",
+            "subject": "Seguir contactando",
+            "closed_time": "11:36"
+          },
+          {
+            "related_to": "Alberto Alejandro Castillo",
+            "subject": "Seguir contactando",
+            "closed_time": "11:59"
+          },
+          {
+            "related_to": "Alejandro Quevedo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:03"
+          },
+          {
+            "related_to": "Implantologo Sánchez",
+            "subject": "Seguir contactando",
+            "closed_time": "13:50"
+          },
+          {
+            "related_to": "Jorge josue Robles hidalgo",
+            "subject": "Seguir contactando",
+            "closed_time": "13:52"
+          },
+          {
+            "related_to": "edith alonso",
+            "subject": "Seguir contactando",
+            "closed_time": "13:56"
+          },
+          {
+            "related_to": "Karen Jaramillo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:19"
+          },
+          {
+            "related_to": "Mireya Ortiz Godínez Ortiz Godinez",
+            "subject": "Seguir contactando",
+            "closed_time": "16:04"
+          },
+          {
+            "related_to": "Iris Muñoz",
+            "subject": "Seguir contactando",
+            "closed_time": "16:20"
+          },
+          {
+            "related_to": "Marco Antonio Martinez Cruz",
+            "subject": "Seguir contactando",
+            "closed_time": "16:23"
+          },
+          {
+            "related_to": "CHEF POLANCO",
+            "subject": "Seguir contactando",
+            "closed_time": "16:25"
+          },
+          {
+            "related_to": "Carlos Gastelum",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:11"
+          },
+          {
+            "related_to": "Sade C.",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:12"
+          },
+          {
+            "related_to": "Socorro Barragan",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:13"
+          },
+          {
+            "related_to": "Obed Vargas",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:15"
+          },
+          {
+            "related_to": "Jennifer Nuñez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:16"
+          },
+          {
+            "related_to": "Gabo Bald Ros",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:18"
+          },
+          {
+            "related_to": "Aaron Felix",
+            "subject": "Seguir contactando 2",
+            "closed_time": "17:19"
+          },
+          {
+            "related_to": "Benjamin Betancourt Ramirez",
+            "subject": "Contactar Alamar",
+            "closed_time": "17:21"
+          }
+        ]
+      },
+      {
+        "dia": "Lunes",
+        "fecha": "23/03/2026",
+        "asignadas": 42,
+        "primera": "09:42",
+        "ultima": "16:46",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Manuel Quevedo",
+            "subject": "Seguir contactando",
+            "closed_time": "15:45"
+          },
+          {
+            "related_to": "Julio Lam",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:42"
+          },
+          {
+            "related_to": "Jose Casillas",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:43"
+          },
+          {
+            "related_to": "Gabriel Medina",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:51"
+          },
+          {
+            "related_to": "Ignacio Hernández Pastrana",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:54"
+          },
+          {
+            "related_to": "Uriel Josias Serrato - velez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:44"
+          },
+          {
+            "related_to": "Sinuhe Márquez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:42"
+          },
+          {
+            "related_to": "Gilberto Sanchez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:45"
+          },
+          {
+            "related_to": "Carlos Estrada",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:47"
+          },
+          {
+            "related_to": "Ricardo Espinoza",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:49"
+          },
+          {
+            "related_to": "Jose Lompe R Trujillo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:02"
+          },
+          {
+            "related_to": "ari ari",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:03"
+          },
+          {
+            "related_to": "Luis Palomeque",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:38"
+          },
+          {
+            "related_to": "Adrian Zamora",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:47"
+          },
+          {
+            "related_to": "Johana monserrat segura gutierrez Segura",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:53"
+          },
+          {
+            "related_to": "Jesús Miguel Guijarro Anaya",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:54"
+          },
+          {
+            "related_to": "Steve Bloom",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:03"
+          },
+          {
+            "related_to": "Martin Quiñones",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:31"
+          },
+          {
+            "related_to": "Valeria Ross",
+            "subject": "Seguir contactando",
+            "closed_time": "15:05"
+          },
+          {
+            "related_to": "Alex Wakaparra",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:09"
+          },
+          {
+            "related_to": "Berenice Elizabeth",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:11"
+          },
+          {
+            "related_to": "Carlos Lopez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:13"
+          },
+          {
+            "related_to": "Eleodoro Falcon",
+            "subject": "Seguir contactando",
+            "closed_time": "15:20"
+          },
+          {
+            "related_to": "José Dejesus Escoto Hernandez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:38"
+          },
+          {
+            "related_to": "Danna Nuño",
+            "subject": "Seguir contactando",
+            "closed_time": "16:12"
+          },
+          {
+            "related_to": "Sandra Ramirez",
+            "subject": "Seguir contactando",
+            "closed_time": "16:13"
+          },
+          {
+            "related_to": "Mariana Valdez",
+            "subject": "Seguir contactando",
+            "closed_time": "16:17"
+          },
+          {
+            "related_to": "VI Pi",
+            "subject": "Seguir contactando",
+            "closed_time": "16:18"
+          },
+          {
+            "related_to": "Enrique Limas",
+            "subject": "Seguir contactando",
+            "closed_time": "16:21"
+          },
+          {
+            "related_to": "Mor Orus",
+            "subject": "Seguir contactando",
+            "closed_time": "16:22"
+          },
+          {
+            "related_to": "John León",
+            "subject": "Seguir contactando",
+            "closed_time": "16:27"
+          },
+          {
+            "related_to": "Erick Contreras",
+            "subject": "Seguir contactando",
+            "closed_time": "16:35"
+          },
+          {
+            "related_to": "Brigitte Alvarado",
+            "subject": "Seguir contactando",
+            "closed_time": "16:36"
+          },
+          {
+            "related_to": "banquetes de baja california",
+            "subject": "Seguir contactando",
+            "closed_time": "16:38"
+          },
+          {
+            "related_to": "Angel Ruiz",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:39"
+          },
+          {
+            "related_to": "Israel Gomez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:40"
+          },
+          {
+            "related_to": "David Zamora Barba",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:41"
+          },
+          {
+            "related_to": "Susana Trujillo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:42"
+          },
+          {
+            "related_to": "Hector Valencia",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:44"
+          },
+          {
+            "related_to": "Raul Gonzalez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:45"
+          },
+          {
+            "related_to": "Marcelo Ortiz",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:46"
+          },
+          {
+            "related_to": "",
+            "subject": "seguimiento pp",
+            "closed_time": "09:39"
+          }
+        ]
+      },
+      {
+        "dia": "Martes",
+        "fecha": "24/03/2026",
+        "asignadas": 53,
+        "primera": "10:47",
+        "ultima": "18:54",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Miriam Azucena",
+            "subject": "Seguir contactando 3",
+            "closed_time": "11:32"
+          },
+          {
+            "related_to": "Adriana Valdez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:47"
+          },
+          {
+            "related_to": "Marisol Rosas",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:49"
+          },
+          {
+            "related_to": "Guillermo García Marmolejo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:50"
+          },
+          {
+            "related_to": "Perfumeplace",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:52"
+          },
+          {
+            "related_to": "Cris Duran",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:55"
+          },
+          {
+            "related_to": "Mayra Reyes",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:57"
+          },
+          {
+            "related_to": "Miguel Dumas",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:03"
+          },
+          {
+            "related_to": "Manuel Escalante",
+            "subject": "Seguir contactando",
+            "closed_time": "11:06"
+          },
+          {
+            "related_to": "Gpo Fiarsa",
+            "subject": "Seguir contactando",
+            "closed_time": "11:08"
+          },
+          {
+            "related_to": "París Flores Coronel",
+            "subject": "Seguir contactando",
+            "closed_time": "11:08"
+          },
+          {
+            "related_to": "Chun Kun",
+            "subject": "Seguir contactando",
+            "closed_time": "11:11"
+          },
+          {
+            "related_to": "Jose Javier Rodriguez",
+            "subject": "Seguir contactando",
+            "closed_time": "11:14"
+          },
+          {
+            "related_to": "Paula Hurtado",
+            "subject": "Seguir contactando",
+            "closed_time": "11:17"
+          },
+          {
+            "related_to": "Marco Antonio Gularte Figueroa",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:19"
+          },
+          {
+            "related_to": "Alejandra Paret",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:21"
+          },
+          {
+            "related_to": "Oscar Gonzalez Gonzalez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:46"
+          },
+          {
+            "related_to": "Pavel Vazquez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:47"
+          },
+          {
+            "related_to": "Paola Corral Castillo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:49"
+          },
+          {
+            "related_to": "Brandon Guzman",
+            "subject": "Seguir contactando 2",
+            "closed_time": "12:50"
+          },
+          {
+            "related_to": "Naan del Angel",
+            "subject": "Seguir contactando 2",
+            "closed_time": "12:51"
+          },
+          {
+            "related_to": "Manuel Aguiar",
+            "subject": "Seguir contactando 2",
+            "closed_time": "12:53"
+          },
+          {
+            "related_to": "Edith Garay",
+            "subject": "Seguir contactando 2",
+            "closed_time": "12:55"
+          },
+          {
+            "related_to": "Marian Muñoz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "13:41"
+          },
+          {
+            "related_to": "Ing Jorge Reyes",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:49"
+          },
+          {
+            "related_to": "Miriam Peña",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:50"
+          },
+          {
+            "related_to": "Saho Varela",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:51"
+          },
+          {
+            "related_to": "Robert Ramirez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:52"
+          },
+          {
+            "related_to": "M V",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:53"
+          },
+          {
+            "related_to": "C Vega",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:56"
+          },
+          {
+            "related_to": "Alfredo Avila",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:57"
+          },
+          {
+            "related_to": "Edith Ruelas",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:00"
+          },
+          {
+            "related_to": "Daniel Jiménez Jimenez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:20"
+          },
+          {
+            "related_to": "Fabiola Pérez Pérez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:22"
+          },
+          {
+            "related_to": "Stephanie González",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:23"
+          },
+          {
+            "related_to": "Ariel Gonzalez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:24"
+          },
+          {
+            "related_to": "Carmina Martinez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:25"
+          },
+          {
+            "related_to": "Ramón Roque",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:26"
+          },
+          {
+            "related_to": "Eduardo D Machuca",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:53"
+          },
+          {
+            "related_to": "Mayra Velazquez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:55"
+          },
+          {
+            "related_to": "Maribel Molina",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:57"
+          },
+          {
+            "related_to": "Aideé Delgado",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:58"
+          },
+          {
+            "related_to": "Ismael Cervantes Lopez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:00"
+          },
+          {
+            "related_to": "Rommel Aguirre Molina",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:08"
+          },
+          {
+            "related_to": "Ingrid Barrios",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:09"
+          },
+          {
+            "related_to": "Jorge Askins",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:10"
+          },
+          {
+            "related_to": "Monica Lugo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:11"
+          },
+          {
+            "related_to": "Marisol Rubio",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:12"
+          },
+          {
+            "related_to": "bbyuli Flores",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:13"
+          },
+          {
+            "related_to": "Arlet Servantes",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:14"
+          },
+          {
+            "related_to": "Jonathan Diaz Maldonado",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:15"
+          },
+          {
+            "related_to": "Edgar Ramirez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:16"
+          },
+          {
+            "related_to": "Alfredo Mandujano Campa",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "18:54"
+          }
+        ]
+      },
+      {
+        "dia": "Miércoles",
+        "fecha": "25/03/2026",
+        "asignadas": 26,
+        "primera": "10:03",
+        "ultima": "16:52",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Optica jireh",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:59"
+          },
+          {
+            "related_to": "Salvador España",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:03"
+          },
+          {
+            "related_to": "Oscar Márquez Gálvez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:05"
+          },
+          {
+            "related_to": "Jonny Walker",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:35"
+          },
+          {
+            "related_to": "Guzman Martha",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:36"
+          },
+          {
+            "related_to": "Fran V Vazquez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:37"
+          },
+          {
+            "related_to": "Sherlyn Garcia",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:39"
+          },
+          {
+            "related_to": "Renato alfonso Pimentel mayo",
+            "subject": "Seguir contactando",
+            "closed_time": "14:55"
+          },
+          {
+            "related_to": "Rafael Vasquez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:56"
+          },
+          {
+            "related_to": "Alejandro Quevedo",
+            "subject": "Seguir contactando",
+            "closed_time": "14:58"
+          },
+          {
+            "related_to": "Jose Ricalday",
+            "subject": "Seguir contactando",
+            "closed_time": "15:23"
+          },
+          {
+            "related_to": "Larios Javier",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:27"
+          },
+          {
+            "related_to": "Jonathan Ortega",
+            "subject": "Seguir contactando",
+            "closed_time": "15:30"
+          },
+          {
+            "related_to": "Marcela García",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:32"
+          },
+          {
+            "related_to": "Job Mtz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:35"
+          },
+          {
+            "related_to": "Ana Aguilar",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:38"
+          },
+          {
+            "related_to": "Gonzalo N/A",
+            "subject": "Seguir contactando 2",
+            "closed_time": "15:39"
+          },
+          {
+            "related_to": "Yarely Almaral",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:42"
+          },
+          {
+            "related_to": "Gabriel Blanco",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:43"
+          },
+          {
+            "related_to": "Rene Ojeda Cid",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:49"
+          },
+          {
+            "related_to": "Gabo Bald Ros",
+            "subject": "Seguir contactando",
+            "closed_time": "16:50"
+          },
+          {
+            "related_to": "Pedro Ramirez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:51"
+          },
+          {
+            "related_to": "Manuel Quevedo",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:51"
+          },
+          {
+            "related_to": "Benjamin Betancourt Ramirez",
+            "subject": "Seguir contactando",
+            "closed_time": "16:52"
+          },
+          {
+            "related_to": "José luis lopez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:14"
+          },
+          {
+            "related_to": "Victor Becerril bec",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:16"
+          }
+        ]
+      },
+      {
+        "dia": "Jueves",
+        "fecha": "26/03/2026",
+        "asignadas": 26,
+        "primera": "09:43",
+        "ultima": "18:36",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Karla Barreiro",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:43"
+          },
+          {
+            "related_to": "Alejandro Franco",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:18"
+          },
+          {
+            "related_to": "Martin Quiñones",
+            "subject": "Seguir contactando",
+            "closed_time": "10:58"
+          },
+          {
+            "related_to": "Sinuhe Márquez",
+            "subject": "Seguir contactando",
+            "closed_time": "11:29"
+          },
+          {
+            "related_to": "Christian Ezequiel Sandoval",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:17"
+          },
+          {
+            "related_to": "Julio Lam",
+            "subject": "Seguir contactando",
+            "closed_time": "14:20"
+          },
+          {
+            "related_to": "Jose Casillas",
+            "subject": "Seguir contactando",
+            "closed_time": "14:22"
+          },
+          {
+            "related_to": "Gabriel Medina",
+            "subject": "Seguir contactando",
+            "closed_time": "14:23"
+          },
+          {
+            "related_to": "Carlos Estrada",
+            "subject": "Seguir contactando",
+            "closed_time": "14:27"
+          },
+          {
+            "related_to": "Ricardo Espinoza",
+            "subject": "Seguir contactando",
+            "closed_time": "15:07"
+          },
+          {
+            "related_to": "EMPORIOnail's mary",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:24"
+          },
+          {
+            "related_to": "Jose Lompe R Trujillo",
+            "subject": "Seguir contactando",
+            "closed_time": "15:25"
+          },
+          {
+            "related_to": "Jimi Arellano Lagunas",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:50"
+          },
+          {
+            "related_to": "ari ari",
+            "subject": "Seguir contactando",
+            "closed_time": "17:57"
+          },
+          {
+            "related_to": "Luis Palomeque",
+            "subject": "Seguir contactando",
+            "closed_time": "18:04"
+          },
+          {
+            "related_to": "Johana monserrat segura gutierrez Segura",
+            "subject": "Seguir contactando",
+            "closed_time": "18:11"
+          },
+          {
+            "related_to": "Jesús Miguel Guijarro Anaya",
+            "subject": "Seguir contactando",
+            "closed_time": "18:15"
+          },
+          {
+            "related_to": "Steve Bloom",
+            "subject": "Seguir contactando",
+            "closed_time": "18:27"
+          },
+          {
+            "related_to": "Bianca Cisneros",
+            "subject": "Seguir contactando 3",
+            "closed_time": "18:28"
+          },
+          {
+            "related_to": "Carlos Maldonado Bizarro",
+            "subject": "Seguir contactando 3",
+            "closed_time": "18:29"
+          },
+          {
+            "related_to": "Mariano Merino",
+            "subject": "Seguir contactando 3",
+            "closed_time": "18:30"
+          },
+          {
+            "related_to": "Jose M Gonzalez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "18:30"
+          },
+          {
+            "related_to": "Brushes Barbersalon",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "18:32"
+          },
+          {
+            "related_to": "Karyna Herrera",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "18:33"
+          },
+          {
+            "related_to": "Hector Valencia",
+            "subject": "Seguir contactando",
+            "closed_time": "18:35"
+          },
+          {
+            "related_to": "Raul Gonzalez",
+            "subject": "Seguir contactando",
+            "closed_time": "18:36"
+          }
+        ]
+      },
+      {
+        "dia": "Viernes",
+        "fecha": "27/03/2026",
+        "asignadas": 1,
+        "primera": "-",
+        "ultima": "-",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Perfumeplace",
+            "subject": "Seguir contactando",
+            "closed_time": "10:21"
+          }
+        ]
+      },
+      {
+        "dia": "Lunes",
+        "fecha": "30/03/2026",
+        "asignadas": 49,
+        "primera": "09:55",
+        "ultima": "16:56",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Lucila Castro",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:55"
+          },
+          {
+            "related_to": "Perla Ayala",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:57"
+          },
+          {
+            "related_to": "Jaime Arredondo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:09"
+          },
+          {
+            "related_to": "Daniela Vnts",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:11"
+          },
+          {
+            "related_to": "Marco Leon Gandara",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:50"
+          },
+          {
+            "related_to": "Maria Paz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "10:59"
+          },
+          {
+            "related_to": "Armando Sotelo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:01"
+          },
+          {
+            "related_to": "Anna De La Vega",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:09"
+          },
+          {
+            "related_to": "Luis Morales Martinez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:16"
+          },
+          {
+            "related_to": "جوديث كرمة",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:23"
+          },
+          {
+            "related_to": "Saul Soto Mellado",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:24"
+          },
+          {
+            "related_to": "Victor Garrix",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:26"
+          },
+          {
+            "related_to": "Isaac Ochoa",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:37"
+          },
+          {
+            "related_to": "Luciano Cruz",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:53"
+          },
+          {
+            "related_to": "sara Hernandez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:56"
+          },
+          {
+            "related_to": "Ana Belen Rodriguez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "11:58"
+          },
+          {
+            "related_to": "Carlos Gutierrez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "12:04"
+          },
+          {
+            "related_to": "Robert Walters",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "13:36"
+          },
+          {
+            "related_to": "Daniel Estrada",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:06"
+          },
+          {
+            "related_to": "Miguel Leal",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:07"
+          },
+          {
+            "related_to": "Jorge Garcia",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:09"
+          },
+          {
+            "related_to": "Jose Hernandez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:10"
+          },
+          {
+            "related_to": "Celso Chilaquil",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:16"
+          },
+          {
+            "related_to": "Nadia Galicia Estrada Soto",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "14:23"
+          },
+          {
+            "related_to": "Oralia Ramos",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:18"
+          },
+          {
+            "related_to": "Gabriel Blanco",
+            "subject": "Seguir contactando",
+            "closed_time": "15:19"
+          },
+          {
+            "related_to": "Jonny Walker",
+            "subject": "Seguir contactando",
+            "closed_time": "15:21"
+          },
+          {
+            "related_to": "Rafael Vasquez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:21"
+          },
+          {
+            "related_to": "Salvador España",
+            "subject": "Seguir contactando",
+            "closed_time": "15:23"
+          },
+          {
+            "related_to": "Oscar Márquez Gálvez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:26"
+          },
+          {
+            "related_to": "Paola Corral Castillo",
+            "subject": "Seguir contactando",
+            "closed_time": "15:28"
+          },
+          {
+            "related_to": "Adriana Valdez",
+            "subject": "Seguir contactando",
+            "closed_time": "15:30"
+          },
+          {
+            "related_to": "Nirvana Miramon",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:50"
+          },
+          {
+            "related_to": "Maria Escobedo",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "15:51"
+          },
+          {
+            "related_to": "Sherlyn Garcia",
+            "subject": "Seguir contactando",
+            "closed_time": "15:52"
+          },
+          {
+            "related_to": "Alfredo Mandujano Campa",
+            "subject": "Seguir contactando",
+            "closed_time": "15:53"
+          },
+          {
+            "related_to": "Marisol Rosas",
+            "subject": "Seguir contactando",
+            "closed_time": "15:55"
+          },
+          {
+            "related_to": "Guillermo García Marmolejo",
+            "subject": "Seguir contactando",
+            "closed_time": "15:56"
+          },
+          {
+            "related_to": "Cris Duran",
+            "subject": "Seguir contactando",
+            "closed_time": "15:58"
+          },
+          {
+            "related_to": "Mayra Reyes",
+            "subject": "Seguir contactando",
+            "closed_time": "16:01"
+          },
+          {
+            "related_to": "Miguel Dumas",
+            "subject": "Seguir contactando",
+            "closed_time": "16:02"
+          },
+          {
+            "related_to": "Valeria Ross",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:48"
+          },
+          {
+            "related_to": "Eleodoro Falcon",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:49"
+          },
+          {
+            "related_to": "José Dejesus Escoto Hernandez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:50"
+          },
+          {
+            "related_to": "Danna Nuño",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:52"
+          },
+          {
+            "related_to": "Sandra Ramirez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:53"
+          },
+          {
+            "related_to": "Alan Marin",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:54"
+          },
+          {
+            "related_to": "Liza Mar",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:55"
+          },
+          {
+            "related_to": "Лизетта Цесаревна",
+            "subject": "Seguir contactando 2",
+            "closed_time": "16:56"
+          }
+        ]
+      },
+      {
+        "dia": "Martes",
+        "fecha": "31/03/2026",
+        "asignadas": 75,
+        "primera": "09:34",
+        "ultima": "17:31",
+        "prom_entre_cierres": "-",
+        "tasks": [
+          {
+            "related_to": "Monserrath gutierrez zavala Kaylany",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:34"
+          },
+          {
+            "related_to": "Luphita Garcia",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:36"
+          },
+          {
+            "related_to": "Samuel Vazquez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "09:38"
+          },
+          {
+            "related_to": "EMPORIOnail's mary",
+            "subject": "Seguir contactando",
+            "closed_time": "09:40"
+          },
+          {
+            "related_to": "José luis lopez",
+            "subject": "Seguir contactando",
+            "closed_time": "10:13"
+          },
+          {
+            "related_to": "Alejandro Franco",
+            "subject": "Seguir contactando",
+            "closed_time": "10:16"
+          },
+          {
+            "related_to": "Manuel Escalante",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:21"
+          },
+          {
+            "related_to": "Gpo Fiarsa",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:34"
+          },
+          {
+            "related_to": "París Flores Coronel",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:37"
+          },
+          {
+            "related_to": "Chun Kun",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:38"
+          },
+          {
+            "related_to": "Jose Javier Rodriguez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:41"
+          },
+          {
+            "related_to": "Efren Odagled",
+            "subject": "Seguir contactando 2",
+            "closed_time": "10:53"
+          },
+          {
+            "related_to": "Alberto Alejandro Castillo",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:00"
+          },
+          {
+            "related_to": "Implantologo Sánchez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:03"
+          },
+          {
+            "related_to": "Jorge josue Robles hidalgo",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:12"
+          },
+          {
+            "related_to": "edith alonso",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:14"
+          },
+          {
+            "related_to": "Mireya Ortiz Godínez Ortiz Godinez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:19"
+          },
+          {
+            "related_to": "Iris Muñoz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:23"
+          },
+          {
+            "related_to": "Marco Antonio Martinez Cruz",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:28"
+          },
+          {
+            "related_to": "CHEF POLANCO",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:30"
+          },
+          {
+            "related_to": "Mariana Valdez",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:37"
+          },
+          {
+            "related_to": "VI Pi",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:42"
+          },
+          {
+            "related_to": "Enrique Limas",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:45"
+          },
+          {
+            "related_to": "Mor Orus",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:49"
+          },
+          {
+            "related_to": "John León",
+            "subject": "Seguir contactando 2",
+            "closed_time": "11:52"
+          },
+          {
+            "related_to": "Erick Contreras",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:02"
+          },
+          {
+            "related_to": "Brigitte Alvarado",
+            "subject": "Seguir contactando 2",
+            "closed_time": "14:04"
+          },
+          {
+            "related_to": "Carlos Gastelum",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:41"
+          },
+          {
+            "related_to": "Josué Andrade",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:42"
+          },
+          {
+            "related_to": "Sade C.",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:42"
+          },
+          {
+            "related_to": "Elsa Benitez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:43"
+          },
+          {
+            "related_to": "Jiram Bautista",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:44"
+          },
+          {
+            "related_to": "Laura Alvarez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:44"
+          },
+          {
+            "related_to": "Luis Rios",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:46"
+          },
+          {
+            "related_to": "Gabriela Acuña",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:47"
+          },
+          {
+            "related_to": "Hugo TAPIA ELORRIAGA",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:47"
+          },
+          {
+            "related_to": "Armando Oso",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:48"
+          },
+          {
+            "related_to": "Gisselle Maya",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:49"
+          },
+          {
+            "related_to": "Perla De leon",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:50"
+          },
+          {
+            "related_to": "Vicente Medina",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:52"
+          },
+          {
+            "related_to": "Humberto Medina",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:53"
+          },
+          {
+            "related_to": "David Flores",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:54"
+          },
+          {
+            "related_to": "Martin Barragan",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:55"
+          },
+          {
+            "related_to": "Roberto Carlos Gutiérrez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:56"
+          },
+          {
+            "related_to": "Brian Vedrichkova",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:57"
+          },
+          {
+            "related_to": "Miguel Medina",
+            "subject": "Seguir contactando 3",
+            "closed_time": "15:57"
+          },
+          {
+            "related_to": "Ricardo Cortez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:00"
+          },
+          {
+            "related_to": "Alejandro Rassam",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:03"
+          },
+          {
+            "related_to": "Raúl Valenzuela valenzuela",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:05"
+          },
+          {
+            "related_to": "Isaac Resendiz",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:07"
+          },
+          {
+            "related_to": "Misraim cruz Pastrana",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:14"
+          },
+          {
+            "related_to": "Alejandro Zuniga",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:14"
+          },
+          {
+            "related_to": "Jose Frutos",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:15"
+          },
+          {
+            "related_to": "Nadia Luna",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:16"
+          },
+          {
+            "related_to": "Alfredo Guzmán",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:17"
+          },
+          {
+            "related_to": "Moises Laniado",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:32"
+          },
+          {
+            "related_to": "Anamaria Orendain Casillas",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:33"
+          },
+          {
+            "related_to": "Salvador Reyes",
+            "subject": "Seguir contactando 3",
+            "closed_time": "16:34"
+          },
+          {
+            "related_to": "Marlene Trejo",
+            "subject": "Contactar Benitez",
+            "closed_time": "16:36"
+          },
+          {
+            "related_to": "Shalon Rivera Juarez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "16:37"
+          },
+          {
+            "related_to": "Brushes Barbersalon",
+            "subject": "Seguir contactando",
+            "closed_time": "17:10"
+          },
+          {
+            "related_to": "Karyna Herrera",
+            "subject": "Seguir contactando",
+            "closed_time": "17:12"
+          },
+          {
+            "related_to": "Dayana Alderete",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:13"
+          },
+          {
+            "related_to": "Umenie Tatto",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:16"
+          },
+          {
+            "related_to": "Hugo Martinez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:18"
+          },
+          {
+            "related_to": "Bigvai Ramos",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:18"
+          },
+          {
+            "related_to": "Ernesto Olivo",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:20"
+          },
+          {
+            "related_to": "Marco Antonio",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:21"
+          },
+          {
+            "related_to": "Jonatan Cr",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:22"
+          },
+          {
+            "related_to": "Gabriel NA",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:24"
+          },
+          {
+            "related_to": "Estif Ortiz",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:27"
+          },
+          {
+            "related_to": "Maricela Ramirez",
+            "subject": "Actividad Contactar Inmediato",
+            "closed_time": "17:28"
+          },
+          {
+            "related_to": "Aaron Felix",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:29"
+          },
+          {
+            "related_to": "Thania Bojorquez",
+            "subject": "Seguir contactando 3",
+            "closed_time": "17:30"
+          },
+          {
+            "related_to": "Juan Antonio Escamilla Gallardo",
+            "subject": "Contactar Inmediato",
+            "closed_time": "17:31"
+          }
+        ]
+      }
+    ]
+  }
+}
