@@ -98,6 +98,8 @@ export default function Dashboard() {
           <span className={styles.brandText}>ATISA</span>
         </div>
 
+        <Link href="/upload" className={styles.uploadBtn}>+ Cargar mes</Link>
+
         <div ref={ddRef} className={`${styles.dropdown} ${ddOpen ? styles.dropdownOpen : ''}`}>
           <div className={styles.dropBtn} onClick={() => setDdOpen(v => !v)}>
             <span className={styles.ddLabel}>Mes</span>

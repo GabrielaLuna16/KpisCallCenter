@@ -1,6 +1,7 @@
 /* ── PANEL BASE ── */
 .panel {
   background: #f5f5f5;
+  color: #1e1e1e;
   min-height: calc(100vh - 104px);
   padding: 24px 32px;
   display: flex;
@@ -110,6 +111,7 @@
 .kpiTurnoMetrics {
   display: flex;
   gap: 20px;
+  color: #1e1e1e;
 }
 
 .kpiTurnoMetrics > div {
