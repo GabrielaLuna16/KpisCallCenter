@@ -21,7 +21,7 @@ const TABS: { id: Tab; label: string; needsAct: boolean; needsResp: boolean }[] 
 export default function Dashboard() {
   const { months, loading: loadingIndex } = useAvailableMonths();
   const [activeMonth, setActiveMonth] = useState<string | null>(null);
-  const [tab, setTab] = useState<Tab>('tendencia');
+  const [tab, setTab] = useState<Tab>('respuesta');
   const [ddOpen, setDdOpen] = useState(false);
   const ddRef = useRef<HTMLDivElement>(null);
 
