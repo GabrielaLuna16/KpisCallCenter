@@ -12,10 +12,10 @@ import styles from './Dashboard.module.css';
 type Tab = 'tendencia' | 'cumplimiento' | 'horarios' | 'respuesta';
 
 const TABS: { id: Tab; label: string; needsAct: boolean; needsResp: boolean }[] = [
-  { id: 'tendencia',    label: 'Actividades',        needsAct: true,  needsResp: false },
-  { id: 'cumplimiento', label: 'Cumplimiento',        needsAct: true,  needsResp: false },
-  { id: 'horarios',     label: 'Horarios',            needsAct: true,  needsResp: false },
   { id: 'respuesta',    label: 'Tiempo de Respuesta', needsAct: false, needsResp: true  },
+  { id: 'tendencia',    label: 'Actividades',         needsAct: true,  needsResp: false },
+  { id: 'cumplimiento', label: 'Cumplimiento',         needsAct: true,  needsResp: false },
+  { id: 'horarios',     label: 'Horarios',             needsAct: true,  needsResp: false },
 ];
 
 export default function Dashboard() {
@@ -95,9 +95,8 @@ export default function Dashboard() {
           <span className={styles.brandText}>ATISA</span>
         </div>
 
-        <Link href="/upload" className={styles.uploadBtn}>+ Cargar mes</Link>
-
-        <div ref={ddRef} className={`${styles.dropdown} ${ddOpen ? styles.dropdownOpen : ''}`}>
+        <div className={styles.rightControls}>
+          <div ref={ddRef} className={`${styles.dropdown} ${ddOpen ? styles.dropdownOpen : ''}`}>
           <div className={styles.dropBtn} onClick={() => setDdOpen(v => !v)}>
             <span className={styles.ddLabel}>Mes</span>
             <span>{currentLabel}</span>
@@ -121,6 +120,8 @@ export default function Dashboard() {
               ))}
             </div>
           )}
+          </div>
+          <Link href="/upload" className={styles.uploadBtn}>+ Cargar mes</Link>
         </div>
       </div>
 
