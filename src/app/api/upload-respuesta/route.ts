@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
-import { commitFile } from '@/lib/github';
+import { commitFile, readFileContent } from '@/lib/github';
 import type { MonthIndex, MonthEntry } from '@/types/data';
 
 const schema = z.object({
@@ -10,12 +10,9 @@ const schema = z.object({
 
 async function readIndex(): Promise<MonthIndex> {
   try {
-    const base = process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : 'http://localhost:3000';
-    const res = await fetch(`${base}/data/index.json`, { cache: 'no-store' });
-    if (!res.ok) return { months: [] };
-    return res.json();
+    const content = await readFileContent('public/data/index.json');
+    if (!content) return { months: [] };
+    return JSON.parse(content);
   } catch {
     return { months: [] };
   }
