@@ -1,0 +1,1339 @@
+{
+  "month": "2026-05",
+  "records": [
+    {
+      "r": "Alfredo Gonzalez Haro",
+      "s": "Fuera de horario L-V",
+      "c": "22/05/2026 07:16",
+      "cl": "",
+      "m": 0
+    },
+    {
+      "r": "Estela Altamirano",
+      "s": "Fuera de horario L-V",
+      "c": "21/05/2026 17:59",
+      "cl": "21/05/2026 18:04",
+      "m": 0
+    },
+    {
+      "r": "Ivan Bustos",
+      "s": "Fuera de horario L-V",
+      "c": "21/05/2026 18:23",
+      "cl": "",
+      "m": 0
+    },
+    {
+      "r": "Franco Monrris",
+      "s": "Fuera de horario L-V",
+      "c": "21/05/2026 22:27",
+      "cl": "",
+      "m": 0
+    },
+    {
+      "r": "Claudia Martinez",
+      "s": "Horario laboral",
+      "c": "21/05/2026 14:35",
+      "cl": "21/05/2026 14:37",
+      "m": 2
+    },
+    {
+      "r": "Jose Olvera",
+      "s": "Horario laboral",
+      "c": "21/05/2026 16:35",
+      "cl": "21/05/2026 18:07",
+      "m": 25
+    },
+    {
+      "r": "Adalberto Romero",
+      "s": "Fuera de horario L-V",
+      "c": "21/05/2026 22:20",
+      "cl": "",
+      "m": 0
+    },
+    {
+      "r": "Jose Luis Ojeda Gutierrez",
+      "s": "Fuera de horario L-V",
+      "c": "21/05/2026 17:12",
+      "cl": "21/05/2026 18:06",
+      "m": 0
+    },
+    {
+      "r": "Alma Marisela Salazar Arce",
+      "s": "Fuera de horario L-V",
+      "c": "22/05/2026 04:06",
+      "cl": "",
+      "m": 0
+    },
+    {
+      "r": "Fernando Santos",
+      "s": "Fuera de horario L-V",
+      "c": "21/05/2026 05:56",
+      "cl": "21/05/2026 10:10",
+      "m": 30
+    },
+    {
+      "r": "Ayali Lara",
+      "s": "Fuera de horario L-V",
+      "c": "21/05/2026 05:55",
+      "cl": "21/05/2026 10:21",
+      "m": 41
+    },
+    {
+      "r": "Gabriel Cervantes",
+      "s": "Fuera de horario L-V",
+      "c": "22/05/2026 00:29",
+      "cl": "",
+      "m": 0
+    },
+    {
+      "r": "Hector Bailon",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 18:08",
+      "cl": "21/05/2026 10:45",
+      "m": 65
+    },
+    {
+      "r": "Xazel Cordova",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 20:43",
+      "cl": "21/05/2026 10:58",
+      "m": 78
+    },
+    {
+      "r": "Kenia Hernandez",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 08:47",
+      "cl": "20/05/2026 10:25",
+      "m": 45
+    },
+    {
+      "r": "Johana Beltran",
+      "s": "Horario laboral",
+      "c": "19/05/2026 11:50",
+      "cl": "19/05/2026 13:50",
+      "m": 120
+    },
+    {
+      "r": "Cocinas patron Patron",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 07:50",
+      "cl": "20/05/2026 10:37",
+      "m": 57
+    },
+    {
+      "r": "Nora Cruz",
+      "s": "Horario laboral",
+      "c": "19/05/2026 10:39",
+      "cl": "19/05/2026 10:43",
+      "m": 4
+    },
+    {
+      "r": "Monserrat Morales",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 22:25",
+      "cl": "21/05/2026 10:59",
+      "m": 79
+    },
+    {
+      "r": "Ricardo Gonzalez",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 22:06",
+      "cl": "21/05/2026 11:01",
+      "m": 81
+    },
+    {
+      "r": "Edgar RZ",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 21:33",
+      "cl": "21/05/2026 10:35",
+      "m": 55
+    },
+    {
+      "r": "Ian Makensi",
+      "s": "Horario laboral",
+      "c": "19/05/2026 14:10",
+      "cl": "19/05/2026 14:45",
+      "m": 35
+    },
+    {
+      "r": "Fermin Macias",
+      "s": "Horario laboral",
+      "c": "20/05/2026 16:58",
+      "cl": "21/05/2026 10:36",
+      "m": 58
+    },
+    {
+      "r": "Jose luis Sanabria Lopez",
+      "s": "Fuera de horario L-V",
+      "c": "19/05/2026 19:18",
+      "cl": "20/05/2026 10:39",
+      "m": 59
+    },
+    {
+      "r": "Victor Manuel Noriega Hernández",
+      "s": "Horario laboral",
+      "c": "19/05/2026 12:08",
+      "cl": "19/05/2026 13:51",
+      "m": 103
+    },
+    {
+      "r": "Rosario Sanchez Avidal",
+      "s": "Horario laboral",
+      "c": "20/05/2026 15:12",
+      "cl": "20/05/2026 16:30",
+      "m": 78
+    },
+    {
+      "r": "Ivan David",
+      "s": "Fuera de horario L-V",
+      "c": "19/05/2026 08:19",
+      "cl": "19/05/2026 18:13",
+      "m": 440
+    },
+    {
+      "r": "Yuridia Valenzuela",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 06:12",
+      "cl": "20/05/2026 10:20",
+      "m": 40
+    },
+    {
+      "r": "GEORGE Garcia",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 22:10",
+      "cl": "21/05/2026 10:39",
+      "m": 59
+    },
+    {
+      "r": "Egar Sanmal",
+      "s": "Horario laboral",
+      "c": "19/05/2026 14:33",
+      "cl": "19/05/2026 14:43",
+      "m": 10
+    },
+    {
+      "r": "Fer Loza",
+      "s": "Horario laboral",
+      "c": "19/05/2026 16:24",
+      "cl": "19/05/2026 16:29",
+      "m": 5
+    },
+    {
+      "r": "Amayrani Meneses",
+      "s": "Fuera de horario L-V",
+      "c": "20/05/2026 20:11",
+      "cl": "21/05/2026 10:23",
+      "m": 43
+    },
+    {
+      "r": "Rodrigo Angeles",
+      "s": "Horario laboral",
+      "c": "19/05/2026 11:43",
+      "cl": "19/05/2026 11:48",
+      "m": 5
+    },
+    {
+      "r": "Mike Gaxiola",
+      "s": "Fuera de horario L-V",
+      "c": "19/05/2026 00:50",
+      "cl": "19/05/2026 09:44",
+      "m": 4
+    },
+    {
+      "r": "Norma Ramirez",
+      "s": "Fuera de horario L-V",
+      "c": "18/05/2026 23:04",
+      "cl": "19/05/2026 09:47",
+      "m": 7
+    },
+    {
+      "r": "Jose David Murillo",
+      "s": "Fin de semana",
+      "c": "17/05/2026 18:06",
+      "cl": "18/05/2026 09:40",
+      "m": 0
+    },
+    {
+      "r": "Jaime Castellanos",
+      "s": "Horario laboral",
+      "c": "18/05/2026 12:01",
+      "cl": "18/05/2026 12:02",
+      "m": 1
+    },
+    {
+      "r": "Jose Jesus Ramirez Castro",
+      "s": "Fin de semana",
+      "c": "17/05/2026 13:00",
+      "cl": "18/05/2026 10:33",
+      "m": 53
+    },
+    {
+      "r": "Cinthya Yuliana López Pérez",
+      "s": "Horario laboral",
+      "c": "15/05/2026 13:42",
+      "cl": "15/05/2026 13:47",
+      "m": 5
+    },
+    {
+      "r": "Samuel Medrano",
+      "s": "Fuera de horario L-V",
+      "c": "18/05/2026 05:37",
+      "cl": "18/05/2026 09:35",
+      "m": 0
+    },
+    {
+      "r": "Rodolfo Pimentel",
+      "s": "Fin de semana",
+      "c": "17/05/2026 18:05",
+      "cl": "18/05/2026 10:28",
+      "m": 48
+    },
+    {
+      "r": "Jose iran muñoz Tinajero",
+      "s": "Fin de semana",
+      "c": "17/05/2026 15:56",
+      "cl": "18/05/2026 11:05",
+      "m": 85
+    },
+    {
+      "r": "Marcus Barrientos",
+      "s": "Fin de semana",
+      "c": "17/05/2026 23:21",
+      "cl": "18/05/2026 11:01",
+      "m": 81
+    },
+    {
+      "r": "Mar Brs",
+      "s": "Fin de semana",
+      "c": "17/05/2026 19:13",
+      "cl": "18/05/2026 10:31",
+      "m": 51
+    },
+    {
+      "r": "????ℯ? ?ℴ??ℯ?",
+      "s": "Fuera de horario L-V",
+      "c": "18/05/2026 00:11",
+      "cl": "18/05/2026 10:33",
+      "m": 53
+    },
+    {
+      "r": "Sergio Rocha Preciado",
+      "s": "Fin de semana",
+      "c": "17/05/2026 12:41",
+      "cl": "18/05/2026 09:40",
+      "m": 0
+    },
+    {
+      "r": "Javier Medina",
+      "s": "Fin de semana",
+      "c": "16/05/2026 18:28",
+      "cl": "18/05/2026 10:28",
+      "m": 48
+    },
+    {
+      "r": "Auri flores",
+      "s": "Fuera de horario L-V",
+      "c": "15/05/2026 18:41",
+      "cl": "18/05/2026 10:39",
+      "m": 59
+    },
+    {
+      "r": "Alberto Gonzalez",
+      "s": "Fin de semana",
+      "c": "16/05/2026 21:19",
+      "cl": "18/05/2026 11:08",
+      "m": 88
+    },
+    {
+      "r": "Oscar Lopez",
+      "s": "Horario laboral",
+      "c": "15/05/2026 15:54",
+      "cl": "15/05/2026 16:04",
+      "m": 10
+    },
+    {
+      "r": "Maria Felix",
+      "s": "Fin de semana",
+      "c": "17/05/2026 11:26",
+      "cl": "18/05/2026 09:36",
+      "m": 0
+    },
+    {
+      "r": "Roberto Tulais",
+      "s": "Fuera de horario L-V",
+      "c": "18/05/2026 22:29",
+      "cl": "19/05/2026 09:48",
+      "m": 8
+    },
+    {
+      "r": "Jesús Díaz",
+      "s": "Fuera de horario L-V",
+      "c": "18/05/2026 09:07",
+      "cl": "18/05/2026 09:32",
+      "m": 0
+    },
+    {
+      "r": "Claudia Aideth",
+      "s": "Fin de semana",
+      "c": "16/05/2026 03:38",
+      "cl": "18/05/2026 10:30",
+      "m": 50
+    },
+    {
+      "r": "Yaredi Feliciano",
+      "s": "Fin de semana",
+      "c": "17/05/2026 19:46",
+      "cl": "18/05/2026 11:10",
+      "m": 90
+    },
+    {
+      "r": "Marla Ortega",
+      "s": "Fin de semana",
+      "c": "16/05/2026 18:24",
+      "cl": "18/05/2026 09:42",
+      "m": 2
+    },
+    {
+      "r": "Jorge Eduardo de Leon",
+      "s": "Fin de semana",
+      "c": "17/05/2026 20:20",
+      "cl": "18/05/2026 09:38",
+      "m": 0
+    },
+    {
+      "r": "Alexandra perez",
+      "s": "Fin de semana",
+      "c": "16/05/2026 15:00",
+      "cl": "18/05/2026 09:43",
+      "m": 3
+    },
+    {
+      "r": "Francisco Moraila",
+      "s": "Fin de semana",
+      "c": "17/05/2026 20:02",
+      "cl": "18/05/2026 09:34",
+      "m": 0
+    },
+    {
+      "r": "Jorge Mondragon Vazquez",
+      "s": "Fuera de horario L-V",
+      "c": "15/05/2026 09:20",
+      "cl": "15/05/2026 09:37",
+      "m": 0
+    },
+    {
+      "r": "Isabel Millanes",
+      "s": "Horario laboral",
+      "c": "14/05/2026 14:48",
+      "cl": "14/05/2026 15:29",
+      "m": 41
+    },
+    {
+      "r": "Gabriela Arroyo Arroyo",
+      "s": "Horario laboral",
+      "c": "14/05/2026 16:23",
+      "cl": "14/05/2026 16:51",
+      "m": 28
+    },
+    {
+      "r": "Alicia Valdez",
+      "s": "Horario laboral",
+      "c": "14/05/2026 15:11",
+      "cl": "14/05/2026 15:28",
+      "m": 17
+    },
+    {
+      "r": "Alex Villalobos",
+      "s": "Fuera de horario L-V",
+      "c": "14/05/2026 17:55",
+      "cl": "15/05/2026 09:39",
+      "m": 0
+    },
+    {
+      "r": "Bryan Blessing",
+      "s": "Horario laboral",
+      "c": "14/05/2026 10:19",
+      "cl": "14/05/2026 10:49",
+      "m": 30
+    },
+    {
+      "r": "Jesus Flores",
+      "s": "Fuera de horario L-V",
+      "c": "15/05/2026 01:13",
+      "cl": "15/05/2026 09:38",
+      "m": 0
+    },
+    {
+      "r": "Pepe Márquez",
+      "s": "Horario laboral",
+      "c": "14/05/2026 14:42",
+      "cl": "14/05/2026 14:44",
+      "m": 2
+    },
+    {
+      "r": "Pedro Olivares",
+      "s": "Horario laboral",
+      "c": "14/05/2026 14:35",
+      "cl": "14/05/2026 14:37",
+      "m": 2
+    },
+    {
+      "r": "Mariam Rosas",
+      "s": "Horario laboral",
+      "c": "13/05/2026 15:03",
+      "cl": "13/05/2026 15:13",
+      "m": 10
+    },
+    {
+      "r": "Andres Almazan Santamaria",
+      "s": "Fuera de horario L-V",
+      "c": "13/05/2026 21:28",
+      "cl": "14/05/2026 10:50",
+      "m": 70
+    },
+    {
+      "r": "Leydi Reynosa",
+      "s": "Horario laboral",
+      "c": "13/05/2026 14:46",
+      "cl": "13/05/2026 15:12",
+      "m": 26
+    },
+    {
+      "r": "Alejandro Bautista Salinas",
+      "s": "Horario laboral",
+      "c": "13/05/2026 15:31",
+      "cl": "13/05/2026 16:06",
+      "m": 35
+    },
+    {
+      "r": "Jose Luis Inclan",
+      "s": "Fuera de horario L-V",
+      "c": "13/05/2026 19:54",
+      "cl": "14/05/2026 10:59",
+      "m": 79
+    },
+    {
+      "r": "x",
+      "s": "Horario laboral",
+      "c": "13/05/2026 10:32",
+      "cl": "13/05/2026 10:39",
+      "m": 7
+    },
+    {
+      "r": "Carlo Castillo Leuconue",
+      "s": "Fuera de horario L-V",
+      "c": "12/05/2026 18:11",
+      "cl": "13/05/2026 09:50",
+      "m": 10
+    },
+    {
+      "r": "Patricia valdez",
+      "s": "Horario laboral",
+      "c": "12/05/2026 16:59",
+      "cl": "12/05/2026 17:24",
+      "m": 1
+    },
+    {
+      "r": "Gustavo Suarez",
+      "s": "Horario laboral",
+      "c": "12/05/2026 10:01",
+      "cl": "12/05/2026 16:25",
+      "m": 384
+    },
+    {
+      "r": "Jorge Valdez",
+      "s": "Horario laboral",
+      "c": "12/05/2026 10:00",
+      "cl": "12/05/2026 17:21",
+      "m": 420
+    },
+    {
+      "r": "Daniel Salazar",
+      "s": "Horario laboral",
+      "c": "12/05/2026 12:16",
+      "cl": "12/05/2026 14:02",
+      "m": 106
+    },
+    {
+      "r": "rous Romero",
+      "s": "Horario laboral",
+      "c": "12/05/2026 12:15",
+      "cl": "12/05/2026 14:04",
+      "m": 109
+    },
+    {
+      "r": "Gonzalo Palacios",
+      "s": "Horario laboral",
+      "c": "12/05/2026 15:09",
+      "cl": "12/05/2026 15:37",
+      "m": 28
+    },
+    {
+      "r": "Javier cel 6632259797 WhatsApp Molina Soto",
+      "s": "Horario laboral",
+      "c": "12/05/2026 12:31",
+      "cl": "12/05/2026 13:58",
+      "m": 87
+    },
+    {
+      "r": "Raquel Mejia",
+      "s": "Fuera de horario L-V",
+      "c": "12/05/2026 09:38",
+      "cl": "12/05/2026 10:40",
+      "m": 60
+    },
+    {
+      "r": "Bjl Jimenez",
+      "s": "Fuera de horario L-V",
+      "c": "12/05/2026 09:34",
+      "cl": "12/05/2026 16:26",
+      "m": 406
+    },
+    {
+      "r": "Elsa Valenzuela",
+      "s": "Horario laboral",
+      "c": "11/05/2026 16:33",
+      "cl": "12/05/2026 10:02",
+      "m": 49
+    },
+    {
+      "r": "Rosalía Vega",
+      "s": "Fin de semana",
+      "c": "09/05/2026 09:59",
+      "cl": "12/05/2026 10:44",
+      "m": 504
+    },
+    {
+      "r": "Oswaldo Ruiz",
+      "s": "Fin de semana",
+      "c": "09/05/2026 00:32",
+      "cl": "12/05/2026 10:54",
+      "m": 514
+    },
+    {
+      "r": "Pedro Serrano",
+      "s": "Fin de semana",
+      "c": "09/05/2026 23:01",
+      "cl": "12/05/2026 10:03",
+      "m": 463
+    },
+    {
+      "r": "J Luis Mungia Hernadez",
+      "s": "Horario laboral",
+      "c": "08/05/2026 16:22",
+      "cl": "08/05/2026 16:52",
+      "m": 30
+    },
+    {
+      "r": "Mariana Soto",
+      "s": "Horario laboral",
+      "c": "11/05/2026 10:55",
+      "cl": "12/05/2026 10:57",
+      "m": 442
+    },
+    {
+      "r": "Suprema Tijuana",
+      "s": "Fuera de horario L-V",
+      "c": "08/05/2026 23:20",
+      "cl": "12/05/2026 10:58",
+      "m": 518
+    },
+    {
+      "r": "Adrián Cortez",
+      "s": "Fuera de horario L-V",
+      "c": "11/05/2026 05:36",
+      "cl": "12/05/2026 11:10",
+      "m": 530
+    },
+    {
+      "r": "Audifaz Zarate",
+      "s": "Fin de semana",
+      "c": "09/05/2026 12:08",
+      "cl": "12/05/2026 10:42",
+      "m": 502
+    },
+    {
+      "r": "Erik Sánchez",
+      "s": "Horario laboral",
+      "c": "08/05/2026 12:42",
+      "cl": "08/05/2026 13:29",
+      "m": 47
+    },
+    {
+      "r": "Juan Manuel Rosas Sanchez",
+      "s": "Fin de semana",
+      "c": "10/05/2026 21:58",
+      "cl": "12/05/2026 11:01",
+      "m": 521
+    },
+    {
+      "r": "Angel Sandoval",
+      "s": "Fin de semana",
+      "c": "10/05/2026 09:09",
+      "cl": "12/05/2026 11:04",
+      "m": 524
+    },
+    {
+      "r": "German Martinez Alonso",
+      "s": "Fin de semana",
+      "c": "10/05/2026 13:36",
+      "cl": "12/05/2026 11:06",
+      "m": 526
+    },
+    {
+      "r": "Karlo omar Hernandez",
+      "s": "Fin de semana",
+      "c": "09/05/2026 17:17",
+      "cl": "12/05/2026 11:07",
+      "m": 527
+    },
+    {
+      "r": "Rafael Martinez Ames",
+      "s": "Fuera de horario L-V",
+      "c": "08/05/2026 09:32",
+      "cl": "08/05/2026 10:23",
+      "m": 43
+    },
+    {
+      "r": "Hugo Jimenez Villegas",
+      "s": "Horario laboral",
+      "c": "08/05/2026 13:07",
+      "cl": "08/05/2026 13:27",
+      "m": 20
+    },
+    {
+      "r": "David Alejandro Gonzalez",
+      "s": "Fuera de horario L-V",
+      "c": "08/05/2026 08:37",
+      "cl": "08/05/2026 14:00",
+      "m": 260
+    },
+    {
+      "r": "Carlos Valenzuela",
+      "s": "Horario laboral",
+      "c": "08/05/2026 12:17",
+      "cl": "08/05/2026 13:58",
+      "m": 101
+    },
+    {
+      "r": "Rosalía Vega",
+      "s": "Fin de semana",
+      "c": "09/05/2026 09:56",
+      "cl": "12/05/2026 10:45",
+      "m": 505
+    },
+    {
+      "r": "Julio Cota",
+      "s": "Fuera de horario L-V",
+      "c": "08/05/2026 06:23",
+      "cl": "08/05/2026 10:14",
+      "m": 34
+    },
+    {
+      "r": "Ernesto SR5",
+      "s": "Fuera de horario L-V",
+      "c": "07/05/2026 20:27",
+      "cl": "08/05/2026 10:40",
+      "m": 60
+    },
+    {
+      "r": "Jose Hernandez",
+      "s": "Fuera de horario L-V",
+      "c": "07/05/2026 22:01",
+      "cl": "08/05/2026 10:36",
+      "m": 56
+    },
+    {
+      "r": "Julio Alejandro flores García",
+      "s": "Horario laboral",
+      "c": "07/05/2026 12:12",
+      "cl": "07/05/2026 15:05",
+      "m": 173
+    },
+    {
+      "r": "Jose Ramírez",
+      "s": "Horario laboral",
+      "c": "07/05/2026 16:54",
+      "cl": "07/05/2026 17:35",
+      "m": 6
+    },
+    {
+      "r": "Ivan Pedroza",
+      "s": "Fuera de horario L-V",
+      "c": "07/05/2026 19:29",
+      "cl": "08/05/2026 10:28",
+      "m": 48
+    },
+    {
+      "r": "Hill Lemon",
+      "s": "Fuera de horario L-V",
+      "c": "07/05/2026 18:15",
+      "cl": "07/05/2026 18:17",
+      "m": 0
+    },
+    {
+      "r": "Jorge Garcia",
+      "s": "Horario laboral",
+      "c": "07/05/2026 15:44",
+      "cl": "07/05/2026 15:49",
+      "m": 5
+    },
+    {
+      "r": "Miguel robles",
+      "s": "Horario laboral",
+      "c": "07/05/2026 13:36",
+      "cl": "07/05/2026 13:52",
+      "m": 16
+    },
+    {
+      "r": "martha guerra",
+      "s": "Horario laboral",
+      "c": "07/05/2026 10:22",
+      "cl": "07/05/2026 10:28",
+      "m": 6
+    },
+    {
+      "r": "Guillermo Arteaga",
+      "s": "Fuera de horario L-V",
+      "c": "07/05/2026 17:36",
+      "cl": "07/05/2026 17:39",
+      "m": 0
+    },
+    {
+      "r": "Raul Arias",
+      "s": "Fuera de horario L-V",
+      "c": "07/05/2026 17:11",
+      "cl": "07/05/2026 17:33",
+      "m": 0
+    },
+    {
+      "r": "Jesus Gaxiola",
+      "s": "Horario laboral",
+      "c": "06/05/2026 11:27",
+      "cl": "06/05/2026 14:56",
+      "m": 209
+    },
+    {
+      "r": "Ximena Resendiz",
+      "s": "Horario laboral",
+      "c": "06/05/2026 11:27",
+      "cl": "06/05/2026 13:32",
+      "m": 125
+    },
+    {
+      "r": "Miguel Fdz",
+      "s": "Horario laboral",
+      "c": "06/05/2026 11:27",
+      "cl": "06/05/2026 13:29",
+      "m": 122
+    },
+    {
+      "r": "Lupita Chong",
+      "s": "Fuera de horario L-V",
+      "c": "06/05/2026 18:58",
+      "cl": "07/05/2026 10:41",
+      "m": 61
+    },
+    {
+      "r": "Mario ContrerasBarajas",
+      "s": "Horario laboral",
+      "c": "06/05/2026 10:55",
+      "cl": "06/05/2026 15:26",
+      "m": 271
+    },
+    {
+      "r": "David Lomelí",
+      "s": "Fuera de horario L-V",
+      "c": "05/05/2026 23:29",
+      "cl": "06/05/2026 10:27",
+      "m": 47
+    },
+    {
+      "r": "Kas BelCon",
+      "s": "Fuera de horario L-V",
+      "c": "06/05/2026 23:15",
+      "cl": "07/05/2026 10:31",
+      "m": 51
+    },
+    {
+      "r": "Bertha Lopez-Cordova",
+      "s": "Fuera de horario L-V",
+      "c": "06/05/2026 06:28",
+      "cl": "06/05/2026 15:24",
+      "m": 344
+    },
+    {
+      "r": "Ezequiel Valle",
+      "s": "Fuera de horario L-V",
+      "c": "06/05/2026 21:52",
+      "cl": "07/05/2026 10:43",
+      "m": 63
+    },
+    {
+      "r": "Yuritzi Mares",
+      "s": "Fuera de horario L-V",
+      "c": "06/05/2026 17:17",
+      "cl": "07/05/2026 15:08",
+      "m": 328
+    },
+    {
+      "r": "Perla Castillo",
+      "s": "Horario laboral",
+      "c": "06/05/2026 16:09",
+      "cl": "06/05/2026 16:52",
+      "m": 43
+    },
+    {
+      "r": "Veronica Cervantes",
+      "s": "Fuera de horario L-V",
+      "c": "06/05/2026 18:13",
+      "cl": "07/05/2026 10:52",
+      "m": 72
+    },
+    {
+      "r": "Maribel Angelica Sánchez Martínez",
+      "s": "Horario laboral",
+      "c": "05/05/2026 10:02",
+      "cl": "05/05/2026 10:11",
+      "m": 9
+    },
+    {
+      "r": "Mirna Cedillo",
+      "s": "Fuera de horario L-V",
+      "c": "06/05/2026 17:11",
+      "cl": "07/05/2026 15:15",
+      "m": 335
+    },
+    {
+      "r": "Pery Sánchez",
+      "s": "Fuera de horario L-V",
+      "c": "06/05/2026 08:48",
+      "cl": "06/05/2026 09:47",
+      "m": 7
+    },
+    {
+      "r": "Martin Alejandro Padilla Romero",
+      "s": "Fuera de horario L-V",
+      "c": "07/05/2026 08:14",
+      "cl": "07/05/2026 10:24",
+      "m": 44
+    },
+    {
+      "r": "Elias Soberanes",
+      "s": "Horario laboral",
+      "c": "05/05/2026 13:12",
+      "cl": "05/05/2026 13:36",
+      "m": 24
+    },
+    {
+      "r": "Bethania Jimenez",
+      "s": "Horario laboral",
+      "c": "06/05/2026 14:13",
+      "cl": "06/05/2026 15:25",
+      "m": 72
+    },
+    {
+      "r": "Zandra Moreno",
+      "s": "Horario laboral",
+      "c": "06/05/2026 09:41",
+      "cl": "06/05/2026 16:54",
+      "m": 433
+    },
+    {
+      "r": "Miguel Martínez Sánchez",
+      "s": "Fuera de horario L-V",
+      "c": "06/05/2026 23:21",
+      "cl": "07/05/2026 15:17",
+      "m": 337
+    },
+    {
+      "r": "Bulmaro Velazquez",
+      "s": "Horario laboral",
+      "c": "06/05/2026 09:43",
+      "cl": "06/05/2026 16:55",
+      "m": 432
+    },
+    {
+      "r": "Rocío salas",
+      "s": "Horario laboral",
+      "c": "06/05/2026 16:55",
+      "cl": "06/05/2026 17:01",
+      "m": 5
+    },
+    {
+      "r": "Edith López",
+      "s": "Fuera de horario L-V",
+      "c": "05/05/2026 23:55",
+      "cl": "06/05/2026 10:26",
+      "m": 46
+    },
+    {
+      "r": "Marlen Serrano",
+      "s": "Fuera de horario L-V",
+      "c": "05/05/2026 21:59",
+      "cl": "06/05/2026 12:05",
+      "m": 145
+    },
+    {
+      "r": "Daisy Wong",
+      "s": "Horario laboral",
+      "c": "05/05/2026 15:03",
+      "cl": "05/05/2026 15:35",
+      "m": 32
+    },
+    {
+      "r": "Beny Nuñez Meza",
+      "s": "Fuera de horario L-V",
+      "c": "05/05/2026 05:48",
+      "cl": "05/05/2026 09:28",
+      "m": 0
+    },
+    {
+      "r": "Marisol Escalante",
+      "s": "Fuera de horario L-V",
+      "c": "05/05/2026 02:12",
+      "cl": "05/05/2026 09:48",
+      "m": 8
+    },
+    {
+      "r": "Liborio Calixto",
+      "s": "Fuera de horario L-V",
+      "c": "05/05/2026 00:28",
+      "cl": "05/05/2026 09:29",
+      "m": 0
+    },
+    {
+      "r": "Amilcar Cruz",
+      "s": "Fin de semana",
+      "c": "03/05/2026 21:01",
+      "cl": "04/05/2026 11:06",
+      "m": 86
+    },
+    {
+      "r": "Daniel Centeno",
+      "s": "Fin de semana",
+      "c": "03/05/2026 17:23",
+      "cl": "04/05/2026 11:15",
+      "m": 95
+    },
+    {
+      "r": "Isaac Canindo",
+      "s": "Horario laboral",
+      "c": "04/05/2026 12:26",
+      "cl": "04/05/2026 16:50",
+      "m": 264
+    },
+    {
+      "r": "Alejandro Salazar",
+      "s": "Fin de semana",
+      "c": "03/05/2026 10:48",
+      "cl": "04/05/2026 11:05",
+      "m": 85
+    },
+    {
+      "r": "EliZzabeth Hernandez",
+      "s": "Horario laboral",
+      "c": "04/05/2026 11:51",
+      "cl": "04/05/2026 16:47",
+      "m": 296
+    },
+    {
+      "r": "Stunt Tapia",
+      "s": "Horario laboral",
+      "c": "04/05/2026 11:50",
+      "cl": "04/05/2026 12:10",
+      "m": 20
+    },
+    {
+      "r": "Hector Ballardo",
+      "s": "Fin de semana",
+      "c": "03/05/2026 16:15",
+      "cl": "04/05/2026 11:04",
+      "m": 84
+    },
+    {
+      "r": "Pablo Bojorquez",
+      "s": "Fin de semana",
+      "c": "03/05/2026 11:12",
+      "cl": "04/05/2026 11:23",
+      "m": 103
+    },
+    {
+      "r": "Isa Mar Cruz",
+      "s": "Fin de semana",
+      "c": "02/05/2026 21:06",
+      "cl": "04/05/2026 11:24",
+      "m": 104
+    },
+    {
+      "r": "Joaquín n",
+      "s": "Fin de semana",
+      "c": "02/05/2026 17:15",
+      "cl": "04/05/2026 11:26",
+      "m": 106
+    },
+    {
+      "r": "Maricela Fernandez",
+      "s": "Fin de semana",
+      "c": "02/05/2026 15:38",
+      "cl": "04/05/2026 11:33",
+      "m": 113
+    },
+    {
+      "r": "Reyes Chapis",
+      "s": "Fin de semana",
+      "c": "02/05/2026 14:34",
+      "cl": "04/05/2026 09:52",
+      "m": 12
+    },
+    {
+      "r": "victor manuel Colin Bravo",
+      "s": "Fin de semana",
+      "c": "03/05/2026 12:41",
+      "cl": "04/05/2026 10:09",
+      "m": 29
+    },
+    {
+      "r": "Leticia Corona",
+      "s": "Fin de semana",
+      "c": "03/05/2026 00:18",
+      "cl": "04/05/2026 10:26",
+      "m": 46
+    },
+    {
+      "r": "Lidia Barba",
+      "s": "Fin de semana",
+      "c": "03/05/2026 18:47",
+      "cl": "04/05/2026 11:21",
+      "m": 101
+    },
+    {
+      "r": "Cesar Montes Oca",
+      "s": "Fin de semana",
+      "c": "03/05/2026 10:17",
+      "cl": "04/05/2026 10:16",
+      "m": 36
+    },
+    {
+      "r": "Norma Sánchez",
+      "s": "Fuera de horario L-V",
+      "c": "04/05/2026 17:37",
+      "cl": "05/05/2026 09:51",
+      "m": 11
+    },
+    {
+      "r": "Gumercindo perez lozada Perez Lozada",
+      "s": "Fin de semana",
+      "c": "03/05/2026 23:34",
+      "cl": "04/05/2026 09:48",
+      "m": 8
+    },
+    {
+      "r": "Teresa Romero",
+      "s": "Fin de semana",
+      "c": "02/05/2026 12:24",
+      "cl": "04/05/2026 10:23",
+      "m": 43
+    },
+    {
+      "r": "Daisy Castellanos Quintana",
+      "s": "Fuera de horario L-V",
+      "c": "04/05/2026 21:10",
+      "cl": "05/05/2026 09:55",
+      "m": 15
+    },
+    {
+      "r": "Arturo Gonzalez",
+      "s": "Fuera de horario L-V",
+      "c": "04/05/2026 00:56",
+      "cl": "04/05/2026 11:32",
+      "m": 112
+    },
+    {
+      "r": "Antonio Martinez",
+      "s": "Fin de semana",
+      "c": "03/05/2026 19:44",
+      "cl": "04/05/2026 09:50",
+      "m": 10
+    },
+    {
+      "r": "Lalo Lucero",
+      "s": "Fin de semana",
+      "c": "02/05/2026 04:41",
+      "cl": "04/05/2026 11:37",
+      "m": 117
+    },
+    {
+      "r": "Martin Plascencia",
+      "s": "Horario laboral",
+      "c": "04/05/2026 12:30",
+      "cl": "04/05/2026 16:45",
+      "m": 255
+    },
+    {
+      "r": "guatavo corrales wong",
+      "s": "Fin de semana",
+      "c": "02/05/2026 02:02",
+      "cl": "04/05/2026 10:25",
+      "m": 45
+    },
+    {
+      "r": "Diego Armando Garcia Pasillas",
+      "s": "Fuera de horario L-V",
+      "c": "04/05/2026 20:39",
+      "cl": "05/05/2026 09:56",
+      "m": 16
+    },
+    {
+      "r": "Esteban Cazares Alonso",
+      "s": "Fin de semana",
+      "c": "02/05/2026 13:14",
+      "cl": "04/05/2026 11:36",
+      "m": 116
+    },
+    {
+      "r": "Maridelosangeles Piedras",
+      "s": "Fin de semana",
+      "c": "03/05/2026 14:04",
+      "cl": "04/05/2026 11:08",
+      "m": 88
+    },
+    {
+      "r": "alexander nava nava",
+      "s": "Fin de semana",
+      "c": "02/05/2026 01:09",
+      "cl": "04/05/2026 11:39",
+      "m": 119
+    },
+    {
+      "r": "Samuel Ortiz",
+      "s": "Fuera de horario L-V",
+      "c": "04/05/2026 20:44",
+      "cl": "05/05/2026 09:54",
+      "m": 14
+    },
+    {
+      "r": "Dan Ramí",
+      "s": "Horario laboral",
+      "c": "04/05/2026 10:58",
+      "cl": "04/05/2026 12:11",
+      "m": 73
+    },
+    {
+      "r": "Guadalupe Hernandez Garcia",
+      "s": "Fin de semana",
+      "c": "03/05/2026 08:25",
+      "cl": "04/05/2026 09:51",
+      "m": 11
+    },
+    {
+      "r": "Gerardo Medina",
+      "s": "Fuera de horario L-V",
+      "c": "01/05/2026 18:07",
+      "cl": "04/05/2026 11:42",
+      "m": 122
+    },
+    {
+      "r": "Águeda Hernández",
+      "s": "Fuera de horario L-V",
+      "c": "01/05/2026 17:04",
+      "cl": "04/05/2026 10:17",
+      "m": 37
+    },
+    {
+      "r": "Enrique Gallegos",
+      "s": "Horario laboral",
+      "c": "01/05/2026 16:04",
+      "cl": "04/05/2026 12:08",
+      "m": 204
+    },
+    {
+      "r": "Julio Cesar Lopez",
+      "s": "Fuera de horario L-V",
+      "c": "01/05/2026 18:26",
+      "cl": "04/05/2026 11:46",
+      "m": 126
+    },
+    {
+      "r": "jose Antonio payan ruelas",
+      "s": "Fuera de horario L-V",
+      "c": "01/05/2026 22:23",
+      "cl": "04/05/2026 12:09",
+      "m": 149
+    },
+    {
+      "r": "José celis Aguilar",
+      "s": "Horario laboral",
+      "c": "01/05/2026 16:29",
+      "cl": "04/05/2026 10:18",
+      "m": 69
+    },
+    {
+      "r": "Alicia Duran",
+      "s": "Fuera de horario L-V",
+      "c": "01/05/2026 23:47",
+      "cl": "04/05/2026 11:40",
+      "m": 120
+    },
+    {
+      "r": "Abel Montes",
+      "s": "Fuera de horario L-V",
+      "c": "01/05/2026 20:16",
+      "cl": "04/05/2026 11:45",
+      "m": 125
+    },
+    {
+      "r": "Gerardo Olmo Del Olmo Araiza",
+      "s": "Horario laboral",
+      "c": "01/05/2026 16:23",
+      "cl": "04/05/2026 10:20",
+      "m": 77
+    },
+    {
+      "r": "marco Herrera",
+      "s": "Horario laboral",
+      "c": "01/05/2026 12:59",
+      "cl": "04/05/2026 11:55",
+      "m": 376
+    },
+    {
+      "r": "Jesus Picazo",
+      "s": "Fuera de horario L-V",
+      "c": "01/05/2026 22:46",
+      "cl": "04/05/2026 11:59",
+      "m": 139
+    },
+    {
+      "r": "Anahi Beltran",
+      "s": "Fuera de horario L-V",
+      "c": "01/05/2026 22:43",
+      "cl": "04/05/2026 11:51",
+      "m": 131
+    },
+    {
+      "r": "Rene cortez Godínez Cortez",
+      "s": "Horario laboral",
+      "c": "01/05/2026 16:50",
+      "cl": "04/05/2026 10:19",
+      "m": 49
+    }
+  ],
+  "metrics": {
+    "Horario laboral": {
+      "avg": 96,
+      "median": 38,
+      "count": 64
+    },
+    "Fuera de horario L-V": {
+      "avg": 91,
+      "median": 53,
+      "count": 71
+    },
+    "Fin de semana": {
+      "avg": 143,
+      "median": 85,
+      "count": 47
+    }
+  },
+  "maxMins": 530
+}
