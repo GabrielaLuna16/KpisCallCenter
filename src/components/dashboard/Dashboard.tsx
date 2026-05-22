@@ -92,9 +92,6 @@ export default function Dashboard() {
       {/* Top Bar */}
       <div className={styles.topBar}>
         <div className={styles.brand}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="https://atisa.com/assets/img/atisa-logo-negative.svg" alt="ATISA" className={styles.logo}
-            onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }} />
           <span className={styles.brandText}>ATISA</span>
         </div>
 

@@ -79,10 +79,9 @@ export default function TendenciaPanel({ data, label }: Props) {
           <span className={styles.kpiVal}>{kpis.prom_realizadas}</span>
           <span className={styles.kpiLbl}>Prom. realizadas / día</span>
         </div>
-        <div className={`${styles.kpiCard} ${styles.kpiRed}`}>
-          <span className={styles.kpiVal}>{kpis.max_realizadas}</span>
-          <span className={styles.kpiLbl}>Máximo realizado</span>
-          <span className={styles.kpiSub}>{kpis.max_real_fecha}</span>
+        <div className={`${styles.kpiCard} ${styles.kpiOrange}`}>
+          <span className={styles.kpiVal}>{kpis.limite_recomendado}</span>
+          <span className={styles.kpiLbl}>Límite recomendado</span>
         </div>
       </div>
 
