@@ -82,24 +82,40 @@ export default function InsightsPanel({ prevLabel, currLabel, prevAct, currAct, 
         <span className={styles.insLblCurr}>{currLabel}</span>
       </div>
 
-      {/* Grid de deltas */}
-      <div className={styles.insDeltaGrid}>
+      {/* Secciones */}
+      <div className={styles.insSections}>
 
-        {/* Actividades */}
-        {(prevAct || currAct) && <>
-          <DeltaCard label="% A tiempo"        prev={prevPct}                                         curr={currPct}                                         fmt={pct} dir="up"      />
-          <DeltaCard label="No realizadas"     prev={prevAct?.cumplimiento.kpis.no_realizadas ?? null} curr={currAct?.cumplimiento.kpis.no_realizadas ?? null} fmt={n}   dir="down"   />
-          <DeltaCard label="Tardías"           prev={prevAct?.cumplimiento.kpis.tardio        ?? null} curr={currAct?.cumplimiento.kpis.tardio        ?? null} fmt={n}   dir="down"   />
-          <DeltaCard label="Realizadas / día"  prev={prevAct?.tendencia.kpis.prom_realizadas  ?? null} curr={currAct?.tendencia.kpis.prom_realizadas  ?? null} fmt={n}   dir="up"     />
-          <DeltaCard label="Asignadas / día"   prev={prevAct?.tendencia.kpis.prom_asignadas   ?? null} curr={currAct?.tendencia.kpis.prom_asignadas   ?? null} fmt={n}   dir="neutral"/>
-        </>}
+        {(prevAct || currAct) && (
+          <div className={styles.insGroup}>
+            <span className={styles.insGroupTitle}>Actividades</span>
+            <div className={styles.insDeltaGrid}>
+              <DeltaCard label="Realizadas / día" prev={prevAct?.tendencia.kpis.prom_realizadas ?? null} curr={currAct?.tendencia.kpis.prom_realizadas ?? null} fmt={n}   dir="up"     />
+              <DeltaCard label="Asignadas / día"  prev={prevAct?.tendencia.kpis.prom_asignadas  ?? null} curr={currAct?.tendencia.kpis.prom_asignadas  ?? null} fmt={n}   dir="neutral"/>
+            </div>
+          </div>
+        )}
 
-        {/* Tiempo de respuesta */}
-        {(prevResp || currResp) && <>
-          <DeltaCard label="Resp. laboral (prom.)"    prev={prevResp?.metrics['Horario laboral'].avg      ?? null} curr={currResp?.metrics['Horario laboral'].avg      ?? null} fmt={min} dir="down" />
-          <DeltaCard label="Resp. fuera horario (prom.)" prev={prevResp?.metrics['Fuera de horario L-V'].avg ?? null} curr={currResp?.metrics['Fuera de horario L-V'].avg ?? null} fmt={min} dir="down" />
-          <DeltaCard label="Total tickets"            prev={prevResp?.records.length                      ?? null} curr={currResp?.records.length                      ?? null} fmt={n}   dir="neutral" />
-        </>}
+        {(prevAct || currAct) && (
+          <div className={styles.insGroup}>
+            <span className={styles.insGroupTitle}>Cumplimiento</span>
+            <div className={styles.insDeltaGrid}>
+              <DeltaCard label="% A tiempo"    prev={prevPct}                                         curr={currPct}                                         fmt={pct} dir="up"  />
+              <DeltaCard label="Tardías"       prev={prevAct?.cumplimiento.kpis.tardio        ?? null} curr={currAct?.cumplimiento.kpis.tardio        ?? null} fmt={n}   dir="down"/>
+              <DeltaCard label="No realizadas" prev={prevAct?.cumplimiento.kpis.no_realizadas ?? null} curr={currAct?.cumplimiento.kpis.no_realizadas ?? null} fmt={n}   dir="down"/>
+            </div>
+          </div>
+        )}
+
+        {(prevResp || currResp) && (
+          <div className={styles.insGroup}>
+            <span className={styles.insGroupTitle}>Tiempo de Respuesta</span>
+            <div className={styles.insDeltaGrid}>
+              <DeltaCard label="Laboral (prom.)"       prev={prevResp?.metrics['Horario laboral'].avg      ?? null} curr={currResp?.metrics['Horario laboral'].avg      ?? null} fmt={min} dir="down"   />
+              <DeltaCard label="Fuera horario (prom.)" prev={prevResp?.metrics['Fuera de horario L-V'].avg ?? null} curr={currResp?.metrics['Fuera de horario L-V'].avg ?? null} fmt={min} dir="down"   />
+              <DeltaCard label="Total tickets"         prev={prevResp?.records.length                      ?? null} curr={currResp?.records.length                      ?? null} fmt={n}   dir="neutral"/>
+            </div>
+          </div>
+        )}
 
       </div>
     </div>

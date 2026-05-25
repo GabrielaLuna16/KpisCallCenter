@@ -513,6 +513,38 @@
   border-radius: 20px;
 }
 
+/* ── INSIGHTS: SECTIONS ── */
+.insSections {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.insGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.insGroupTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #383838;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.insGroupTitle::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 13px;
+  background: #d2262c;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
 /* ── INSIGHTS: DELTA GRID ── */
 .insDeltaGrid {
   display: grid;
