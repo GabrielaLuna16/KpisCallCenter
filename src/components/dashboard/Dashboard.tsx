@@ -7,15 +7,17 @@ import TendenciaPanel from './TendenciaPanel';
 import CumplimientoPanel from './CumplimientoPanel';
 import HorariosPanel from './HorariosPanel';
 import TiempoRespuestaPanel from './TiempoRespuestaPanel';
+import InsightsPanel from './InsightsPanel';
 import styles from './Dashboard.module.css';
 
-type Tab = 'tendencia' | 'cumplimiento' | 'horarios' | 'respuesta';
+type Tab = 'tendencia' | 'cumplimiento' | 'horarios' | 'respuesta' | 'insights';
 
 const TABS: { id: Tab; label: string; needsAct: boolean; needsResp: boolean }[] = [
   { id: 'respuesta',    label: 'Tiempo de Respuesta', needsAct: false, needsResp: true  },
   { id: 'tendencia',    label: 'Actividades',         needsAct: true,  needsResp: false },
-  { id: 'cumplimiento', label: 'Cumplimiento',         needsAct: true,  needsResp: false },
-  { id: 'horarios',     label: 'Horarios',             needsAct: true,  needsResp: false },
+  { id: 'cumplimiento', label: 'Cumplimiento',        needsAct: true,  needsResp: false },
+  { id: 'horarios',     label: 'Horarios',            needsAct: true,  needsResp: false },
+  { id: 'insights',     label: 'Insights',            needsAct: false, needsResp: false },
 ];
 
 export default function Dashboard() {
@@ -50,6 +52,14 @@ export default function Dashboard() {
     currentEntry?.hasRespuesta ? activeMonth : null
   );
 
+  // Datos para Insights: siempre los 2 meses más recientes
+  const ins0 = months.length > 0 ? months[0] : null;
+  const ins1 = months.length > 1 ? months[1] : null;
+  const { data: insAct0,  loading: loadInsAct0  } = useActividadesData(ins0?.hasActividades ? ins0.key : null);
+  const { data: insResp0, loading: loadInsResp0 } = useRespuestaData(ins0?.hasRespuesta   ? ins0.key : null);
+  const { data: insAct1,  loading: loadInsAct1  } = useActividadesData(ins1?.hasActividades ? ins1.key : null);
+  const { data: insResp1, loading: loadInsResp1 } = useRespuestaData(ins1?.hasRespuesta   ? ins1.key : null);
+
   const currentLabel = currentEntry?.label ?? '';
 
   function selectMonth(key: string) {
@@ -83,9 +93,11 @@ export default function Dashboard() {
     );
   }
 
-  const tabDisabled = (t: typeof TABS[0]) =>
-    (t.needsAct && !currentEntry?.hasActividades) ||
-    (t.needsResp && !currentEntry?.hasRespuesta);
+  const tabDisabled = (t: typeof TABS[0]) => {
+    if (t.id === 'insights') return months.length < 2;
+    return (t.needsAct && !currentEntry?.hasActividades) ||
+           (t.needsResp && !currentEntry?.hasRespuesta);
+  };
 
   return (
     <>
@@ -162,6 +174,18 @@ export default function Dashboard() {
           loadingResp ? <LoadingPanel /> :
           respData ? <TiempoRespuestaPanel data={respData} label={currentLabel} /> :
           <UnavailablePanel />
+        )}
+        {tab === 'insights' && (
+          months.length < 2 ? <UnavailablePanel /> :
+          (loadInsAct0 || loadInsResp0 || loadInsAct1 || loadInsResp1) ? <LoadingPanel /> :
+          <InsightsPanel
+            prevLabel={ins1?.label ?? ''}
+            currLabel={ins0?.label ?? ''}
+            prevAct={insAct1}
+            currAct={insAct0}
+            prevResp={insResp1}
+            currResp={insResp0}
+          />
         )}
       </div>
     </>
