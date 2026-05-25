@@ -491,20 +491,21 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 4px;
 }
 .insLblPrev {
   font-family: 'Poppins', sans-serif;
-  font-size: .8rem;
+  font-size: .85rem;
   font-weight: 600;
   color: #999;
 }
 .insLblArrow {
   color: #ccc;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .insLblCurr {
   font-family: 'Poppins', sans-serif;
-  font-size: .8rem;
+  font-size: .85rem;
   font-weight: 700;
   background: #eaf5f0;
   color: #2d8a5e;
@@ -512,79 +513,23 @@
   border-radius: 20px;
 }
 
-/* ── INSIGHTS: HIGHLIGHTS ── */
-.insHlGrid {
+/* ── INSIGHTS: DELTA GRID ── */
+.insDeltaGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 12px;
-}
-.insHlCard {
-  border-radius: 10px;
-  padding: 16px 18px;
-  border-left: 4px solid;
-}
-.insHlTitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: .72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .07em;
-  margin-bottom: 6px;
-}
-.insHlBody {
-  font-size: .88rem;
-  line-height: 1.55;
-}
-.insHlGood  { background: #f0faf5; border-left-color: #2d8a5e; color: #1a5c3a; }
-.insHlBad   { background: #fef5f5; border-left-color: #d2262c; color: #7a1a1d; }
-.insHlNeutral { background: #f8f8f8; border-left-color: #bbb;    color: #383838; }
-.insHlGood   .insHlTitle { color: #2d8a5e; }
-.insHlBad    .insHlTitle { color: #d2262c; }
-.insHlNeutral .insHlTitle { color: #767676; }
-
-/* ── INSIGHTS: SECTIONS ── */
-.insSection {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.insSectionTitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: .75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  color: #383838;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.insSectionTitle::before {
-  content: '';
-  display: block;
-  width: 3px;
-  height: 14px;
-  background: #d2262c;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-.insCardsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 14px;
 }
 
-/* ── INSIGHTS: METRIC CARD ── */
-.insCard {
-  background: #fff;
+/* ── INSIGHTS: DELTA CARD ── */
+.insDeltaCard {
   border-radius: 10px;
-  padding: 16px 18px;
-  box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  padding: 18px 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
 }
-.insCardLbl {
+.insDeltaCardLbl {
   font-family: 'Poppins', sans-serif;
   font-size: .68rem;
   font-weight: 700;
@@ -593,53 +538,16 @@
   color: #999;
   line-height: 1.3;
 }
-.insCardBody {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-}
-.insCol {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  min-width: 0;
-}
-.insNumPrev {
+.insDeltaCardNum {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #bbb;
-  line-height: 1;
-  white-space: nowrap;
-}
-.insNumCurr {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.75rem;
   font-weight: 800;
-  color: #1e1e1e;
   line-height: 1;
-  white-space: nowrap;
 }
-.insMthLbl {
-  font-size: .62rem;
-  color: #bbb;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.insArrw {
-  font-size: .95rem;
-  color: #ddd;
-  padding-bottom: 16px;
-  flex-shrink: 0;
-}
-.insDelta {
-  font-family: 'Poppins', sans-serif;
-  font-size: .78rem;
-  font-weight: 600;
-  line-height: 1;
+.insDeltaCardSub {
+  font-size: .75rem;
+  color: #aaa;
+  margin-top: 2px;
 }
 
 /* ── RESPONSIVE ── */
@@ -647,7 +555,7 @@
   .panel { padding: 16px; }
   .kpiGrid4, .kpiGrid3 { grid-template-columns: repeat(2, 1fr); }
   .twoCol { grid-template-columns: 1fr; }
-  .insCardsGrid { grid-template-columns: repeat(2, 1fr); }
+  .insDeltaGrid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 600px) {
