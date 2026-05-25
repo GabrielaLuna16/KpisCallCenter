@@ -52,13 +52,6 @@ export default function Dashboard() {
     currentEntry?.hasRespuesta ? activeMonth : null
   );
 
-  // Datos para Insights: siempre los 2 meses más recientes
-  const ins0 = months.length > 0 ? months[0] : null;
-  const ins1 = months.length > 1 ? months[1] : null;
-  const { data: insAct0,  loading: loadInsAct0  } = useActividadesData(ins0?.hasActividades ? ins0.key : null);
-  const { data: insResp0, loading: loadInsResp0 } = useRespuestaData(ins0?.hasRespuesta   ? ins0.key : null);
-  const { data: insAct1,  loading: loadInsAct1  } = useActividadesData(ins1?.hasActividades ? ins1.key : null);
-  const { data: insResp1, loading: loadInsResp1 } = useRespuestaData(ins1?.hasRespuesta   ? ins1.key : null);
 
   const currentLabel = currentEntry?.label ?? '';
 
@@ -177,15 +170,7 @@ export default function Dashboard() {
         )}
         {tab === 'insights' && (
           months.length < 2 ? <UnavailablePanel /> :
-          (loadInsAct0 || loadInsResp0 || loadInsAct1 || loadInsResp1) ? <LoadingPanel /> :
-          <InsightsPanel
-            prevLabel={ins1?.label ?? ''}
-            currLabel={ins0?.label ?? ''}
-            prevAct={insAct1}
-            currAct={insAct0}
-            prevResp={insResp1}
-            currResp={insResp0}
-          />
+          <InsightsPanel months={months} />
         )}
       </div>
     </>

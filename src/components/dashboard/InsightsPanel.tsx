@@ -1,123 +1,194 @@
 'use client';
-import type { ActividadesMonthData, RespuestaMonthData } from '@/types/data';
+import { useState, useEffect } from 'react';
+import { Line, Bar } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale, LinearScale,
+  PointElement, LineElement, BarElement,
+  Tooltip, Legend, Filler,
+} from 'chart.js';
+import type { MonthEntry, ActividadesMonthData, RespuestaMonthData } from '@/types/data';
 import { fmtTime } from '@/lib/processors/respuesta';
 import styles from './Panels.module.css';
 
-interface Props {
-  prevLabel: string;
-  currLabel: string;
-  prevAct:  ActividadesMonthData | null;
-  currAct:  ActividadesMonthData | null;
-  prevResp: RespuestaMonthData   | null;
-  currResp: RespuestaMonthData   | null;
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Tooltip, Legend, Filler);
+
+interface Props { months: MonthEntry[] }
+
+// ─── helpers ─────────────────────────────────────────────────────────────────
+
+const MESES: Record<string, string> = {
+  Enero:'Ene', Febrero:'Feb', Marzo:'Mar', Abril:'Abr',
+  Mayo:'May',  Junio:'Jun',   Julio:'Jul', Agosto:'Ago',
+  Septiembre:'Sep', Octubre:'Oct', Noviembre:'Nov', Diciembre:'Dic',
+};
+const shortLbl = (label: string) => MESES[label.split(' ')[0]] ?? label;
+const pctOf    = (a: number, b: number) => b === 0 ? 0 : Math.round((a / b) * 100);
+
+// ─── carga todos los meses ───────────────────────────────────────────────────
+
+function useAllData(months: MonthEntry[]) {
+  const [actMap,  setActMap]  = useState<Map<string, ActividadesMonthData>>(new Map());
+  const [respMap, setRespMap] = useState<Map<string, RespuestaMonthData>>(new Map());
+  const [loading, setLoading] = useState(true);
+
+  const keys = months.map(m => m.key).join(',');
+
+  useEffect(() => {
+    if (!keys) { setLoading(false); return; }
+    setLoading(true);
+
+    const actF  = months.filter(m => m.hasActividades).map(m =>
+      fetch(`/data/${m.key}-actividades.json`).then(r => r.ok ? r.json() : null)
+        .then(d  => ({ t: 'act'  as const, k: m.key, d }))
+        .catch(() => ({ t: 'act'  as const, k: m.key, d: null }))
+    );
+    const respF = months.filter(m => m.hasRespuesta).map(m =>
+      fetch(`/data/${m.key}-respuesta.json`).then(r => r.ok ? r.json() : null)
+        .then(d  => ({ t: 'resp' as const, k: m.key, d }))
+        .catch(() => ({ t: 'resp' as const, k: m.key, d: null }))
+    );
+
+    Promise.all([...actF, ...respF]).then(results => {
+      const am = new Map<string, ActividadesMonthData>();
+      const rm = new Map<string, RespuestaMonthData>();
+      for (const r of results) {
+        if (!r.d) continue;
+        if (r.t === 'act')  am.set(r.k, r.d as ActividadesMonthData);
+        else                rm.set(r.k, r.d as RespuestaMonthData);
+      }
+      setActMap(am); setRespMap(rm); setLoading(false);
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [keys]);
+
+  return { actMap, respMap, loading };
 }
 
-type Dir = 'up' | 'down' | 'neutral';
+// ─── opciones base Chart.js ───────────────────────────────────────────────────
 
-function pctOf(num: number, den: number) {
-  return den === 0 ? 0 : (num / den) * 100;
+const base = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    legend: { position: 'bottom' as const, labels: { font: { family: 'Poppins', size: 12 }, boxWidth: 12, padding: 16 } },
+  },
+  scales: {
+    y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,.06)' }, ticks: { font: { size: 11 } } },
+    x: { grid: { display: false },                              ticks: { font: { size: 12 } } },
+  },
+};
+
+function line(label: string, data: (number|null)[], color: string) {
+  return { label, data, borderColor: color, backgroundColor: color + '15',
+           pointBackgroundColor: color, pointRadius: 5, pointHoverRadius: 7,
+           tension: 0.35, fill: false, spanGaps: true };
+}
+function bar(label: string, data: (number|null)[], color: string) {
+  return { label, data, backgroundColor: color + 'cc', borderRadius: 4, spanGaps: true };
 }
 
-// ─── Tarjeta delta ───────────────────────────────────────────────────────────
+// ─── Panel ────────────────────────────────────────────────────────────────────
 
-interface CardProps {
-  label: string;
-  prev:  number | null;
-  curr:  number | null;
-  fmt:   (v: number) => string;
-  dir:   Dir;
-}
+export default function InsightsPanel({ months }: Props) {
+  // ordenar de más antiguo a más reciente (izq → der en gráficas)
+  const sorted = [...months].reverse();
+  const labels = sorted.map(m => shortLbl(m.label));
 
-function DeltaCard({ label, prev, curr, fmt, dir }: CardProps) {
-  const hasBoth = prev !== null && curr !== null;
-  const diff    = hasBoth ? curr! - prev! : null;
+  const { actMap, respMap, loading } = useAllData(sorted);
 
-  let tone: 'good' | 'bad' | 'neutral' = 'neutral';
-  if (diff !== null && diff !== 0) {
-    if (dir === 'up')   tone = diff > 0 ? 'good' : 'bad';
-    if (dir === 'down') tone = diff < 0 ? 'good' : 'bad';
-  }
-
-  const theme = {
-    good:    { border: '#2d8a5e', text: '#2d8a5e', bg: '#f0faf5' },
-    bad:     { border: '#d2262c', text: '#d2262c', bg: '#fef5f5' },
-    neutral: { border: '#d0d0d0', text: '#767676', bg: '#fff'    },
-  }[tone];
-
-  const diffStr =
-    diff === null ? '—' :
-    diff === 0    ? '=' :
-    (diff > 0 ? '▲ +' : '▼ ') + fmt(Math.abs(diff));
-
-  return (
-    <div className={styles.insDeltaCard} style={{ background: theme.bg, borderTop: `3px solid ${theme.border}` }}>
-      <span className={styles.insDeltaCardLbl}>{label}</span>
-      <span className={styles.insDeltaCardNum} style={{ color: theme.text }}>{diffStr}</span>
-      {hasBoth && (
-        <span className={styles.insDeltaCardSub}>{fmt(prev!)} → {fmt(curr!)}</span>
-      )}
+  if (loading) return (
+    <div className={styles.panel} style={{ display:'flex', alignItems:'center', justifyContent:'center', minHeight:300 }}>
+      <span style={{ color:'#767676' }}>Cargando datos...</span>
     </div>
   );
-}
 
-// ─── Panel ───────────────────────────────────────────────────────────────────
+  const actS  = sorted.map(m => actMap.get(m.key)  ?? null);
+  const respS = sorted.map(m => respMap.get(m.key) ?? null);
 
-export default function InsightsPanel({ prevLabel, currLabel, prevAct, currAct, prevResp, currResp }: Props) {
-  const n   = (v: number) => String(Math.round(v));
-  const pct = (v: number) => `${Math.round(v)}%`;
-  const min = (v: number) => fmtTime(v);
+  const hasAct  = actS.some(Boolean);
+  const hasResp = respS.some(Boolean);
 
-  const prevPct = prevAct && prevAct.cumplimiento.kpis.total > 0
-    ? pctOf(prevAct.cumplimiento.kpis.a_tiempo, prevAct.cumplimiento.kpis.total) : null;
-  const currPct = currAct && currAct.cumplimiento.kpis.total > 0
-    ? pctOf(currAct.cumplimiento.kpis.a_tiempo, currAct.cumplimiento.kpis.total) : null;
+  // series actividades
+  const realizadas = actS.map(d => d?.tendencia.kpis.prom_realizadas ?? null);
+  const asignadas  = actS.map(d => d?.tendencia.kpis.prom_asignadas  ?? null);
+
+  // series cumplimiento
+  const aTiempo = actS.map(d => d ? pctOf(d.cumplimiento.kpis.a_tiempo, d.cumplimiento.kpis.total) : null);
+  const tardias = actS.map(d => d?.cumplimiento.kpis.tardio        ?? null);
+  const noReal  = actS.map(d => d?.cumplimiento.kpis.no_realizadas ?? null);
+
+  // series tiempo de respuesta
+  const respLab   = respS.map(d => d?.metrics['Horario laboral'].avg      ?? null);
+  const respFuera = respS.map(d => d?.metrics['Fuera de horario L-V'].avg ?? null);
+  const tickets   = respS.map(d => d?.records.length ?? null);
 
   return (
     <div className={styles.panel}>
 
-      {/* Header */}
-      <div className={styles.insCompareRow}>
-        <span className={styles.insLblPrev}>{prevLabel}</span>
-        <span className={styles.insLblArrow}>→</span>
-        <span className={styles.insLblCurr}>{currLabel}</span>
-      </div>
+      {/* ── ACTIVIDADES ── */}
+      {hasAct && <>
+        <div className={styles.insGroupTitle}>Actividades</div>
+        <div className={styles.chartCard}>
+          <div className={styles.chartTitle}>Realizadas vs Asignadas por día (prom.)</div>
+          <div style={{ height: 240, position: 'relative' }}>
+            <Line data={{ labels, datasets: [
+              line('Realizadas', realizadas, '#2d8a5e'),
+              line('Asignadas',  asignadas,  '#767676'),
+            ]}} options={base} />
+          </div>
+        </div>
+      </>}
 
-      {/* Secciones */}
-      <div className={styles.insSections}>
-
-        {(prevAct || currAct) && (
-          <div className={styles.insGroup}>
-            <span className={styles.insGroupTitle}>Actividades</span>
-            <div className={styles.insDeltaGrid}>
-              <DeltaCard label="Realizadas / día" prev={prevAct?.tendencia.kpis.prom_realizadas ?? null} curr={currAct?.tendencia.kpis.prom_realizadas ?? null} fmt={n}   dir="up"     />
-              <DeltaCard label="Asignadas / día"  prev={prevAct?.tendencia.kpis.prom_asignadas  ?? null} curr={currAct?.tendencia.kpis.prom_asignadas  ?? null} fmt={n}   dir="neutral"/>
+      {/* ── CUMPLIMIENTO ── */}
+      {hasAct && <>
+        <div className={styles.insGroupTitle}>Cumplimiento</div>
+        <div className={styles.twoCol}>
+          <div className={styles.chartCard}>
+            <div className={styles.chartTitle}>% A tiempo</div>
+            <div className={styles.chartWrap}>
+              <Line data={{ labels, datasets: [line('% A tiempo', aTiempo, '#2d8a5e')] }}
+                options={{ ...base, scales: { ...base.scales, y: { ...base.scales.y, max: 100 } } }} />
             </div>
           </div>
-        )}
-
-        {(prevAct || currAct) && (
-          <div className={styles.insGroup}>
-            <span className={styles.insGroupTitle}>Cumplimiento</span>
-            <div className={styles.insDeltaGrid}>
-              <DeltaCard label="% A tiempo"    prev={prevPct}                                         curr={currPct}                                         fmt={pct} dir="up"  />
-              <DeltaCard label="Tardías"       prev={prevAct?.cumplimiento.kpis.tardio        ?? null} curr={currAct?.cumplimiento.kpis.tardio        ?? null} fmt={n}   dir="down"/>
-              <DeltaCard label="No realizadas" prev={prevAct?.cumplimiento.kpis.no_realizadas ?? null} curr={currAct?.cumplimiento.kpis.no_realizadas ?? null} fmt={n}   dir="down"/>
+          <div className={styles.chartCard}>
+            <div className={styles.chartTitle}>Tardías y no realizadas</div>
+            <div className={styles.chartWrap}>
+              <Bar data={{ labels, datasets: [
+                bar('Tardías',       tardias, '#c45c1a'),
+                bar('No realizadas', noReal,  '#d2262c'),
+              ]}} options={base} />
             </div>
           </div>
-        )}
+        </div>
+      </>}
 
-        {(prevResp || currResp) && (
-          <div className={styles.insGroup}>
-            <span className={styles.insGroupTitle}>Tiempo de Respuesta</span>
-            <div className={styles.insDeltaGrid}>
-              <DeltaCard label="Laboral (prom.)"       prev={prevResp?.metrics['Horario laboral'].avg      ?? null} curr={currResp?.metrics['Horario laboral'].avg      ?? null} fmt={min} dir="down"   />
-              <DeltaCard label="Fuera horario (prom.)" prev={prevResp?.metrics['Fuera de horario L-V'].avg ?? null} curr={currResp?.metrics['Fuera de horario L-V'].avg ?? null} fmt={min} dir="down"   />
-              <DeltaCard label="Total tickets"         prev={prevResp?.records.length                      ?? null} curr={currResp?.records.length                      ?? null} fmt={n}   dir="neutral"/>
+      {/* ── TIEMPO DE RESPUESTA ── */}
+      {hasResp && <>
+        <div className={styles.insGroupTitle}>Tiempo de Respuesta</div>
+        <div className={styles.twoCol}>
+          <div className={styles.chartCard}>
+            <div className={styles.chartTitle}>Tiempo promedio de respuesta</div>
+            <div className={styles.chartWrap}>
+              <Line data={{ labels, datasets: [
+                line('Horario laboral',    respLab,   '#2d8a5e'),
+                line('Fuera de horario',   respFuera, '#c45c1a'),
+              ]}} options={{ ...base, plugins: { ...base.plugins, tooltip: { callbacks: {
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                label: (ctx: any) => `${ctx.dataset.label}: ${fmtTime(ctx.parsed.y)}`,
+              }}}}} />
             </div>
           </div>
-        )}
+          <div className={styles.chartCard}>
+            <div className={styles.chartTitle}>Total tickets</div>
+            <div className={styles.chartWrap}>
+              <Bar data={{ labels, datasets: [bar('Tickets', tickets, '#5b3fa0')] }}
+                options={base} />
+            </div>
+          </div>
+        </div>
+      </>}
 
-      </div>
     </div>
   );
 }
