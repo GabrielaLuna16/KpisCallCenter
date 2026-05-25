@@ -486,6 +486,17 @@
   text-align: right;
 }
 
+/* ── INSIGHTS: INFO ICON ── */
+.insInfo {
+  font-style: normal;
+  font-size: .78rem;
+  color: #bbb;
+  cursor: default;
+  margin-left: 6px;
+  user-select: none;
+}
+.insInfo:hover { color: #767676; }
+
 /* ── INSIGHTS: SECTION TITLE ── */
 .insGroupTitle {
   font-family: 'Poppins', sans-serif;

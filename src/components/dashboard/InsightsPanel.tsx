@@ -130,7 +130,10 @@ export default function InsightsPanel({ months }: Props) {
       {hasAct && <>
         <div className={styles.insGroupTitle}>Actividades</div>
         <div className={styles.chartCard}>
-          <div className={styles.chartTitle}>Realizadas vs Asignadas por día (prom.)</div>
+          <div className={styles.chartTitle}>
+            Realizadas vs Asignadas por día (prom.)
+            <span className={styles.insInfo} title="Compara cuántas actividades se asignaron versus cuántas se completaron cada mes. Lo ideal es que ambas líneas estén cerca.">ⓘ</span>
+          </div>
           <div style={{ height: 240, position: 'relative' }}>
             <Line data={{ labels, datasets: [
               line('Realizadas', realizadas, '#2d8a5e'),
@@ -145,14 +148,20 @@ export default function InsightsPanel({ months }: Props) {
         <div className={styles.insGroupTitle}>Cumplimiento</div>
         <div className={styles.twoCol}>
           <div className={styles.chartCard}>
-            <div className={styles.chartTitle}>% A tiempo</div>
+            <div className={styles.chartTitle}>
+              % A tiempo
+              <span className={styles.insInfo} title="Porcentaje de actividades cerradas antes o en la fecha límite. Cuanto más alto y estable, mejor.">ⓘ</span>
+            </div>
             <div className={styles.chartWrap}>
               <Line data={{ labels, datasets: [line('% A tiempo', aTiempo, '#2d8a5e')] }}
                 options={{ ...base, scales: { ...base.scales, y: { ...base.scales.y, max: 100 } } }} />
             </div>
           </div>
           <div className={styles.chartCard}>
-            <div className={styles.chartTitle}>Tardías y no realizadas</div>
+            <div className={styles.chartTitle}>
+              Tardías y no realizadas
+              <span className={styles.insInfo} title="Actividades cerradas después del plazo (tardías) y actividades que quedaron sin cerrar. Lo ideal es que ambas bajen.">ⓘ</span>
+            </div>
             <div className={styles.chartWrap}>
               <Bar data={{ labels, datasets: [
                 bar('Tardías',       tardias, '#c45c1a'),
@@ -168,7 +177,10 @@ export default function InsightsPanel({ months }: Props) {
         <div className={styles.insGroupTitle}>Tiempo de Respuesta</div>
         <div className={styles.twoCol}>
           <div className={styles.chartCard}>
-            <div className={styles.chartTitle}>Tiempo promedio de respuesta</div>
+            <div className={styles.chartTitle}>
+              Tiempo promedio de respuesta
+              <span className={styles.insInfo} title="Minutos laborales promedio desde que se abre un ticket hasta que se cierra, separado por horario. Cuanto más bajo, mejor.">ⓘ</span>
+            </div>
             <div className={styles.chartWrap}>
               <Line data={{ labels, datasets: [
                 line('Horario laboral',    respLab,   '#2d8a5e'),
@@ -180,7 +192,10 @@ export default function InsightsPanel({ months }: Props) {
             </div>
           </div>
           <div className={styles.chartCard}>
-            <div className={styles.chartTitle}>Total tickets</div>
+            <div className={styles.chartTitle}>
+              Total tickets
+              <span className={styles.insInfo} title="Número total de tickets recibidos por mes. Útil para detectar meses con mayor carga de trabajo.">ⓘ</span>
+            </div>
             <div className={styles.chartWrap}>
               <Bar data={{ labels, datasets: [bar('Tickets', tickets, '#5b3fa0')] }}
                 options={base} />
