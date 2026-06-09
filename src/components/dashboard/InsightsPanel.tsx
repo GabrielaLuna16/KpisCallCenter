@@ -11,7 +11,11 @@ import type { MonthEntry, ActividadesMonthData, RespuestaMonthData } from '@/typ
 import { fmtTime } from '@/lib/processors/respuesta';
 import styles from './Panels.module.css';
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Tooltip, Legend, Filler);
+import DataLabelsPlugin from 'chartjs-plugin-datalabels';
+
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Tooltip, Legend, Filler, DataLabelsPlugin);
+// Desactivar datalabels por defecto — solo se activan en InsightsPanel
+ChartJS.defaults.set('plugins.datalabels', { display: false });
 
 interface Props { months: MonthEntry[] }
 
@@ -70,6 +74,7 @@ function useAllData(months: MonthEntry[]) {
 const base = {
   responsive: true,
   maintainAspectRatio: false,
+  layout: { padding: { top: 22 } },
   plugins: {
     legend: { position: 'bottom' as const, labels: { font: { family: 'Poppins', size: 12 }, boxWidth: 12, padding: 16 } },
   },
@@ -78,6 +83,31 @@ const base = {
     x: { grid: { display: false },                              ticks: { font: { size: 12 } } },
   },
 };
+
+// ─── datalabels configs ───────────────────────────────────────────────────────
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const dlLine = (formatter?: (v: number) => string): any => ({
+  display: true,
+  anchor: 'end',
+  align: 'end',
+  offset: 4,
+  font: { size: 11, weight: '700', family: 'Poppins' },
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  color: (ctx: any) => ctx.dataset.borderColor ?? '#383838',
+  formatter: (v: number | null) => v === null || v === undefined ? '' : formatter ? formatter(v) : String(v),
+});
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const dlBar = (formatter?: (v: number) => string): any => ({
+  display: true,
+  anchor: 'end',
+  align: 'end',
+  offset: 2,
+  font: { size: 11, weight: '700', family: 'Poppins' },
+  color: '#383838',
+  formatter: (v: number | null) => v === null || v === undefined ? '' : formatter ? formatter(v) : String(v),
+});
 
 function line(label: string, data: (number|null)[], color: string) {
   return { label, data, borderColor: color, backgroundColor: color + '15',
@@ -138,7 +168,7 @@ export default function InsightsPanel({ months }: Props) {
             <Line data={{ labels, datasets: [
               line('Realizadas', realizadas, '#2d8a5e'),
               line('Asignadas',  asignadas,  '#767676'),
-            ]}} options={base} />
+            ]}} options={{ ...base, plugins: { ...base.plugins, datalabels: dlLine() } }} />
           </div>
         </div>
       </>}
@@ -154,7 +184,8 @@ export default function InsightsPanel({ months }: Props) {
             </div>
             <div className={styles.chartWrap}>
               <Line data={{ labels, datasets: [line('% A tiempo', aTiempo, '#2d8a5e')] }}
-                options={{ ...base, scales: { ...base.scales, y: { ...base.scales.y, max: 100 } } }} />
+                options={{ ...base, scales: { ...base.scales, y: { ...base.scales.y, max: 100 } },
+                  plugins: { ...base.plugins, datalabels: dlLine(v => `${v}%`) } }} />
             </div>
           </div>
           <div className={styles.chartCard}>
@@ -166,7 +197,7 @@ export default function InsightsPanel({ months }: Props) {
               <Bar data={{ labels, datasets: [
                 bar('Tardías',       tardias, '#c45c1a'),
                 bar('No realizadas', noReal,  '#d2262c'),
-              ]}} options={base} />
+              ]}} options={{ ...base, plugins: { ...base.plugins, datalabels: dlBar() } }} />
             </div>
           </div>
         </div>
@@ -185,10 +216,13 @@ export default function InsightsPanel({ months }: Props) {
               <Line data={{ labels, datasets: [
                 line('Horario laboral',    respLab,   '#2d8a5e'),
                 line('Fuera de horario',   respFuera, '#c45c1a'),
-              ]}} options={{ ...base, plugins: { ...base.plugins, tooltip: { callbacks: {
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                label: (ctx: any) => `${ctx.dataset.label}: ${fmtTime(ctx.parsed.y)}`,
-              }}}}} />
+              ]}} options={{ ...base, plugins: { ...base.plugins,
+                tooltip: { callbacks: {
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                  label: (ctx: any) => `${ctx.dataset.label}: ${fmtTime(ctx.parsed.y)}`,
+                }},
+                datalabels: dlLine(v => fmtTime(v)),
+              }}} />
             </div>
           </div>
           <div className={styles.chartCard}>
@@ -198,7 +232,7 @@ export default function InsightsPanel({ months }: Props) {
             </div>
             <div className={styles.chartWrap}>
               <Bar data={{ labels, datasets: [bar('Tickets', tickets, '#5b3fa0')] }}
-                options={base} />
+                options={{ ...base, plugins: { ...base.plugins, datalabels: dlBar() } }} />
             </div>
           </div>
         </div>
