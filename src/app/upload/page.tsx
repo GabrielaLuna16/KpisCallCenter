@@ -40,8 +40,9 @@ export default function UploadPage() {
             title="Actividades por día"
             subtitle="Genera las pestañas: Actividades, Cumplimiento y Horarios"
             endpoint="/api/upload-actividades"
-            parser={async (buf) => parseActividadesToData(buf) as unknown as { month: string; [k: string]: unknown }}
+            parser={async (buf, days) => parseActividadesToData(buf, days) as unknown as { month: string; [k: string]: unknown }}
             previewSummary={actSummary}
+            showHolidays
           />
 
           <UploadSection

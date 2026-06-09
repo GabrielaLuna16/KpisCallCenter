@@ -8,14 +8,15 @@ interface Props {
   title: string;
   subtitle: string;
   endpoint: string;
-  parser: (buffer: ArrayBuffer) => Promise<{ month: string; [k: string]: unknown }>;
+  parser: (buffer: ArrayBuffer, nonWorkingDays?: string[]) => Promise<{ month: string; [k: string]: unknown }>;
   previewSummary: (data: Record<string, unknown>) => string;
+  showHolidays?: boolean;
 }
 
 const MESES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
                'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
-export default function UploadSection({ title, subtitle, endpoint, parser, previewSummary }: Props) {
+export default function UploadSection({ title, subtitle, endpoint, parser, previewSummary, showHolidays }: Props) {
   const now = new Date();
   const prev = new Date(now.getFullYear(), now.getMonth() - 1, 1);
   const [month, setMonth] = useState(
@@ -27,7 +28,19 @@ export default function UploadSection({ title, subtitle, endpoint, parser, previ
   const [preview, setPreview] = useState<string>('');
   const [dragging, setDragging] = useState(false);
   const [parsedData, setParsedData] = useState<Record<string, unknown> | null>(null);
+  const [nonWorkingDays, setNonWorkingDays] = useState<string[]>([]);
+  const [holidayInput, setHolidayInput] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+
+  function addHoliday() {
+    if (!holidayInput || nonWorkingDays.includes(holidayInput)) return;
+    setNonWorkingDays(prev => [...prev, holidayInput].sort());
+    setHolidayInput('');
+  }
+
+  function removeHoliday(d: string) {
+    setNonWorkingDays(prev => prev.filter(x => x !== d));
+  }
 
   const yearOptions = [now.getFullYear() - 1, now.getFullYear(), now.getFullYear() + 1];
 
@@ -58,7 +71,7 @@ export default function UploadSection({ title, subtitle, endpoint, parser, previ
     setMsg('Procesando Excel...');
     try {
       const buffer = await file.arrayBuffer();
-      const data = await parser(buffer) as Record<string, unknown>;
+      const data = await parser(buffer, nonWorkingDays) as Record<string, unknown>;
       // Sobreescribir el mes detectado automáticamente con el seleccionado
       data.month = month;
       setParsedData(data);
@@ -158,6 +171,36 @@ export default function UploadSection({ title, subtitle, endpoint, parser, previ
             )}
           </div>
         </div>
+
+        {/* Días no laborables — solo para Actividades */}
+        {showHolidays && (
+          <div className={styles.field}>
+            <label className={styles.label}>Días no laborables <span className={styles.labelHint}>(festivos / vacaciones)</span></label>
+            <div className={styles.holidayRow}>
+              <input
+                type="date"
+                className={styles.dateInput}
+                value={holidayInput}
+                onChange={e => setHolidayInput(e.target.value)}
+                onKeyDown={e => e.key === 'Enter' && (e.preventDefault(), addHoliday())}
+              />
+              <button type="button" className={styles.btnAdd} onClick={addHoliday}>+ Agregar</button>
+            </div>
+            {nonWorkingDays.length > 0 && (
+              <div className={styles.holidayList}>
+                {nonWorkingDays.map(d => {
+                  const [y, m, day] = d.split('-');
+                  return (
+                    <span key={d} className={styles.holidayTag}>
+                      {`${day}/${m}/${y}`}
+                      <button type="button" onClick={() => removeHoliday(d)}>×</button>
+                    </span>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
 
         {status !== 'confirming' && status !== 'uploading' && status !== 'success' && (
           <button type="submit" className={styles.btn} disabled={!file || status === 'parsing'}>

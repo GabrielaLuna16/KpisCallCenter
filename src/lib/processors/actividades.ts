@@ -39,6 +39,17 @@ function toDateKey(d: Date): string {
   return d.toISOString().split('T')[0];
 }
 
+// Devuelve el primer día hábil a partir de `date` (inclusive si ya es hábil)
+function efectivoDue(date: Date, noLaborables: Set<string>): Date {
+  const d = new Date(date);
+  while (true) {
+    const dow = d.getUTCDay(); // 0=Dom, 6=Sáb
+    const key = toDateKey(d);
+    if (dow !== 0 && dow !== 6 && !noLaborables.has(key)) return d;
+    d.setUTCDate(d.getUTCDate() + 1);
+  }
+}
+
 function formatDateDisplay(d: Date): string {
   const dd = String(d.getUTCDate()).padStart(2, '0');
   const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
@@ -86,7 +97,8 @@ interface RawRow {
 
 // ─── PARSER PRINCIPAL ────────────────────────────────────────────────────────
 
-export function parseActividadesToData(buffer: ArrayBuffer): ActividadesMonthData {
+export function parseActividadesToData(buffer: ArrayBuffer, nonWorkingDays: string[] = []): ActividadesMonthData {
+  const noLaborables = new Set(nonWorkingDays);
   const wb = XLSX.read(buffer, { type: 'array' });
   const sheetName = wb.SheetNames.find(n =>
     n.toLowerCase().includes('actividades') || n.toLowerCase().includes('día') || n.toLowerCase().includes('dia')
@@ -192,8 +204,8 @@ export function parseActividadesToData(buffer: ArrayBuffer): ActividadesMonthDat
 
   return {
     month: monthKey,
-    tendencia: buildTendencia(rows, workdays),
-    cumplimiento: buildCumplimiento(rows, workdays),
+    tendencia: buildTendencia(rows, workdays, noLaborables),
+    cumplimiento: buildCumplimiento(rows, workdays, noLaborables),
     horarios: buildHorarios(rows, workdays),
   };
 }
@@ -202,37 +214,28 @@ export function parseActividadesToData(buffer: ArrayBuffer): ActividadesMonthDat
 
 type Clasificacion = 'a_tiempo' | 'tardio' | 'no_realizada';
 
-function clasificar(row: RawRow): Clasificacion {
+function clasificar(row: RawRow, noLaborables: Set<string>): Clasificacion {
   if (!row.closedDate) return 'no_realizada';
   if (!row.dueGroup) return 'no_realizada';
 
-  const due = row.dueGroup.getTime();
-  const closed = row.closedDate.getTime();
   const subject = row.subject;
 
-  // Excepción 30/04 → 04/05 para "Actividad Contactar Inmediato"
+  // Excepción fija 30/04 → 04/05 para "Actividad Contactar Inmediato"
   const dueIsApr30 = row.dueGroup.getUTCMonth() === 3 && row.dueGroup.getUTCDate() === 30;
   const closedIsMay4 = row.closedDate.getUTCMonth() === 4 && row.closedDate.getUTCDate() === 4;
   if (dueIsApr30 && closedIsMay4 && subject === 'Actividad Contactar Inmediato') return 'a_tiempo';
 
-  // Excepción festivo 01/05 → cierre 02/05 (Día del Trabajo)
-  const dueIsMay1 = row.dueGroup.getUTCMonth() === 4 && row.dueGroup.getUTCDate() === 1;
-  const closedIsMay2 = row.closedDate.getUTCMonth() === 4 && row.closedDate.getUTCDate() === 2;
-  if (dueIsMay1 && closedIsMay2) return 'a_tiempo';
+  // Plazo efectivo: si due date es no laborable, avanzar al primer día hábil
+  const plazo = efectivoDue(row.dueGroup, noLaborables);
 
-  // Excepción festivo 11/05 → cierre 12/05
-  const dueIsMay11 = row.dueGroup.getUTCMonth() === 4 && row.dueGroup.getUTCDate() === 11;
-  const closedIsMay12 = row.closedDate.getUTCMonth() === 4 && row.closedDate.getUTCDate() === 12;
-  if (dueIsMay11 && closedIsMay12) return 'a_tiempo';
-
-  if (closed <= due) return 'a_tiempo';
+  if (row.closedDate.getTime() <= plazo.getTime()) return 'a_tiempo';
   if (subject === 'Actividad Contactar Inmediato') return 'a_tiempo';
   return 'tardio';
 }
 
 // ─── TENDENCIA ────────────────────────────────────────────────────────────────
 
-function buildTendencia(rows: RawRow[], workdays: Date[]): TendenciaData {
+function buildTendencia(rows: RawRow[], workdays: Date[], noLaborables: Set<string>): TendenciaData {
   // Asignadas por due date (primer valor encontrado)
   const asignadasByDue = new Map<string, number>();
   for (const r of rows) {
@@ -244,7 +247,7 @@ function buildTendencia(rows: RawRow[], workdays: Date[]): TendenciaData {
   // Realizadas = cerradas (a_tiempo o tardio), agrupadas por Closed Date
   const realizadasByClose = new Map<string, number>();
   for (const r of rows) {
-    const cl = clasificar(r);
+    const cl = clasificar(r, noLaborables);
     if ((cl === 'a_tiempo' || cl === 'tardio') && r.closedDate) {
       const k = toDateKey(r.closedDate);
       realizadasByClose.set(k, (realizadasByClose.get(k) ?? 0) + 1);
@@ -288,7 +291,7 @@ function buildTendencia(rows: RawRow[], workdays: Date[]): TendenciaData {
 
 // ─── CUMPLIMIENTO ─────────────────────────────────────────────────────────────
 
-function buildCumplimiento(rows: RawRow[], workdays: Date[]): CumplimientoData {
+function buildCumplimiento(rows: RawRow[], workdays: Date[], noLaborables: Set<string>): CumplimientoData {
   let total = 0, aTiempo = 0, tardio = 0, noReal = 0;
   const tardioDetail: CumplimientoDetalle[] = [];
   const noRealDetail: CumplimientoDetalle[] = [];
@@ -296,7 +299,7 @@ function buildCumplimiento(rows: RawRow[], workdays: Date[]): CumplimientoData {
   for (const r of rows) {
     if (!r.dueGroup) continue;
     total++;
-    const cl = clasificar(r);
+    const cl = clasificar(r, noLaborables);
     const dueStr = formatDateDisplay(r.dueGroup);
     const closedStr = r.closedDateTime ? formatDateDisplay(r.closedDateTime) + ' ' + formatTimeDisplay(r.closedDateTime) : '';
 
@@ -321,7 +324,7 @@ function buildCumplimiento(rows: RawRow[], workdays: Date[]): CumplimientoData {
 
   const realizadasByClose = new Map<string, number>();
   for (const r of rows) {
-    const cl = clasificar(r);
+    const cl = clasificar(r, noLaborables);
     if ((cl === 'a_tiempo' || cl === 'tardio') && r.closedDate) {
       const k = toDateKey(r.closedDate);
       realizadasByClose.set(k, (realizadasByClose.get(k) ?? 0) + 1);
