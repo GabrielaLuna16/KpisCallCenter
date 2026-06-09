@@ -168,7 +168,7 @@ export default function InsightsPanel({ months }: Props) {
             <Line data={{ labels, datasets: [
               line('Realizadas', realizadas, '#2d8a5e'),
               line('Asignadas',  asignadas,  '#767676'),
-            ]}} options={{ ...base, plugins: { ...base.plugins, datalabels: dlLine() } }} />
+            ]}} options={base} />
           </div>
         </div>
       </>}
@@ -184,8 +184,7 @@ export default function InsightsPanel({ months }: Props) {
             </div>
             <div className={styles.chartWrap}>
               <Line data={{ labels, datasets: [line('% A tiempo', aTiempo, '#2d8a5e')] }}
-                options={{ ...base, scales: { ...base.scales, y: { ...base.scales.y, max: 100 } },
-                  plugins: { ...base.plugins, datalabels: dlLine(v => `${v}%`) } }} />
+                options={{ ...base, scales: { ...base.scales, y: { ...base.scales.y, max: 100 } } }} />
             </div>
           </div>
           <div className={styles.chartCard}>
@@ -216,13 +215,10 @@ export default function InsightsPanel({ months }: Props) {
               <Line data={{ labels, datasets: [
                 line('Horario laboral',    respLab,   '#2d8a5e'),
                 line('Fuera de horario',   respFuera, '#c45c1a'),
-              ]}} options={{ ...base, plugins: { ...base.plugins,
-                tooltip: { callbacks: {
-                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                  label: (ctx: any) => `${ctx.dataset.label}: ${fmtTime(ctx.parsed.y)}`,
-                }},
-                datalabels: dlLine(v => fmtTime(v)),
-              }}} />
+              ]}} options={{ ...base, plugins: { ...base.plugins, tooltip: { callbacks: {
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                label: (ctx: any) => `${ctx.dataset.label}: ${fmtTime(ctx.parsed.y)}`,
+              }}}}} />
             </div>
           </div>
           <div className={styles.chartCard}>
