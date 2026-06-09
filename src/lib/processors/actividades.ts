@@ -215,6 +215,11 @@ function clasificar(row: RawRow): Clasificacion {
   const closedIsMay4 = row.closedDate.getUTCMonth() === 4 && row.closedDate.getUTCDate() === 4;
   if (dueIsApr30 && closedIsMay4 && subject === 'Actividad Contactar Inmediato') return 'a_tiempo';
 
+  // Excepción festivo 01/05 → cierre 02/05 (Día del Trabajo)
+  const dueIsMay1 = row.dueGroup.getUTCMonth() === 4 && row.dueGroup.getUTCDate() === 1;
+  const closedIsMay2 = row.closedDate.getUTCMonth() === 4 && row.closedDate.getUTCDate() === 2;
+  if (dueIsMay1 && closedIsMay2) return 'a_tiempo';
+
   if (closed <= due) return 'a_tiempo';
   if (subject === 'Actividad Contactar Inmediato') return 'a_tiempo';
   return 'tardio';
