@@ -49,8 +49,9 @@ export default function UploadPage() {
             title="Tiempo de respuesta"
             subtitle="Genera la pestaña: Tiempo de Respuesta"
             endpoint="/api/upload-respuesta"
-            parser={async (buf) => parseRespuestaToData(buf) as unknown as { month: string; [k: string]: unknown }}
+            parser={async (buf, days) => parseRespuestaToData(buf, days) as unknown as { month: string; [k: string]: unknown }}
             previewSummary={respSummary}
+            showHolidays
           />
         </div>
       </div>

@@ -43,17 +43,25 @@ function isWeekend(d: Date): boolean {
   return day === 0 || day === 6;
 }
 
-function nextWeekday(d: Date): Date {
+function dateKey(d: Date): string {
+  return d.toISOString().split('T')[0];
+}
+
+function isNonWorking(d: Date, noLab: Set<string>): boolean {
+  return isWeekend(d) || noLab.has(dateKey(d));
+}
+
+function nextWorkday(d: Date, noLab: Set<string>): Date {
   const next = new Date(d);
   next.setUTCDate(next.getUTCDate() + 1);
-  while (isWeekend(next)) next.setUTCDate(next.getUTCDate() + 1);
+  while (isNonWorking(next, noLab)) next.setUTCDate(next.getUTCDate() + 1);
   return next;
 }
 
-function prevWeekday(d: Date): Date {
+function prevWorkday(d: Date, noLab: Set<string>): Date {
   const prev = new Date(d);
   prev.setUTCDate(prev.getUTCDate() - 1);
-  while (isWeekend(prev)) prev.setUTCDate(prev.getUTCDate() - 1);
+  while (isNonWorking(prev, noLab)) prev.setUTCDate(prev.getUTCDate() - 1);
   return prev;
 }
 
@@ -70,18 +78,16 @@ function minutesOfDay(d: Date): number {
 }
 
 // Ajusta el punto de inicio hacia adelante al próximo minuto hábil
-function adjustStart(created: Date): Date {
+function adjustStart(created: Date, noLab: Set<string>): Date {
   let c = new Date(created);
-  // Fin de semana → lunes 09:40
-  if (isWeekend(c)) {
-    const daysToMonday = c.getUTCDay() === 6 ? 2 : 1;
-    c = new Date(Date.UTC(c.getUTCFullYear(), c.getUTCMonth(), c.getUTCDate() + daysToMonday, START_H, START_M));
-    while (isWeekend(c)) c = new Date(Date.UTC(c.getUTCFullYear(), c.getUTCMonth(), c.getUTCDate() + 1, START_H, START_M));
+  // Día no laborable → siguiente día hábil 09:40
+  if (isNonWorking(c, noLab)) {
+    c = atStartOfDay(nextWorkday(c, noLab));
     return c;
   }
   // Día hábil después de 17:00 → siguiente día hábil 09:40
   if (minutesOfDay(c) >= END_MINS) {
-    c = atStartOfDay(nextWeekday(c));
+    c = atStartOfDay(nextWorkday(c, noLab));
     return c;
   }
   // Día hábil antes de 09:40 → mismo día 09:40
@@ -92,16 +98,16 @@ function adjustStart(created: Date): Date {
 }
 
 // Ajusta el punto de cierre hacia atrás al último minuto hábil
-function adjustEnd(closed: Date): Date {
+function adjustEnd(closed: Date, noLab: Set<string>): Date {
   let e = new Date(closed);
-  // Fin de semana → viernes anterior 17:00
-  if (isWeekend(e)) {
-    e = atEndOfDay(prevWeekday(e));
+  // Día no laborable → día hábil anterior 17:00
+  if (isNonWorking(e, noLab)) {
+    e = atEndOfDay(prevWorkday(e, noLab));
     return e;
   }
   // Antes de 09:40 → día hábil anterior 17:00
   if (minutesOfDay(e) < START_MINS) {
-    e = atEndOfDay(prevWeekday(e));
+    e = atEndOfDay(prevWorkday(e, noLab));
     return e;
   }
   // Después de 17:00 → truncar a 17:00 del mismo día
@@ -112,9 +118,9 @@ function adjustEnd(closed: Date): Date {
 }
 
 // Calcula minutos laborales entre c (inicio ajustado) y e (cierre ajustado)
-function businessMinutes(created: Date, closed: Date): number {
-  const c = adjustStart(created);
-  const e = adjustEnd(closed);
+function businessMinutes(created: Date, closed: Date, noLab: Set<string>): number {
+  const c = adjustStart(created, noLab);
+  const e = adjustEnd(closed, noLab);
 
   if (e <= c) return 0;
 
@@ -125,7 +131,7 @@ function businessMinutes(created: Date, closed: Date): number {
     const curDay = new Date(Date.UTC(cur.getUTCFullYear(), cur.getUTCMonth(), cur.getUTCDate()));
     const eDay = new Date(Date.UTC(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate()));
 
-    if (!isWeekend(curDay)) {
+    if (!isNonWorking(curDay, noLab)) {
       const dayStart = atStartOfDay(curDay);
       const dayEnd = atEndOfDay(curDay);
       const from = cur > dayStart ? cur : dayStart;
@@ -146,7 +152,7 @@ function businessMinutes(created: Date, closed: Date): number {
     }
 
     // Avanzar al siguiente día hábil 09:40
-    const next = nextWeekday(curDay);
+    const next = nextWorkday(curDay, noLab);
     cur = atStartOfDay(next);
     if (cur >= e) break;
   }
@@ -166,7 +172,8 @@ export function clasificarTurno(created: Date): Turno {
 
 // ─── PARSER PRINCIPAL ─────────────────────────────────────────────────────────
 
-export function parseRespuestaToData(buffer: ArrayBuffer): RespuestaMonthData {
+export function parseRespuestaToData(buffer: ArrayBuffer, nonWorkingDays: string[] = []): RespuestaMonthData {
+  const noLab = new Set(nonWorkingDays);
   const wb = XLSX.read(buffer, { type: 'array' });
   const sheetName = wb.SheetNames.find(n =>
     n.toLowerCase().includes('respuesta') || n.toLowerCase().includes('tiempo')
@@ -208,7 +215,7 @@ export function parseRespuestaToData(buffer: ArrayBuffer): RespuestaMonthData {
       : null;
 
     const turno = clasificarTurno(createdDate);
-    const mins = closedDate ? businessMinutes(createdDate, closedDate) : 0;
+    const mins = closedDate ? businessMinutes(createdDate, closedDate, noLab) : 0;
 
     records.push({
       r: String(row[iRelated] ?? ''),
