@@ -28,18 +28,41 @@ export default function UploadSection({ title, subtitle, endpoint, parser, previ
   const [preview, setPreview] = useState<string>('');
   const [dragging, setDragging] = useState(false);
   const [parsedData, setParsedData] = useState<Record<string, unknown> | null>(null);
-  const [nonWorkingDays, setNonWorkingDays] = useState<string[]>([]);
+  const [holidays, setHolidays] = useState<string[]>([]);
   const [holidayInput, setHolidayInput] = useState('');
+  const [vacations, setVacations] = useState<{ start: string; end: string }[]>([]);
+  const [vacStart, setVacStart] = useState('');
+  const [vacEnd, setVacEnd] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
 
   function addHoliday() {
-    if (!holidayInput || nonWorkingDays.includes(holidayInput)) return;
-    setNonWorkingDays(prev => [...prev, holidayInput].sort());
+    if (!holidayInput || holidays.includes(holidayInput)) return;
+    setHolidays(prev => [...prev, holidayInput].sort());
     setHolidayInput('');
   }
 
-  function removeHoliday(d: string) {
-    setNonWorkingDays(prev => prev.filter(x => x !== d));
+  function addVacation() {
+    if (!vacStart || !vacEnd || vacStart > vacEnd) return;
+    setVacations(prev => [...prev, { start: vacStart, end: vacEnd }]);
+    setVacStart(''); setVacEnd('');
+  }
+
+  function getAllNonWorkingDays(): string[] {
+    const days = new Set(holidays);
+    for (const v of vacations) {
+      const d = new Date(v.start + 'T00:00:00Z');
+      const end = new Date(v.end + 'T00:00:00Z');
+      while (d <= end) {
+        days.add(d.toISOString().split('T')[0]);
+        d.setUTCDate(d.getUTCDate() + 1);
+      }
+    }
+    return Array.from(days);
+  }
+
+  function fmtDate(iso: string) {
+    const [y, m, d] = iso.split('-');
+    return `${d}/${m}/${y}`;
   }
 
   const yearOptions = [now.getFullYear() - 1, now.getFullYear(), now.getFullYear() + 1];
@@ -71,7 +94,7 @@ export default function UploadSection({ title, subtitle, endpoint, parser, previ
     setMsg('Procesando Excel...');
     try {
       const buffer = await file.arrayBuffer();
-      const data = await parser(buffer, nonWorkingDays) as Record<string, unknown>;
+      const data = await parser(buffer, getAllNonWorkingDays()) as Record<string, unknown>;
       // Sobreescribir el mes detectado automáticamente con el seleccionado
       data.month = month;
       setParsedData(data);
@@ -174,32 +197,59 @@ export default function UploadSection({ title, subtitle, endpoint, parser, previ
 
         {/* Días no laborables — solo para Actividades */}
         {showHolidays && (
-          <div className={styles.field}>
-            <label className={styles.label}>Días no laborables <span className={styles.labelHint}>(festivos / vacaciones)</span></label>
-            <div className={styles.holidayRow}>
-              <input
-                type="date"
-                className={styles.dateInput}
-                value={holidayInput}
-                onChange={e => setHolidayInput(e.target.value)}
-                onKeyDown={e => e.key === 'Enter' && (e.preventDefault(), addHoliday())}
-              />
-              <button type="button" className={styles.btnAdd} onClick={addHoliday}>+ Agregar</button>
-            </div>
-            {nonWorkingDays.length > 0 && (
-              <div className={styles.holidayList}>
-                {nonWorkingDays.map(d => {
-                  const [y, m, day] = d.split('-');
-                  return (
-                    <span key={d} className={styles.holidayTag}>
-                      {`${day}/${m}/${y}`}
-                      <button type="button" onClick={() => removeHoliday(d)}>×</button>
-                    </span>
-                  );
-                })}
+          <>
+            {/* Sección 1: días festivos / días sueltos */}
+            <div className={styles.field}>
+              <label className={styles.label}>Días no laborables <span className={styles.labelHint}>(festivos o días sueltos)</span></label>
+              <div className={styles.holidayRow}>
+                <input type="date" className={styles.dateInput} value={holidayInput}
+                  onChange={e => setHolidayInput(e.target.value)}
+                  onKeyDown={e => e.key === 'Enter' && (e.preventDefault(), addHoliday())} />
+                <button type="button" className={styles.btnAdd} onClick={addHoliday}>+ Agregar</button>
               </div>
-            )}
-          </div>
+              {holidays.length > 0 && (
+                <div className={styles.holidayList}>
+                  {holidays.map(d => (
+                    <span key={d} className={styles.holidayTag}>
+                      {fmtDate(d)}
+                      <button type="button" onClick={() => setHolidays(prev => prev.filter(x => x !== d))}>×</button>
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Sección 2: vacaciones (rango) */}
+            <div className={styles.field}>
+              <label className={styles.label}>Vacaciones <span className={styles.labelHint}>(rango de días)</span></label>
+              <div className={styles.vacRow}>
+                <div className={styles.vacGroup}>
+                  <span className={styles.vacLabel}>Inicio</span>
+                  <input type="date" className={styles.dateInput} value={vacStart}
+                    onChange={e => setVacStart(e.target.value)} />
+                </div>
+                <div className={styles.vacGroup}>
+                  <span className={styles.vacLabel}>Fin</span>
+                  <input type="date" className={styles.dateInput} value={vacEnd}
+                    onChange={e => setVacEnd(e.target.value)} />
+                </div>
+                <button type="button" className={styles.btnAdd}
+                  onClick={addVacation} disabled={!vacStart || !vacEnd || vacStart > vacEnd}>
+                  + Agregar
+                </button>
+              </div>
+              {vacations.length > 0 && (
+                <div className={styles.holidayList}>
+                  {vacations.map((v, i) => (
+                    <span key={i} className={styles.holidayTag}>
+                      {fmtDate(v.start)} — {fmtDate(v.end)}
+                      <button type="button" onClick={() => setVacations(prev => prev.filter((_, j) => j !== i))}>×</button>
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          </>
         )}
 
         {status !== 'confirming' && status !== 'uploading' && status !== 'success' && (
