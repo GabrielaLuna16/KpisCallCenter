@@ -17,8 +17,9 @@ const MESES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
 
 export default function UploadSection({ title, subtitle, endpoint, parser, previewSummary }: Props) {
   const now = new Date();
+  const prev = new Date(now.getFullYear(), now.getMonth() - 1, 1);
   const [month, setMonth] = useState(
-    `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`
+    `${prev.getFullYear()}-${String(prev.getMonth() + 1).padStart(2, '0')}`
   );
   const [file, setFile] = useState<File | null>(null);
   const [status, setStatus] = useState<Status>('idle');
