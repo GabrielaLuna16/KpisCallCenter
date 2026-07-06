@@ -923,7 +923,7 @@
       "s": "Horario laboral",
       "c": "10/06/2026 15:02",
       "cl": "11/06/2026 09:55",
-      "m": 133
+      "m": 15
     },
     {
       "r": "Jiapsy Angulo",
@@ -944,7 +944,7 @@
       "s": "Horario laboral",
       "c": "10/06/2026 13:26",
       "cl": "11/06/2026 09:52",
-      "m": 226
+      "m": 12
     },
     {
       "r": "Antonio Ruffo",
@@ -958,14 +958,14 @@
       "s": "Horario laboral",
       "c": "10/06/2026 11:12",
       "cl": "11/06/2026 10:01",
-      "m": 369
+      "m": 21
     },
     {
       "r": "Eduardo Adalberto Robles Chávez",
       "s": "Fuera de horario L-V",
       "c": "10/06/2026 08:24",
       "cl": "11/06/2026 10:00",
-      "m": 460
+      "m": 20
     },
     {
       "r": "Janny Lopez",
@@ -979,7 +979,7 @@
       "s": "Fuera de horario L-V",
       "c": "09/06/2026 21:57",
       "cl": "11/06/2026 10:28",
-      "m": 488
+      "m": 48
     },
     {
       "r": "Hope Hope Hope",
@@ -993,21 +993,21 @@
       "s": "Fuera de horario L-V",
       "c": "09/06/2026 19:18",
       "cl": "11/06/2026 10:31",
-      "m": 491
+      "m": 51
     },
     {
       "r": "Kinnereth Juarez",
       "s": "Fuera de horario L-V",
       "c": "09/06/2026 23:29",
       "cl": "11/06/2026 10:02",
-      "m": 462
+      "m": 22
     },
     {
       "r": "Arturo Martin Vilchis Martinwz",
       "s": "Fuera de horario L-V",
       "c": "09/06/2026 23:18",
       "cl": "11/06/2026 10:34",
-      "m": 494
+      "m": 54
     },
     {
       "r": "Diana Rodriguez Valencia",
@@ -1021,7 +1021,7 @@
       "s": "Fuera de horario L-V",
       "c": "09/06/2026 23:06",
       "cl": "11/06/2026 10:26",
-      "m": 486
+      "m": 46
     },
     {
       "r": "Carlos Alberto Barranco Maldonado",
@@ -1866,13 +1866,13 @@
   ],
   "metrics": {
     "Horario laboral": {
-      "avg": 62,
-      "median": 23,
+      "avg": 54,
+      "median": 22,
       "count": 78
     },
     "Fuera de horario L-V": {
-      "avg": 127,
-      "median": 50,
+      "avg": 105,
+      "median": 46,
       "count": 124
     },
     "Fin de semana": {
@@ -1881,5 +1881,5 @@
       "count": 64
     }
   },
-  "maxMins": 494
+  "maxMins": 440
 }
