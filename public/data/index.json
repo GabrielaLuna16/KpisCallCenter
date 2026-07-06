@@ -1,6 +1,12 @@
 {
   "months": [
     {
+      "key": "2026-06",
+      "label": "Junio 2026",
+      "hasActividades": true,
+      "hasRespuesta": false
+    },
+    {
       "key": "2026-05",
       "label": "Mayo 2026",
       "hasActividades": true,
