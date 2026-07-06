@@ -6,17 +6,19 @@ interface Props {
   positiveIsGood?: boolean;
   variant?: 'dark' | 'light';
   format?: (v: number) => string;
+  prevLabel?: string;
 }
 
-export default function DeltaBadge({ curr, prev, positiveIsGood = true, variant = 'dark', format }: Props) {
+export default function DeltaBadge({ curr, prev, positiveIsGood = true, variant = 'dark', format, prevLabel }: Props) {
   if (prev == null || prev === 0) return null;
   const pct = Math.round(((curr - prev) / Math.abs(prev)) * 100);
   const prevFmt = format ? format(prev) : String(prev);
+  const monthName = prevLabel ? prevLabel.split(' ')[0].toLowerCase() : 'ant';
 
   if (pct === 0) {
     return (
       <span className={`${styles.delta} ${variant === 'dark' ? styles.deltaNeutDark : styles.deltaNeutLight}`}>
-        = {prevFmt} mes ant.
+        = {prevFmt} ({monthName})
       </span>
     );
   }
@@ -29,7 +31,7 @@ export default function DeltaBadge({ curr, prev, positiveIsGood = true, variant 
 
   return (
     <span className={`${styles.delta} ${colorClass}`}>
-      {up ? '↑' : '↓'} {Math.abs(pct)}% · ant: {prevFmt}
+      {up ? '↑' : '↓'} {Math.abs(pct)}% vs {monthName}: {prevFmt}
     </span>
   );
 }

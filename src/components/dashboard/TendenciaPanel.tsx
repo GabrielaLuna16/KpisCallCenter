@@ -10,9 +10,9 @@ import styles from './Panels.module.css';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
-interface Props { data: TendenciaData; label: string; prevData?: TendenciaData }
+interface Props { data: TendenciaData; label: string; prevData?: TendenciaData; prevLabel?: string }
 
-export default function TendenciaPanel({ data, label, prevData }: Props) {
+export default function TendenciaPanel({ data, label, prevData, prevLabel }: Props) {
   const { kpis } = data;
 
   const chartData = {
@@ -75,17 +75,17 @@ export default function TendenciaPanel({ data, label, prevData }: Props) {
         <div className={`${styles.kpiCard} ${styles.kpiDark}`}>
           <span className={styles.kpiVal}>{kpis.prom_asignadas}</span>
           <span className={styles.kpiLbl}>Prom. asignadas / día</span>
-          <DeltaBadge curr={kpis.prom_asignadas} prev={prevData?.kpis.prom_asignadas} />
+          <DeltaBadge curr={kpis.prom_asignadas} prev={prevData?.kpis.prom_asignadas} prevLabel={prevLabel} />
         </div>
         <div className={`${styles.kpiCard} ${styles.kpiGreen}`}>
           <span className={styles.kpiVal}>{kpis.prom_realizadas}</span>
           <span className={styles.kpiLbl}>Prom. realizadas / día</span>
-          <DeltaBadge curr={kpis.prom_realizadas} prev={prevData?.kpis.prom_realizadas} positiveIsGood />
+          <DeltaBadge curr={kpis.prom_realizadas} prev={prevData?.kpis.prom_realizadas} positiveIsGood prevLabel={prevLabel} />
         </div>
         <div className={`${styles.kpiCard} ${styles.kpiOrange}`}>
           <span className={styles.kpiVal}>{kpis.limite_recomendado}</span>
           <span className={styles.kpiLbl}>Límite recomendado</span>
-          <DeltaBadge curr={kpis.limite_recomendado} prev={prevData?.kpis.limite_recomendado} />
+          <DeltaBadge curr={kpis.limite_recomendado} prev={prevData?.kpis.limite_recomendado} prevLabel={prevLabel} />
         </div>
       </div>
 

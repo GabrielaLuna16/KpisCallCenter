@@ -12,7 +12,7 @@ import styles from './Panels.module.css';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-interface Props { data: RespuestaMonthData; label: string; prevData?: RespuestaMonthData }
+interface Props { data: RespuestaMonthData; label: string; prevData?: RespuestaMonthData; prevLabel?: string }
 
 const TURNOS: Turno[] = ['Horario laboral', 'Fuera de horario L-V', 'Fin de semana'];
 const TURNO_COLORS: Record<Turno, string> = {
@@ -23,7 +23,7 @@ const TURNO_COLORS: Record<Turno, string> = {
 
 type Filter = 'Todos' | Turno;
 
-export default function TiempoRespuestaPanel({ data, label, prevData }: Props) {
+export default function TiempoRespuestaPanel({ data, label, prevData, prevLabel }: Props) {
   const [filter, setFilter] = useState<Filter>('Todos');
   const [busqueda, setBusqueda] = useState('');
   const [sortCol, setSortCol] = useState<'r' | 'c' | 'cl' | 'm'>('m');
@@ -114,17 +114,17 @@ export default function TiempoRespuestaPanel({ data, label, prevData }: Props) {
                 <div>
                   <span className={styles.kpiVal}>{fmtTime(m?.avg ?? 0)}</span>
                   <span className={styles.kpiLbl}>Promedio</span>
-                  <DeltaBadge curr={m?.avg ?? 0} prev={prevData?.metrics[t]?.avg} positiveIsGood={false} variant="light" format={fmtTime} />
+                  <DeltaBadge curr={m?.avg ?? 0} prev={prevData?.metrics[t]?.avg} positiveIsGood={false} variant="light" format={fmtTime} prevLabel={prevLabel} />
                 </div>
                 <div>
                   <span className={styles.kpiVal}>{fmtTime(m?.median ?? 0)}</span>
                   <span className={styles.kpiLbl}>Mediana</span>
-                  <DeltaBadge curr={m?.median ?? 0} prev={prevData?.metrics[t]?.median} positiveIsGood={false} variant="light" format={fmtTime} />
+                  <DeltaBadge curr={m?.median ?? 0} prev={prevData?.metrics[t]?.median} positiveIsGood={false} variant="light" format={fmtTime} prevLabel={prevLabel} />
                 </div>
                 <div>
                   <span className={styles.kpiVal}>{m?.count ?? 0}</span>
                   <span className={styles.kpiLbl}>Registros</span>
-                  <DeltaBadge curr={m?.count ?? 0} prev={prevData?.metrics[t]?.count} variant="light" />
+                  <DeltaBadge curr={m?.count ?? 0} prev={prevData?.metrics[t]?.count} variant="light" prevLabel={prevLabel} />
                 </div>
               </div>
             </div>

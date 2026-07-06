@@ -155,22 +155,22 @@ export default function Dashboard() {
       <div className={styles.panelWrap}>
         {tab === 'tendencia' && (
           loadingAct ? <LoadingPanel /> :
-          actData ? <TendenciaPanel data={actData.tendencia} label={currentLabel} prevData={prevActData?.tendencia} /> :
+          actData ? <TendenciaPanel data={actData.tendencia} label={currentLabel} prevData={prevActData?.tendencia} prevLabel={prevEntry?.label} /> :
           <UnavailablePanel />
         )}
         {tab === 'cumplimiento' && (
           loadingAct ? <LoadingPanel /> :
-          actData ? <CumplimientoPanel data={actData.cumplimiento} label={currentLabel} prevData={prevActData?.cumplimiento} /> :
+          actData ? <CumplimientoPanel data={actData.cumplimiento} label={currentLabel} prevData={prevActData?.cumplimiento} prevLabel={prevEntry?.label} /> :
           <UnavailablePanel />
         )}
         {tab === 'horarios' && (
           loadingAct ? <LoadingPanel /> :
-          actData ? <HorariosPanel data={actData.horarios} label={currentLabel} prevData={prevActData?.horarios} /> :
+          actData ? <HorariosPanel data={actData.horarios} label={currentLabel} prevData={prevActData?.horarios} prevLabel={prevEntry?.label} /> :
           <UnavailablePanel />
         )}
         {tab === 'respuesta' && (
           loadingResp ? <LoadingPanel /> :
-          respData ? <TiempoRespuestaPanel data={respData} label={currentLabel} prevData={prevRespData ?? undefined} /> :
+          respData ? <TiempoRespuestaPanel data={respData} label={currentLabel} prevData={prevRespData ?? undefined} prevLabel={prevEntry?.label} /> :
           <UnavailablePanel />
         )}
         {tab === 'insights' && (
