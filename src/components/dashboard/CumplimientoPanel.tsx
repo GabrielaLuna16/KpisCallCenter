@@ -47,8 +47,11 @@ export default function CumplimientoPanel({ data, label }: Props) {
     (i.subject ?? '').toLowerCase().includes(busqueda.toLowerCase())
   );
 
-  const zohoUrl = (id?: string) =>
-    id ? `https://crm.zoho.com/crm/org666606221/tab/Tasks/${id}` : null;
+  const zohoUrl = (id?: string) => {
+    if (!id) return null;
+    const clean = id.replace(/^zcrm_/, '');
+    return clean ? `https://crm.zoho.com/crm/org666606221/tab/Tasks/${clean}` : null;
+  };
 
   return (
     <div className={styles.panel}>
