@@ -52,6 +52,11 @@ export default function Dashboard() {
     currentEntry?.hasRespuesta ? activeMonth : null
   );
 
+  // Mes anterior (siguiente en el array, que está ordenado desc)
+  const prevEntry = months[months.findIndex(m => m.key === activeMonth) + 1] ?? null;
+  const { data: prevActData } = useActividadesData(prevEntry?.hasActividades ? prevEntry.key : null);
+  const { data: prevRespData } = useRespuestaData(prevEntry?.hasRespuesta ? prevEntry.key : null);
+
 
   const currentLabel = currentEntry?.label ?? '';
 
@@ -150,22 +155,22 @@ export default function Dashboard() {
       <div className={styles.panelWrap}>
         {tab === 'tendencia' && (
           loadingAct ? <LoadingPanel /> :
-          actData ? <TendenciaPanel data={actData.tendencia} label={currentLabel} /> :
+          actData ? <TendenciaPanel data={actData.tendencia} label={currentLabel} prevData={prevActData?.tendencia} /> :
           <UnavailablePanel />
         )}
         {tab === 'cumplimiento' && (
           loadingAct ? <LoadingPanel /> :
-          actData ? <CumplimientoPanel data={actData.cumplimiento} label={currentLabel} /> :
+          actData ? <CumplimientoPanel data={actData.cumplimiento} label={currentLabel} prevData={prevActData?.cumplimiento} /> :
           <UnavailablePanel />
         )}
         {tab === 'horarios' && (
           loadingAct ? <LoadingPanel /> :
-          actData ? <HorariosPanel data={actData.horarios} label={currentLabel} /> :
+          actData ? <HorariosPanel data={actData.horarios} label={currentLabel} prevData={prevActData?.horarios} /> :
           <UnavailablePanel />
         )}
         {tab === 'respuesta' && (
           loadingResp ? <LoadingPanel /> :
-          respData ? <TiempoRespuestaPanel data={respData} label={currentLabel} /> :
+          respData ? <TiempoRespuestaPanel data={respData} label={currentLabel} prevData={prevRespData ?? undefined} /> :
           <UnavailablePanel />
         )}
         {tab === 'insights' && (

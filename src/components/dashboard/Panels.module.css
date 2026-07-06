@@ -486,6 +486,21 @@
   text-align: right;
 }
 
+/* ── DELTA BADGE ── */
+.delta {
+  font-size: .71rem;
+  font-weight: 600;
+  margin-top: 6px;
+  display: block;
+  letter-spacing: .01em;
+}
+.deltaGoodDark  { color: rgba(180,255,210,.9); }
+.deltaBadDark   { color: rgba(255,180,180,.9); }
+.deltaNeutDark  { color: rgba(255,255,255,.45); }
+.deltaGoodLight { color: #2d8a5e; }
+.deltaBadLight  { color: #d2262c; }
+.deltaNeutLight { color: #999; }
+
 /* ── ZOHO LINK ROW ── */
 .zohoRow {
   cursor: pointer;

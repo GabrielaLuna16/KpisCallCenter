@@ -3,13 +3,14 @@ import { useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import type { CumplimientoData, CumplimientoDetalle } from '@/types/data';
+import DeltaBadge from './DeltaBadge';
 import styles from './Panels.module.css';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-interface Props { data: CumplimientoData; label: string }
+interface Props { data: CumplimientoData; label: string; prevData?: CumplimientoData }
 
-export default function CumplimientoPanel({ data, label }: Props) {
+export default function CumplimientoPanel({ data, label, prevData }: Props) {
   const { kpis } = data;
   const [modal, setModal] = useState<null | 'tardio' | 'no_real'>(null);
   const [busqueda, setBusqueda] = useState('');
@@ -70,6 +71,7 @@ export default function CumplimientoPanel({ data, label }: Props) {
           <span className={styles.kpiVal}>{kpis.a_tiempo}</span>
           <span className={styles.kpiLbl}>A tiempo</span>
           <span className={styles.kpiSub}>{pAT}%</span>
+          <DeltaBadge curr={kpis.a_tiempo} prev={prevData?.kpis.a_tiempo} positiveIsGood />
         </div>
         <div
           className={`${styles.kpiCard} ${styles.kpiOrange} ${styles.clickable}`}
@@ -79,6 +81,7 @@ export default function CumplimientoPanel({ data, label }: Props) {
           <span className={styles.kpiVal}>{kpis.tardio}</span>
           <span className={styles.kpiLbl}>Tardío</span>
           <span className={styles.kpiSub}>{pTard}%</span>
+          <DeltaBadge curr={kpis.tardio} prev={prevData?.kpis.tardio} positiveIsGood={false} />
         </div>
         <div
           className={`${styles.kpiCard} ${styles.kpiPurple} ${styles.clickable}`}
@@ -88,6 +91,7 @@ export default function CumplimientoPanel({ data, label }: Props) {
           <span className={styles.kpiVal}>{kpis.no_realizadas}</span>
           <span className={styles.kpiLbl}>No realizadas</span>
           <span className={styles.kpiSub}>{pNoReal}%</span>
+          <DeltaBadge curr={kpis.no_realizadas} prev={prevData?.kpis.no_realizadas} positiveIsGood={false} />
         </div>
       </div>
 

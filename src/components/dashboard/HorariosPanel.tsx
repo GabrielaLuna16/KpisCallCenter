@@ -1,11 +1,12 @@
 'use client';
 import { useState } from 'react';
 import type { HorariosData } from '@/types/data';
+import DeltaBadge from './DeltaBadge';
 import styles from './Panels.module.css';
 
-interface Props { data: HorariosData; label: string }
+interface Props { data: HorariosData; label: string; prevData?: HorariosData }
 
-export default function HorariosPanel({ data, label }: Props) {
+export default function HorariosPanel({ data, label, prevData }: Props) {
   const { kpis } = data;
   const [expanded, setExpanded] = useState<number | null>(null);
 
@@ -25,10 +26,12 @@ export default function HorariosPanel({ data, label }: Props) {
         <div className={`${styles.kpiCard} ${styles.kpiDark}`}>
           <span className={styles.kpiVal}>{kpis.prom_horas_activas}h</span>
           <span className={styles.kpiLbl}>Prom. horas activas / día</span>
+          <DeltaBadge curr={kpis.prom_horas_activas} prev={prevData?.kpis.prom_horas_activas} positiveIsGood />
         </div>
         <div className={`${styles.kpiCard} ${styles.kpiDark}`}>
           <span className={styles.kpiVal}>{kpis.tiempo_prom_entre_cierres}m</span>
           <span className={styles.kpiLbl}>Tiempo prom. entre cierres</span>
+          <DeltaBadge curr={kpis.tiempo_prom_entre_cierres} prev={prevData?.kpis.tiempo_prom_entre_cierres} positiveIsGood={false} />
         </div>
         <div className={`${styles.kpiCard} ${styles.kpiGreen}`}>
           <span className={styles.kpiVal}>{kpis.dia_mas_largo.horas}h</span>

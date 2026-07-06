@@ -7,11 +7,12 @@ import {
 } from 'chart.js';
 import type { RespuestaMonthData, Turno } from '@/types/data';
 import { fmtTime } from '@/lib/processors/respuesta';
+import DeltaBadge from './DeltaBadge';
 import styles from './Panels.module.css';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-interface Props { data: RespuestaMonthData; label: string }
+interface Props { data: RespuestaMonthData; label: string; prevData?: RespuestaMonthData }
 
 const TURNOS: Turno[] = ['Horario laboral', 'Fuera de horario L-V', 'Fin de semana'];
 const TURNO_COLORS: Record<Turno, string> = {
@@ -22,7 +23,7 @@ const TURNO_COLORS: Record<Turno, string> = {
 
 type Filter = 'Todos' | Turno;
 
-export default function TiempoRespuestaPanel({ data, label }: Props) {
+export default function TiempoRespuestaPanel({ data, label, prevData }: Props) {
   const [filter, setFilter] = useState<Filter>('Todos');
   const [busqueda, setBusqueda] = useState('');
   const [sortCol, setSortCol] = useState<'r' | 'c' | 'cl' | 'm'>('m');
@@ -113,14 +114,17 @@ export default function TiempoRespuestaPanel({ data, label }: Props) {
                 <div>
                   <span className={styles.kpiVal}>{fmtTime(m?.avg ?? 0)}</span>
                   <span className={styles.kpiLbl}>Promedio</span>
+                  <DeltaBadge curr={m?.avg ?? 0} prev={prevData?.metrics[t]?.avg} positiveIsGood={false} variant="light" format={fmtTime} />
                 </div>
                 <div>
                   <span className={styles.kpiVal}>{fmtTime(m?.median ?? 0)}</span>
                   <span className={styles.kpiLbl}>Mediana</span>
+                  <DeltaBadge curr={m?.median ?? 0} prev={prevData?.metrics[t]?.median} positiveIsGood={false} variant="light" format={fmtTime} />
                 </div>
                 <div>
                   <span className={styles.kpiVal}>{m?.count ?? 0}</span>
                   <span className={styles.kpiLbl}>Registros</span>
+                  <DeltaBadge curr={m?.count ?? 0} prev={prevData?.metrics[t]?.count} variant="light" />
                 </div>
               </div>
             </div>
