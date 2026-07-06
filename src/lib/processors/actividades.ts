@@ -178,7 +178,7 @@ export function parseActividadesToData(buffer: ArrayBuffer, nonWorkingDays: stri
       subject: String(row[iSubject] ?? ''),
       relatedTo: String(row[iRelated] ?? ''),
       status: String(row[iStatus] ?? ''),
-      recordId: iRecordId >= 0 ? String(row[iRecordId] ?? '') : '',
+      recordId: iRecordId >= 0 ? String(row[iRecordId] ?? '').replace(/^zcrm_/, '') : '',
     });
   }
 

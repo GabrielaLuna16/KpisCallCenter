@@ -168,14 +168,14 @@ export default function CumplimientoPanel({ data, label }: Props) {
                   {filtered.map((item, i) => {
                     const url = zohoUrl(item.record_id);
                     return (
-                      <tr
-                        key={i}
-                        className={url ? styles.zohoRow : ''}
-                        onClick={() => url && window.open(url, '_blank')}
-                        title={url ? 'Abrir tarea en Zoho CRM' : undefined}
-                      >
+                      <tr key={i}>
                         <td>{item.lead}</td>
-                        <td>{item.subject ?? '—'}</td>
+                        <td>
+                          {url
+                            ? <a href={url} target="_blank" rel="noreferrer" className={styles.zohoSubjectLink}>{item.subject ?? '—'}</a>
+                            : (item.subject ?? '—')
+                          }
+                        </td>
                         <td>{item.due_date}</td>
                         {modal === 'tardio' && <td>{item.closed_time}</td>}
                         <td className={styles.zohoLinkCell}>
