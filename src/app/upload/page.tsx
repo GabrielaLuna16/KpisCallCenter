@@ -28,6 +28,7 @@ function fmtDate(iso: string) {
 }
 
 export default function UploadPage() {
+  const [anySuccess, setAnySuccess] = useState(false);
   const [holidays, setHolidays] = useState<string[]>([]);
   const [holidayInput, setHolidayInput] = useState('');
   const [vacations, setVacations] = useState<{ start: string; end: string }[]>([]);
@@ -169,6 +170,7 @@ export default function UploadPage() {
             parser={async (buf, days) => parseActividadesToData(buf, days) as unknown as { month: string; [k: string]: unknown }}
             previewSummary={actSummary}
             nonWorkingDays={nonWorkingDays}
+            onSuccess={() => setAnySuccess(true)}
           />
 
           <UploadSection
@@ -178,8 +180,21 @@ export default function UploadPage() {
             parser={async (buf, days) => parseRespuestaToData(buf, days) as unknown as { month: string; [k: string]: unknown }}
             previewSummary={respSummary}
             nonWorkingDays={nonWorkingDays}
+            onSuccess={() => setAnySuccess(true)}
           />
         </div>
+
+        {anySuccess && (
+          <div className={styles.successBanner}>
+            <div className={styles.successBannerText}>
+              <span className={styles.successBannerCheck}>✓</span>
+              Archivo guardado correctamente. El dashboard se actualizará en ~45 segundos.
+            </div>
+            <Link href="/" className={styles.backBtn}>
+              Volver a Dashboards
+            </Link>
+          </div>
+        )}
       </div>
     </>
   );

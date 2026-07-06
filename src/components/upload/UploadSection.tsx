@@ -11,12 +11,13 @@ interface Props {
   parser: (buffer: ArrayBuffer, nonWorkingDays?: string[]) => Promise<{ month: string; [k: string]: unknown }>;
   previewSummary: (data: Record<string, unknown>) => string;
   nonWorkingDays?: string[];
+  onSuccess?: () => void;
 }
 
 const MESES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
                'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
-export default function UploadSection({ title, subtitle, endpoint, parser, previewSummary, nonWorkingDays }: Props) {
+export default function UploadSection({ title, subtitle, endpoint, parser, previewSummary, nonWorkingDays, onSuccess }: Props) {
   const now = new Date();
   const prev = new Date(now.getFullYear(), now.getMonth() - 1, 1);
   const [month, setMonth] = useState(
@@ -89,6 +90,7 @@ export default function UploadSection({ title, subtitle, endpoint, parser, previ
       setMsg(`¡Listo! Datos de ${label} guardados. El sitio actualizará en ~45 segundos.`);
       setFile(null);
       setParsedData(null);
+      onSuccess?.();
     } catch (err) {
       setStatus('error');
       setMsg(err instanceof Error ? err.message : 'Error al guardar');
