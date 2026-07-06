@@ -43,8 +43,12 @@ export default function CumplimientoPanel({ data, label }: Props) {
 
   const filtered = modalItems.filter(i =>
     i.lead.toLowerCase().includes(busqueda.toLowerCase()) ||
-    i.due_date.includes(busqueda)
+    i.due_date.includes(busqueda) ||
+    (i.subject ?? '').toLowerCase().includes(busqueda.toLowerCase())
   );
+
+  const zohoUrl = (id?: string) =>
+    id ? `https://crm.zoho.com/crm/org666606221/tab/Tasks/${id}` : null;
 
   return (
     <div className={styles.panel}>
@@ -145,7 +149,7 @@ export default function CumplimientoPanel({ data, label }: Props) {
             </div>
             <input
               className={styles.searchInput}
-              placeholder="Buscar por nombre o fecha..."
+              placeholder="Buscar por nombre, subject o fecha..."
               value={busqueda}
               onChange={e => setBusqueda(e.target.value)}
             />
@@ -154,20 +158,34 @@ export default function CumplimientoPanel({ data, label }: Props) {
                 <thead>
                   <tr>
                     <th>Lead</th>
+                    <th>Subject</th>
                     <th>Due Date</th>
                     {modal === 'tardio' && <th>Closed Time</th>}
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody>
-                  {filtered.map((item, i) => (
-                    <tr key={i}>
-                      <td>{item.lead}</td>
-                      <td>{item.due_date}</td>
-                      {modal === 'tardio' && <td>{item.closed_time}</td>}
-                    </tr>
-                  ))}
+                  {filtered.map((item, i) => {
+                    const url = zohoUrl(item.record_id);
+                    return (
+                      <tr
+                        key={i}
+                        className={url ? styles.zohoRow : ''}
+                        onClick={() => url && window.open(url, '_blank')}
+                        title={url ? 'Abrir tarea en Zoho CRM' : undefined}
+                      >
+                        <td>{item.lead}</td>
+                        <td>{item.subject ?? '—'}</td>
+                        <td>{item.due_date}</td>
+                        {modal === 'tardio' && <td>{item.closed_time}</td>}
+                        <td className={styles.zohoLinkCell}>
+                          {url && <span className={styles.zohoIcon}>↗</span>}
+                        </td>
+                      </tr>
+                    );
+                  })}
                   {filtered.length === 0 && (
-                    <tr><td colSpan={3} style={{ textAlign: 'center', color: '#999' }}>Sin resultados</td></tr>
+                    <tr><td colSpan={5} style={{ textAlign: 'center', color: '#999' }}>Sin resultados</td></tr>
                   )}
                 </tbody>
               </table>

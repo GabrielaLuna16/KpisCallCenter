@@ -486,6 +486,36 @@
   text-align: right;
 }
 
+/* ── ZOHO LINK ROW ── */
+.zohoRow {
+  cursor: pointer;
+}
+.zohoRow:hover {
+  background: #f0f4ff !important;
+}
+.zohoLinkCell {
+  width: 28px;
+  text-align: center;
+  padding: 10px 6px !important;
+}
+.zohoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: #3a5cc5;
+  color: #fff;
+  border-radius: 5px;
+  font-size: .75rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity .15s;
+}
+.zohoRow:hover .zohoIcon {
+  opacity: 1;
+}
+
 /* ── INSIGHTS: INFO ICON ── */
 .insInfo {
   font-style: normal;

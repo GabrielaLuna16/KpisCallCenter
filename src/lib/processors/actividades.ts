@@ -93,6 +93,7 @@ interface RawRow {
   subject: string;
   relatedTo: string;
   status: string;
+  recordId: string;
 }
 
 // ─── PARSER PRINCIPAL ────────────────────────────────────────────────────────
@@ -119,6 +120,10 @@ export function parseActividadesToData(buffer: ArrayBuffer, nonWorkingDays: stri
   const iSubject = headers.findIndex(h => h?.toLowerCase?.()?.includes('subject'));
   const iRelated = headers.findIndex(h => h?.toLowerCase?.()?.includes('related'));
   const iStatus = headers.findIndex(h => h?.toLowerCase?.()?.includes('status'));
+  const iRecordId = headers.findIndex(h => {
+    const l = h?.toLowerCase?.() ?? '';
+    return l.includes('record id') || l === 'record_id' || l === 'id';
+  });
 
   const dataRows = raw.slice(headerIdx + 1).filter(r => r.some(c => c !== ''));
 
@@ -173,6 +178,7 @@ export function parseActividadesToData(buffer: ArrayBuffer, nonWorkingDays: stri
       subject: String(row[iSubject] ?? ''),
       relatedTo: String(row[iRelated] ?? ''),
       status: String(row[iStatus] ?? ''),
+      recordId: iRecordId >= 0 ? String(row[iRecordId] ?? '') : '',
     });
   }
 
@@ -307,10 +313,10 @@ function buildCumplimiento(rows: RawRow[], workdays: Date[], noLaborables: Set<s
       aTiempo++;
     } else if (cl === 'tardio') {
       tardio++;
-      tardioDetail.push({ lead: r.relatedTo, due_date: dueStr, closed_time: closedStr });
+      tardioDetail.push({ lead: r.relatedTo, due_date: dueStr, closed_time: closedStr, subject: r.subject, record_id: r.recordId });
     } else {
       noReal++;
-      noRealDetail.push({ lead: r.relatedTo, due_date: dueStr, closed_time: '' });
+      noRealDetail.push({ lead: r.relatedTo, due_date: dueStr, closed_time: '', subject: r.subject, record_id: r.recordId });
     }
   }
 

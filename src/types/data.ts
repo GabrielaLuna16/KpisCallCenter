@@ -35,6 +35,8 @@ export interface CumplimientoDetalle {
   lead: string;
   due_date: string;
   closed_time: string;
+  subject?: string;
+  record_id?: string;
 }
 
 export interface CumplimientoFila {
