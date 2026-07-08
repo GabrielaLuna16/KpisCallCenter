@@ -19,7 +19,6 @@ export default function CumplimientoPanel({ data, label, prevData, prevLabel }: 
   const pAT = Math.round((kpis.a_tiempo / total) * 100);
   const pTard = Math.round((kpis.tardio / total) * 100);
   const pNoReal = Math.round((kpis.no_realizadas / total) * 100);
-  const fmtPct = (n: number, raw: number) => raw > 0 && n === 0 ? '<1%' : `${n}%`;
 
   const doughnutData = {
     labels: ['A tiempo', 'Tardío', 'No realizadas'],
@@ -71,7 +70,7 @@ export default function CumplimientoPanel({ data, label, prevData, prevLabel }: 
         <div className={`${styles.kpiCard} ${styles.kpiGreen}`}>
           <span className={styles.kpiVal}>{kpis.a_tiempo}</span>
           <span className={styles.kpiLbl}>A tiempo</span>
-          <span className={styles.kpiSub}>{fmtPct(pAT, kpis.a_tiempo)}</span>
+          <span className={styles.kpiSub}>{pAT}%</span>
           <DeltaBadge curr={kpis.a_tiempo} prev={prevData?.kpis.a_tiempo} positiveIsGood prevLabel={prevLabel} />
         </div>
         <div
@@ -81,7 +80,7 @@ export default function CumplimientoPanel({ data, label, prevData, prevLabel }: 
         >
           <span className={styles.kpiVal}>{kpis.tardio}</span>
           <span className={styles.kpiLbl}>Tardío</span>
-          <span className={styles.kpiSub}>{fmtPct(pTard, kpis.tardio)}</span>
+          <span className={styles.kpiSub}>{pTard}%</span>
           <DeltaBadge curr={kpis.tardio} prev={prevData?.kpis.tardio} positiveIsGood={false} prevLabel={prevLabel} />
         </div>
         <div
@@ -91,7 +90,7 @@ export default function CumplimientoPanel({ data, label, prevData, prevLabel }: 
         >
           <span className={styles.kpiVal}>{kpis.no_realizadas}</span>
           <span className={styles.kpiLbl}>No realizadas</span>
-          <span className={styles.kpiSub}>{fmtPct(pNoReal, kpis.no_realizadas)}</span>
+          <span className={styles.kpiSub}>{pNoReal}%</span>
           <DeltaBadge curr={kpis.no_realizadas} prev={prevData?.kpis.no_realizadas} positiveIsGood={false} prevLabel={prevLabel} />
         </div>
       </div>
